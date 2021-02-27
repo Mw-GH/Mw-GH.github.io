@@ -199,476 +199,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/Mw.png">
-      <meta itemprop="name" content="Mw">
-      <meta itemprop="description" content="God is Developer">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mw-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/" class="post-title-link" itemprop="url">Hexo博客基础配置（二）</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-02-27 16:00:00 / 修改时间：14:45:29" itemprop="dateCreated datePublished" datetime="2021-02-27T16:00:00+08:00">2021-02-27</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">个人博客搭建</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo博客基础配置（二）" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>10k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>9 min</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h2><h3 id="博客信息"><a href="#博客信息" class="headerlink" title="博客信息"></a>博客信息</h3><p><mark>站点配置文件</mark></p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Mw-Blog</span></span><br><span class="line"><span class="attr">subtitle:</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">个人博客</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Mw</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/24/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/Mw.png">
-      <meta itemprop="name" content="Mw">
-      <meta itemprop="description" content="God is Developer">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mw-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/24/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/" class="post-title-link" itemprop="url">JAVA集合框架</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-24 16:00:00" itemprop="dateCreated datePublished" datetime="2020-02-24T16:00:00+08:00">2020-02-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-26 23:40:45" itemprop="dateModified" datetime="2021-02-26T23:40:45+08:00">2021-02-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">Java基础</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2020/02/24/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/" class="post-meta-item leancloud_visitors" data-flag-title="JAVA集合框架" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/02/24/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/24/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 min</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="JAVA集合框架"><a href="#JAVA集合框架" class="headerlink" title="JAVA集合框架"></a>JAVA集合框架</h1><ul>
-<li><p><strong>概念:</strong> 对象的容器，实现了对象常用的操作，类似与数组的功能</p>
-</li>
-<li><p><strong>集合与数组的区别</strong></p>
-<ol>
-<li>数组的长度是固定的，集合长度不固定</li>
-<li>数组可以存储基本类型和引用类型，集合只能存储引用类型</li>
-</ol>
-</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/24/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/Mw.png">
-      <meta itemprop="name" content="Mw">
-      <meta itemprop="description" content="God is Developer">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mw-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">AP配置文件</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-03 16:17:56" itemprop="dateCreated datePublished" datetime="2019-09-03T16:17:56+08:00">2019-09-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-26 23:40:45" itemprop="dateModified" datetime="2021-02-26T23:40:45+08:00">2021-02-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E6%96%87%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">个人文件</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/" class="post-meta-item leancloud_visitors" data-flag-title="AP配置文件" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>594</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 min</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          这是一篇加密文章，需要查看请与我联系。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2019/09/03/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/Mw.png">
-      <meta itemprop="name" content="Mw">
-      <meta itemprop="description" content="God is Developer">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mw-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/03/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Linux常用命令 长期更新</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-03 00:00:00" itemprop="dateCreated datePublished" datetime="2019-09-03T00:00:00+08:00">2019-09-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-27 14:32:54" itemprop="dateModified" datetime="2021-02-27T14:32:54+08:00">2021-02-27</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/" itemprop="url" rel="index"><span itemprop="name">技术储备</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2019/09/03/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-meta-item leancloud_visitors" data-flag-title="Linux常用命令 长期更新" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/09/03/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/09/03/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>157</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 min</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -an</span><br></pre></td></tr></table></figure>
-
-<h2 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ss -tunlp</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/09/03/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -691,7 +221,7 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">发表于</span>
+              <span class="post-meta-item-text">更新于</span>
 
               <time title="创建时间：2019-08-30 16:17:56" itemprop="dateCreated datePublished" datetime="2019-08-30T16:17:56+08:00">2019-08-30</time>
             </span>
@@ -700,7 +230,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-26 23:40:45" itemprop="dateModified" datetime="2021-02-26T23:40:45+08:00">2021-02-26</time>
+                <time title="修改时间：2021-02-27 18:56:15" itemprop="dateModified" datetime="2021-02-27T18:56:15+08:00">2021-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -776,8 +306,1206 @@
   
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/27/Git%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/27/Git%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Git命令</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+              
+
+              <time title="创建时间：2021-02-27 16:00:00 / 修改时间：18:53:34" itemprop="dateCreated datePublished" datetime="2021-02-27T16:00:00+08:00">2021-02-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/" itemprop="url" rel="index"><span itemprop="name">技术储备</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/02/27/Git%E5%91%BD%E4%BB%A4/" class="post-meta-item leancloud_visitors" data-flag-title="Git命令" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/02/27/Git%E5%91%BD%E4%BB%A4/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/27/Git%E5%91%BD%E4%BB%A4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h1><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
+<li><p><code>git clone https://github.com/Mw-GH/GitLearning.git</code>     从远程仓库上克隆项目</p>
+</li>
+<li><p><code>git push -u orgin master</code><br>  将本地的最新数据推送到远程仓库<br>  第一加 <code>-u</code>后  后面可直接使用 <code>git push</code><br>  <code>pull</code>同理</p>
+</li>
+<li><p><code>git pull orgin master</code><br>  将远程仓库的最新数据同步到本地</p>
+</li>
+</ul>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<li><p><code>git config user.name</code><br>  查看配置用户</p>
+</li>
+<li><p><code>git config user.email</code><br>  查看配置邮箱</p>
+</li>
+<li><p><code>git config --global user.name &quot;Mw-GH&quot;</code><br>  配置更改git用户</p>
+</li>
+<li><p><code>git config --global user.email &quot;Mw-MS@outlook.com&quot;</code><br>  配置或更改git邮箱</p>
+</li>
+<li><p><code>ssh-keygen -t rsa -C &quot;Mw-MS@outlook.com&quot;</code><br>  在C:\Users\Administrator目录下生成.ssh</p>
+</li>
+</ul>
+<h2 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h2><hr>
+<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ul>
+<li><p><code>git init</code><br>初始化仓库</p>
+</li>
+<li><p><code>git add &lt;file&gt;</code><br>更新文件 工作区&gt;&gt;&gt;暂存区  </p>
+</li>
+<li><p><code>git commit -m &lt;&quot;describe&quot;&gt;</code><br>更新版本 暂存区&gt;&gt;&gt;仓库（版本库）</p>
+<p>  <strong>注意<br>  一次commit能够提交上一次commit后所有的修改添加</strong></p>
+</li>
+<li><p><code>git checkout &lt;file&gt;</code><br><code>git checkout .</code>  恢复全部文件的修改<br>恢复修改  撤销<br>未git add的文件</p>
+</li>
+<li><p><code>git reset HEAD</code><br>撤销文件更新 工作区&lt;&lt;&lt;暂存区<br>已经git add的文件，再用上一条命令恢复文件<br>同commit 全部恢复为未提交状态</p>
+</li>
+<li><p><code>git reset --hard HEAD^</code><br>  <code>git rest --hard &lt;版本号&gt;</code><br>版本回退 暂存区&lt;&lt;&lt;仓库（仓库）<br>回退到上一个版本 上上一个版本为HEAD^^ 上一百个版本HEAD~100<br>已经commit后 恢复所有文件为上一个版本</p>
+</li>
+<li><p><code>git rm test.txt</code><br>删除test.txt文件</p>
+</li>
+<li><p><code>git status</code><br>查看commit前仓库的状态 是否有需要提交的文件</p>
+</li>
+<li><p><code>git diff [file]</code><br>查看commit前的差异   difference差异</p>
+</li>
+<li><p><code>git log</code><br>查看最近到最远的提交日志<br>  <code>git log --pretty=oneline</code><br>简略版日志</p>
+</li>
+<li><p><code>git reflog</code><br>查看你的每一次命令</p>
+</li>
+</ul>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><hr>
+<h3 id="branch"><a href="#branch" class="headerlink" title="branch"></a>branch</h3><ul>
+<li><p><code>git checkout -b dev</code><br>创建并切换到新的分支dev<br>等同于<br><code>git branch dev</code><br><code>git checkout dev</code></p>
+</li>
+<li><p><code>git branch</code><br>查看当前所有分支</p>
+</li>
+<li><p><code>git merge dev</code><br>当前分支master合并dev分支  </p>
+</li>
+</ul>
+<p><strong>合并方式：<br><code>Fast-forward</code>:快进模式<code>git merge dev</code>，直接把master指向dev的提交，缺点：看不出合并记录还会搅乱master分支提交记录<br>禁用<code>Fast-forward</code>:普通模式<code>git merge --no-ff -m &quot;merge --no-ff&quot;</code>,合并后的历史有分支，能看出来曾经做过合并</strong></p>
+<p><code>git merge --no-ff -m &quot;merge with no-ff&quot; dev</code><br>禁用<code>Fast forward</code>模式 合并分支并生成一个commit  </p>
+<p><strong>建议使用<br><code>--no-ff</code>参数 就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而<code>fast forward</code>合并就看不出来曾经做过合并。</strong></p>
+<ul>
+<li><code>git branch -d dev</code><br>删除dev分支</li>
+</ul>
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><ul>
+<li><p><code>git switch -c dev</code><br>创建并切换到新的分支dev</p>
+</li>
+<li><p><code>git switch master</code><br>直接切换到已有分支master  </p>
+</li>
+</ul>
+<p><strong>注意<br> 因为创建、合并和删除分支非常快，所以Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在master分支上工作效果是一样的，但过程更安全。</strong></p>
+<ul>
+<li><code>git log --graph --pretty=oneline --abbrev-commit</code><br>用带参的<code>git log</code>查看分支的合并情况</li>
+</ul>
+<h2 id="stash"><a href="#stash" class="headerlink" title="stash"></a>stash</h2><ul>
+<li><p><code>git stash</code><br><code>git stash save &quot;sta1&quot;</code><br>储藏现在的工作区</p>
+</li>
+<li><p><code>git stash list</code><br>查看所有储藏的内容</p>
+</li>
+<li><p><code>git stash pop</code><br>恢复内容同时删除stash</p>
+</li>
+<li><p><code>git stash apply</code><br><code>git stash apply stash@&#123;0&#125;</code><br>恢复最近一个stash</p>
+</li>
+<li><p><code>git stash drop stash@&#123;0&#125;</code><br>删除指定stash</p>
+</li>
+<li><p><code>git stash branch</code><br>从最新的stash创建分支</p>
+</li>
+<li><p><code>git cherry-pick</code><br>复制一个特定的提交到当前分支</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" class="post-title-link" itemprop="url">Tomcat 中文乱码解决</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+              
+
+              <time title="创建时间：2021-02-27 16:00:00 / 修改时间：19:29:06" itemprop="dateCreated datePublished" datetime="2021-02-27T16:00:00+08:00">2021-02-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/" itemprop="url" rel="index"><span itemprop="name">技术储备</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" class="post-meta-item leancloud_visitors" data-flag-title="Tomcat 中文乱码解决" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>408</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在开发过程或者更换开发环境中经常遇到tomcat中文乱码问题，在此记录已方便查看.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/" class="post-title-link" itemprop="url">Hexo博客基础配置（二）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+              
+
+              <time title="创建时间：2021-02-27 16:00:00 / 修改时间：15:41:22" itemprop="dateCreated datePublished" datetime="2021-02-27T16:00:00+08:00">2021-02-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">个人博客搭建</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo博客基础配置（二）" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>10k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>9 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h2><h3 id="博客信息"><a href="#博客信息" class="headerlink" title="博客信息"></a><h2 id="testJump">博客信息</h2></h3><p><mark>站点配置文件</mark></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Mw-Blog</span></span><br><span class="line"><span class="attr">subtitle:</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">个人博客</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Mw</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%20copy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%20copy/" class="post-title-link" itemprop="url">常用命令</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+              
+
+              <time title="创建时间：2021-02-27 16:00:00 / 修改时间：19:00:59" itemprop="dateCreated datePublished" datetime="2021-02-27T16:00:00+08:00">2021-02-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/" itemprop="url" rel="index"><span itemprop="name">技术储备</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%20copy/" class="post-meta-item leancloud_visitors" data-flag-title="常用命令" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%20copy/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%20copy/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>591</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
+<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
+<p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
+<h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
+<p>查看以有分区<br><code>fdisk -l</code></p>
+<p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
+<p>重启<br><code>reboot</code></p>
+<p>查看分区情况<br><code>df -h</code></p>
+<p>格式化<br><code>mkfs -t ext4 /dev/sda4</code></p>
+<p>不挂载直接给根目录扩容</p>
+<p>进入lvm管理<br><code>lvm</code></p>
+<p>初始化分区<br><code>pvcreate /dev/sda3</code></p>
+<p>将初始化过的分区加入到虚拟卷组vg_dc01<br><code>vgextend centos /dev/sda3</code></p>
+<p>扩展已有的卷的容量<br><code>lvextend -L +50G /dev/mapper/centos-root</code></p>
+<p>查看卷容量<br><code>pvdisplay</code></p>
+<h2 id="设置开机启动之nexus3"><a href="#设置开机启动之nexus3" class="headerlink" title="设置开机启动之nexus3"></a>设置开机启动之nexus3</h2><p>创建软连接<br><code>ln -s /opt/nexus-3.21.1-01/bin/nexus /etc/init.d/nexus</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;init.d</span><br><span class="line">sudo chkconfig --add nexus</span><br><span class="line">sudo chkconfig --levels 345 nexus on</span><br><span class="line">sudo service nexus start</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/27/linux%E9%83%A8%E7%BD%B2javaweb%E9%A1%B9%E7%9B%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/27/linux%E9%83%A8%E7%BD%B2javaweb%E9%A1%B9%E7%9B%AE/" class="post-title-link" itemprop="url">linux部署javaweb项目</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+              
+
+              <time title="创建时间：2021-02-27 16:00:00 / 修改时间：18:55:50" itemprop="dateCreated datePublished" datetime="2021-02-27T16:00:00+08:00">2021-02-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/" itemprop="url" rel="index"><span itemprop="name">技术储备</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/02/27/linux%E9%83%A8%E7%BD%B2javaweb%E9%A1%B9%E7%9B%AE/" class="post-meta-item leancloud_visitors" data-flag-title="linux部署javaweb项目" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/02/27/linux%E9%83%A8%E7%BD%B2javaweb%E9%A1%B9%E7%9B%AE/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/27/linux%E9%83%A8%E7%BD%B2javaweb%E9%A1%B9%E7%9B%AE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>943</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="linux部署javaweb项目"><a href="#linux部署javaweb项目" class="headerlink" title="linux部署javaweb项目"></a>linux部署javaweb项目</h1><h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
+</code></pre>
+<h2 id="2-部署tomcat"><a href="#2-部署tomcat" class="headerlink" title="2.部署tomcat"></a>2.部署tomcat</h2><p>解压tomcat</p>
+<pre><code>tar -zxvf apache-tomcat-8.5.43.tar.gz 
+</code></pre>
+<p>进入bin目录运行<code>start.sh</code></p>
+<pre><code>./start.sh
+</code></pre>
+<p>开放8080端口</p>
+<p>先关闭防火墙–&gt;安装或更新防火墙–&gt;启动防火墙–&gt;查看防火墙状态</p>
+<pre><code>systemctl stop firewalld
+yum install iptables-services
+systemctl enable iptables
+systemctl start iptables
+</code></pre>
+<p>查看正在运行的程序信息(端口)</p>
+<pre><code>netstat -tunlp
+</code></pre>
+<h2 id="3-部署mysql"><a href="#3-部署mysql" class="headerlink" title="3.部署mysql"></a>3.部署mysql</h2><p>解压mysql</p>
+<pre><code>tar xvf mysql-8.0.19-linux-glibc2.12-x86_64.tar.xz
+</code></pre>
+<p>移动并修改文件名</p>
+<pre><code>mv mysql-5.7.17-linux-glibc2.5-x86_64 /usr/saplc-gc/mysql
+</code></pre>
+<p>添加mysql 用户</p>
+<pre><code>groupadd mysql
+useradd -r -g mysql mysql
+</code></pre>
+<p>切换到/usr/saplc-gc/mysql 改变目录拥有者为 mysql</p>
+<pre><code>chown -R mysql.mysql /usr/saplc-gc/mysql
+</code></pre>
+<p>安装mysql</p>
+<pre><code>bin/mysqld --initialize --user=mysql --basedir=/usr/saplc-gc/mysql --datadir=/usr/saplc-gc/mysql/data
+</code></pre>
+<p><strong>填坑</strong><br>在linux系统，默认设置下：</p>
+<ul>
+<li>数据库名与表名是严格区分大小写的；</li>
+<li>列名与列的别名在所有的情况下均是忽略大小写的；</li>
+<li>变量名也是严格区分大小写的；</li>
+</ul>
+<p>在windows系统，默认设置下：</p>
+<ul>
+<li>都不区分大小写</li>
+</ul>
+<p><strong>解决方法</strong><br>以root用户登录数据库服务器,修改<code>/etc/my.cnf</code>文件:</p>
+<ol>
+<li><p>在[mysqld]下加入代码:</p>
+<pre><code> lower_case_table_names=1
+</code></pre>
+</li>
+<li><p>重启数据库</p>
+<pre><code> service mysqld restart
+</code></pre>
+</li>
+<li><p>验证lower_case_table_names的值,0代表区分大小写,1代表不区分大小写</p>
+</li>
+</ol>
+<p><strong>建议</strong><br>为了避免大小写引发的问题，一种推荐的命名规则是：在定义数据库、表、列的时候全部采用小写字母加下划线的方式，不使用任何大写字母。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/24/%E5%A4%9A%E6%80%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/24/%E5%A4%9A%E6%80%81/" class="post-title-link" itemprop="url">JavaEE-多态</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+
+              <time title="创建时间：2020-02-24 16:00:00" itemprop="dateCreated datePublished" datetime="2020-02-24T16:00:00+08:00">2020-02-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-27 18:59:09" itemprop="dateModified" datetime="2021-02-27T18:59:09+08:00">2021-02-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaEE/" itemprop="url" rel="index"><span itemprop="name">JavaEE</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/02/24/%E5%A4%9A%E6%80%81/" class="post-meta-item leancloud_visitors" data-flag-title="JavaEE-多态" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/02/24/%E5%A4%9A%E6%80%81/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/24/%E5%A4%9A%E6%80%81/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>367</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
+<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
+<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
+<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
+<li>父类引用指向子类对象  </li>
+</ol>
+<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
+<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/24/%E5%BC%82%E5%B8%B8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/24/%E5%BC%82%E5%B8%B8/" class="post-title-link" itemprop="url">JavaEE-异常</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+
+              <time title="创建时间：2020-02-24 16:00:00" itemprop="dateCreated datePublished" datetime="2020-02-24T16:00:00+08:00">2020-02-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-27 19:02:36" itemprop="dateModified" datetime="2021-02-27T19:02:36+08:00">2021-02-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaEE/" itemprop="url" rel="index"><span itemprop="name">JavaEE</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/02/24/%E5%BC%82%E5%B8%B8/" class="post-meta-item leancloud_visitors" data-flag-title="JavaEE-异常" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/02/24/%E5%BC%82%E5%B8%B8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/24/%E5%BC%82%E5%B8%B8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="运行时异常和非运行时异常的区别"><a href="#运行时异常和非运行时异常的区别" class="headerlink" title="运行时异常和非运行时异常的区别"></a>运行时异常和非运行时异常的区别</h2><h3 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h3><p>运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。</p>
+<p>常见的5中运行时异常：</p>
+<p>ClassCastException(类转换异常)<br>IndexOutOfBoundsException(数组越界)<br>NullPointerException(空指针)<br>ArrayStoreException(数据存储异常，操作数组时类型不一致)<br>还有IO操作的BufferOverflowException异常</p>
+<h3 id="非运行时异常"><a href="#非运行时异常" class="headerlink" title="非运行时异常"></a>非运行时异常</h3><p>非运行时异常就必须得捕获了，强制处理异常，否则编译不过去，java编译器要求程序员必须对这种异常进行catch,Java认为Checked异常都是可以被处理（修复）的异常，所以Java程序必须显式处理Checked异常。</p>
+<p>常见的非运行异常有io异常和sql异常。</p>
+<p>IOException<br>FileNotFoundExcetion<br>SQLException</p>
+<h3 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h3><p>错误 无法解决</p>
+<h2 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try catch finally"></a>try catch finally</h2><p>捕获异常 范围由小到大</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="throw和throws"><a href="#throw和throws" class="headerlink" title="throw和throws"></a>throw和throws</h2><p>1、throws出现在方法的声明中，表示该方法可能会抛出的异常，允许throws后面跟着多个异常类型<br>2、throw出现在方法体中，用于抛出异常。当方法在执行过程中遇到异常情况时，将异常信息封装为异常对象，然后throw。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理，让程序继续执行下去,而不是遇到异常中断程序运行</li>
+<li>在多重catch块后面，可以加一个catch(Exception)来处理可能被遗漏的异常  </li>
+<li>对于不确定的代码，也可以加上try-catch来处理潜在的异常</li>
+<li>尽力去处理异常，切忌只是简单的调用printStackTrace()去打印输出  </li>
+<li>具体如何处理异常，要根据不同的业务需求和异常类型去决定</li>
+<li>尽量添加finally语句块去释放占用的资源</li>
+<li>不要在循环语句内使用try-catch，会占用大量资源</li>
+</ul>
+<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>抛出异常和捕获异常：</p>
+<p>抛出异常 为了让程序继续执行<br>让调用者捕获解决异常</p>
+<p>什么时候用 try catch ，throws ，throw：</p>
+<ol>
+<li><p>throws:抛出异常</p>
+<p> 写方法时可能会遇到异常，在方法名声明异常  可声明多个异常  </p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">d2</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//这里有可能会产生FileNotFoundException异常</span></span><br><span class="line">    FileInputStream fis = <span class="keyword">new</span> FileInputStream(<span class="string">&quot;MyFile.txt&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>throw：手动抛出异常  </p>
+<p> 常用于判断内 例如：用户输入不合法</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(i==<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> ArithmeticException(<span class="string">&quot;i不能等于0&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 类似与sout打印到控制台，但是打印到控制台</p>
+</li>
+<li><p>try catch: 捕获异常，处理异常</p>
+<p> 调用时try catch捕获异常 处理异常</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/24/%E6%95%B0%E7%BB%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/24/%E6%95%B0%E7%BB%84/" class="post-title-link" itemprop="url">JavaEE-数组</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+
+              <time title="创建时间：2020-02-24 16:00:00" itemprop="dateCreated datePublished" datetime="2020-02-24T16:00:00+08:00">2020-02-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-27 18:59:47" itemprop="dateModified" datetime="2021-02-27T18:59:47+08:00">2021-02-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaEE/" itemprop="url" rel="index"><span itemprop="name">JavaEE</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/02/24/%E6%95%B0%E7%BB%84/" class="post-meta-item leancloud_visitors" data-flag-title="JavaEE-数组" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/02/24/%E6%95%B0%E7%BB%84/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/24/%E6%95%B0%E7%BB%84/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>375</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/24/%E9%94%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/24/%E9%94%81/" class="post-title-link" itemprop="url">JavaEE-锁</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">更新于</span>
+
+              <time title="创建时间：2020-02-24 16:00:00" itemprop="dateCreated datePublished" datetime="2020-02-24T16:00:00+08:00">2020-02-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-27 18:59:55" itemprop="dateModified" datetime="2021-02-27T18:59:55+08:00">2021-02-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaEE/" itemprop="url" rel="index"><span itemprop="name">JavaEE</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/02/24/%E9%94%81/" class="post-meta-item leancloud_visitors" data-flag-title="JavaEE-锁" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/02/24/%E9%94%81/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/24/%E9%94%81/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>541</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
+<p>适合于多读</p>
+<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -844,20 +1572,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -910,12 +1638,12 @@
     <span class="post-meta-item-icon">
     <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">16k</span>
+    <span title="站点总字数">22k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
     <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">14 min</span>
+    <span title="站点阅读时长">20 min</span>
 </div>
 <div class="busuanzi-count">
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

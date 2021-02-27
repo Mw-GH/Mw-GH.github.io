@@ -21,20 +21,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="1.使用用docker第一步：在控制面板中勾选Hyper -v第二步：在cmd，以管理员身份运行：bcdedit &#x2F;set hypervisorlaunchtype auto第三步:重启 2.使用虚拟机第一步：在控制面板中取消勾选Hyper -v第二步：在cmd中，以管理员身份运行：bcdedit &#x2F;set hypervisorlaunchtype off第三步:重启 这俩哥们不能共存">
+  <meta name="description" content="运行时异常和非运行时异常的区别运行时异常运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。 常见的5中运行时异常： ClassCastException(类转换异常)IndexOutOfBoundsException(数组越界)NullPointerException(空指针)A">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VMware与Docker不兼容解决办法">
-<meta property="og:url" content="http://example.com/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:title" content="JavaEE-异常">
+<meta property="og:url" content="http://example.com/2020/02/24/%E5%BC%82%E5%B8%B8/index.html">
 <meta property="og:site_name" content="Mw-Blog">
-<meta property="og:description" content="1.使用用docker第一步：在控制面板中勾选Hyper -v第二步：在cmd，以管理员身份运行：bcdedit &#x2F;set hypervisorlaunchtype auto第三步:重启 2.使用虚拟机第一步：在控制面板中取消勾选Hyper -v第二步：在cmd中，以管理员身份运行：bcdedit &#x2F;set hypervisorlaunchtype off第三步:重启 这俩哥们不能共存">
+<meta property="og:description" content="运行时异常和非运行时异常的区别运行时异常运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。 常见的5中运行时异常： ClassCastException(类转换异常)IndexOutOfBoundsException(数组越界)NullPointerException(空指针)A">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-08-30T08:17:56.000Z">
-<meta property="article:modified_time" content="2021-02-27T10:56:15.783Z">
+<meta property="article:published_time" content="2020-02-24T08:00:00.000Z">
+<meta property="article:modified_time" content="2021-02-27T11:02:36.378Z">
 <meta property="article:author" content="Mw">
-<meta property="article:tag" content="VMware">
+<meta property="article:tag" content="JavaEE">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">
+<link rel="canonical" href="http://example.com/2020/02/24/%E5%BC%82%E5%B8%B8/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>VMware与Docker不兼容解决办法 | Mw-Blog</title>
+  <title>JavaEE-异常 | Mw-Blog</title>
   
 
 
@@ -203,7 +203,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/24/%E5%BC%82%E5%B8%B8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/Mw.png">
@@ -216,7 +216,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          VMware与Docker不兼容解决办法
+          JavaEE-异常
         </h1>
 
         <div class="post-meta">
@@ -226,14 +226,14 @@
               </span>
               <span class="post-meta-item-text">更新于</span>
 
-              <time title="创建时间：2019-08-30 16:17:56" itemprop="dateCreated datePublished" datetime="2019-08-30T16:17:56+08:00">2019-08-30</time>
+              <time title="创建时间：2020-02-24 16:00:00" itemprop="dateCreated datePublished" datetime="2020-02-24T16:00:00+08:00">2020-02-24</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-27 18:56:15" itemprop="dateModified" datetime="2021-02-27T18:56:15+08:00">2021-02-27</time>
+                <time title="修改时间：2021-02-27 19:02:36" itemprop="dateModified" datetime="2021-02-27T19:02:36+08:00">2021-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -241,12 +241,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/" itemprop="url" rel="index"><span itemprop="name">技术储备</span></a>
+                  <a href="/categories/JavaEE/" itemprop="url" rel="index"><span itemprop="name">JavaEE</span></a>
                 </span>
             </span>
 
           
-            <span id="/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" class="post-meta-item leancloud_visitors" data-flag-title="VMware与Docker不兼容解决办法" title="阅读次数">
+            <span id="/2020/02/24/%E5%BC%82%E5%B8%B8/" class="post-meta-item leancloud_visitors" data-flag-title="JavaEE-异常" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -261,8 +261,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/02/24/%E5%BC%82%E5%B8%B8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/24/%E5%BC%82%E5%B8%B8/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -272,7 +272,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>184</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -291,10 +291,46 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-<h2 id="这俩哥们不能共存"><a href="#这俩哥们不能共存" class="headerlink" title="这俩哥们不能共存"></a>这俩哥们不能共存</h2>
+        <h2 id="运行时异常和非运行时异常的区别"><a href="#运行时异常和非运行时异常的区别" class="headerlink" title="运行时异常和非运行时异常的区别"></a>运行时异常和非运行时异常的区别</h2><h3 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h3><p>运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。</p>
+<p>常见的5中运行时异常：</p>
+<p>ClassCastException(类转换异常)<br>IndexOutOfBoundsException(数组越界)<br>NullPointerException(空指针)<br>ArrayStoreException(数据存储异常，操作数组时类型不一致)<br>还有IO操作的BufferOverflowException异常</p>
+<h3 id="非运行时异常"><a href="#非运行时异常" class="headerlink" title="非运行时异常"></a>非运行时异常</h3><p>非运行时异常就必须得捕获了，强制处理异常，否则编译不过去，java编译器要求程序员必须对这种异常进行catch,Java认为Checked异常都是可以被处理（修复）的异常，所以Java程序必须显式处理Checked异常。</p>
+<p>常见的非运行异常有io异常和sql异常。</p>
+<p>IOException<br>FileNotFoundExcetion<br>SQLException</p>
+<h3 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h3><p>错误 无法解决</p>
+<h2 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try catch finally"></a>try catch finally</h2><p>捕获异常 范围由小到大</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="throw和throws"><a href="#throw和throws" class="headerlink" title="throw和throws"></a>throw和throws</h2><p>1、throws出现在方法的声明中，表示该方法可能会抛出的异常，允许throws后面跟着多个异常类型<br>2、throw出现在方法体中，用于抛出异常。当方法在执行过程中遇到异常情况时，将异常信息封装为异常对象，然后throw。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理，让程序继续执行下去,而不是遇到异常中断程序运行</li>
+<li>在多重catch块后面，可以加一个catch(Exception)来处理可能被遗漏的异常  </li>
+<li>对于不确定的代码，也可以加上try-catch来处理潜在的异常</li>
+<li>尽力去处理异常，切忌只是简单的调用printStackTrace()去打印输出  </li>
+<li>具体如何处理异常，要根据不同的业务需求和异常类型去决定</li>
+<li>尽量添加finally语句块去释放占用的资源</li>
+<li>不要在循环语句内使用try-catch，会占用大量资源</li>
+</ul>
+<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>抛出异常和捕获异常：</p>
+<p>抛出异常 为了让程序继续执行<br>让调用者捕获解决异常</p>
+<p>什么时候用 try catch ，throws ，throw：</p>
+<ol>
+<li><p>throws:抛出异常</p>
+<p> 写方法时可能会遇到异常，在方法名声明异常  可声明多个异常  </p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">d2</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//这里有可能会产生FileNotFoundException异常</span></span><br><span class="line">    FileInputStream fis = <span class="keyword">new</span> FileInputStream(<span class="string">&quot;MyFile.txt&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>throw：手动抛出异常  </p>
+<p> 常用于判断内 例如：用户输入不合法</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(i==<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> ArithmeticException(<span class="string">&quot;i不能等于0&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 类似与sout打印到控制台，但是打印到控制台</p>
+</li>
+<li><p>try catch: 捕获异常，处理异常</p>
+<p> 调用时try catch捕获异常 处理异常</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
     </div>
 
     
@@ -303,7 +339,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/VMware/" rel="tag"># VMware</a>
+              <a href="/tags/JavaEE/" rel="tag"># JavaEE</a>
           </div>
 
         
@@ -311,10 +347,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2019/09/03/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="next" title="Linux常用命令 长期更新">
-      Linux常用命令 长期更新 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/02/24/%E6%95%B0%E7%BB%84/" rel="prev" title="JavaEE-数组">
+      <i class="fa fa-chevron-left"></i> JavaEE-数组
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/24/%E5%A4%9A%E6%80%81/" rel="next" title="JavaEE-多态">
+      JavaEE-多态 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -375,7 +414,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BD%BF%E7%94%A8%E7%94%A8docker"><span class="nav-number">1.</span> <span class="nav-text">1.使用用docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="nav-number">2.</span> <span class="nav-text">2.使用虚拟机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E4%BF%A9%E5%93%A5%E4%BB%AC%E4%B8%8D%E8%83%BD%E5%85%B1%E5%AD%98"><span class="nav-number">3.</span> <span class="nav-text">这俩哥们不能共存</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8%E5%92%8C%E9%9D%9E%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.</span> <span class="nav-text">运行时异常和非运行时异常的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8"><span class="nav-number">1.1.</span> <span class="nav-text">运行时异常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%9E%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8"><span class="nav-number">1.2.</span> <span class="nav-text">非运行时异常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error"><span class="nav-number">1.3.</span> <span class="nav-text">Error</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#try-catch-finally"><span class="nav-number">2.</span> <span class="nav-text">try catch finally</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#throw%E5%92%8Cthrows"><span class="nav-number">3.</span> <span class="nav-text">throw和throws</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text">个人总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
