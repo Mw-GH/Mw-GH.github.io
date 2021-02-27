@@ -218,6 +218,20 @@
       </tags>
   </entry>
   <entry>
+    <title>VMware与Docker不兼容解决办法</title>
+    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
+<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
+<h2 id="这俩哥们不能共存"><a href="#这俩哥们不能共存" class="headerlink" title="这俩哥们不能共存"></a>这俩哥们不能共存</h2>]]></content>
+      <categories>
+        <category>技术储备</category>
+      </categories>
+      <tags>
+        <tag>VMware</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux常用命令 长期更新</title>
     <url>/2019/09/03/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">uname -an</span><br></pre></td></tr></table></figure>
@@ -258,51 +272,6 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </categories>
       <tags>
         <tag>Tomcat</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VMware与Docker不兼容解决办法</title>
-    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-<h2 id="这俩哥们不能共存"><a href="#这俩哥们不能共存" class="headerlink" title="这俩哥们不能共存"></a>这俩哥们不能共存</h2>]]></content>
-      <categories>
-        <category>技术储备</category>
-      </categories>
-      <tags>
-        <tag>VMware</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用命令</title>
-    <url>/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%20copy/</url>
-    <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
-<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
-<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
-<p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
-<h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
-<p>查看以有分区<br><code>fdisk -l</code></p>
-<p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
-<p>重启<br><code>reboot</code></p>
-<p>查看分区情况<br><code>df -h</code></p>
-<p>格式化<br><code>mkfs -t ext4 /dev/sda4</code></p>
-<p>不挂载直接给根目录扩容</p>
-<p>进入lvm管理<br><code>lvm</code></p>
-<p>初始化分区<br><code>pvcreate /dev/sda3</code></p>
-<p>将初始化过的分区加入到虚拟卷组vg_dc01<br><code>vgextend centos /dev/sda3</code></p>
-<p>扩展已有的卷的容量<br><code>lvextend -L +50G /dev/mapper/centos-root</code></p>
-<p>查看卷容量<br><code>pvdisplay</code></p>
-<h2 id="设置开机启动之nexus3"><a href="#设置开机启动之nexus3" class="headerlink" title="设置开机启动之nexus3"></a>设置开机启动之nexus3</h2><p>创建软连接<br><code>ln -s /opt/nexus-3.21.1-01/bin/nexus /etc/init.d/nexus</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;init.d</span><br><span class="line">sudo chkconfig --add nexus</span><br><span class="line">sudo chkconfig --levels 345 nexus on</span><br><span class="line">sudo service nexus start</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -396,6 +365,37 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
+    <title>常用命令</title>
+    <url>/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%20copy/</url>
+    <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
+<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
+<p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
+<h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
+<p>查看以有分区<br><code>fdisk -l</code></p>
+<p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
+<p>重启<br><code>reboot</code></p>
+<p>查看分区情况<br><code>df -h</code></p>
+<p>格式化<br><code>mkfs -t ext4 /dev/sda4</code></p>
+<p>不挂载直接给根目录扩容</p>
+<p>进入lvm管理<br><code>lvm</code></p>
+<p>初始化分区<br><code>pvcreate /dev/sda3</code></p>
+<p>将初始化过的分区加入到虚拟卷组vg_dc01<br><code>vgextend centos /dev/sda3</code></p>
+<p>扩展已有的卷的容量<br><code>lvextend -L +50G /dev/mapper/centos-root</code></p>
+<p>查看卷容量<br><code>pvdisplay</code></p>
+<h2 id="设置开机启动之nexus3"><a href="#设置开机启动之nexus3" class="headerlink" title="设置开机启动之nexus3"></a>设置开机启动之nexus3</h2><p>创建软连接<br><code>ln -s /opt/nexus-3.21.1-01/bin/nexus /etc/init.d/nexus</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;init.d</span><br><span class="line">sudo chkconfig --add nexus</span><br><span class="line">sudo chkconfig --levels 345 nexus on</span><br><span class="line">sudo service nexus start</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaEE-异常</title>
     <url>/2020/02/24/%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="运行时异常和非运行时异常的区别"><a href="#运行时异常和非运行时异常的区别" class="headerlink" title="运行时异常和非运行时异常的区别"></a>运行时异常和非运行时异常的区别</h2><h3 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h3><p>运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。</p>
@@ -457,43 +457,6 @@ useradd -r -g mysql mysql
 <h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AP配置文件</title>
-    <url>/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="ebf7c5fec32fc441c0166d9eb469254d625d950164c281464804549641a11fc9">a4626797b59d51ca61698aa4c885a79dbaf4e24b070ecdbf062639dad5a2a232ae84e372eb2560f6d2baa8fedd9be3b73c9cf6bd7aeb290d0a95d232d530ba34f6256845b0d316e6d68091afa31924b6515af881d12b5202d0c165e03130cb2f8fb64160daf6fe9f22f5f34fc043230c210248507b92a662d53c33dd7219b6dd3fbc0007a943ef0a8b5a90e23868b5948694db2a30da5a4bfc2c33eb5e814721cff19a35b459cb1f9ff0012cc1d9ab5c86495a82e5d5b42712a90bbb893bd6c89fe89201b6f7a345a6f2252bd5b46470ecfecb30b3c107ef74dfda7fd44538b9ad660fe84d8febf9cb6bf0e5324c1913a0f9415ccfe95e2ef6b14b068c36c1c3bc47e638e934c5e6a0cd8082628995f6a6edc602414eed7bc66f16928c9b384cfd603db20e71a9a001f898cad03a7c23a7165f9e0d2e4c770abd63110cfd557e322af7b1189d357e1dee53727a54d1931ea4e3c1f2e0b01f8eaa8f0ce892ee18c58ecb66b0201890a1fbe38e146097f1d75eb441b7f78c9cf3d14d058d33bb8e7b89c4c5ca817b6013ba2c4aeb865c8e268f9a0eb08745cba9b7282926fc0ad4cc5c3b8ccdcd3c8aaf42f50e85ffed42a75e1adc92d41bdc539f55b7cc4f1b11b665336827a615242f26b2f93a6b2044bb024ee656646255143fc123b64e22c28960ecf448d2fce36dc47e17e23a711c051e56b83bee9915166fd9f7e11e40d2ba28e9dbdfd8fffd597f70058478be9f31cfc745ff6e84757df970b0d94741b3adf6da9a61adfdbb911e37bc1410a8b87cf711acdbfa6d39b059efd41a3f908df4bb36b77f50f200ada752a14e2a7cbbe2f60c46d85e39b50cffbefec666c1f788c55d4947217c1cee59cd7c6c5a9478e84eacfd3dea59c9f889a3fe9e922c9d8812e093e2528968d227b4da559d5d73c0690a6bb46c8f6affe8934ec12b3f3c89296121c57b0216e5d4757b7c0f76e0056149199765be06e0925f7d479045857a609907216ffb4b872367d103ddf914668a9a543445b70a46f55fc632d08ac40328075162b6341a10e076d1dee16fd7389da25a4b07ff010918f0dfd8d772cc92164a36ee775b41bcb5e846f85f9d952c34732a1591f8e9b3c5a72f8213caffc8d207e896ef47a454dc62331bd6870d3509cb3544e581508026365c262a3b5f14ead3ff48754e320c706c5c48493c23e7868dfbb31ea291c14062200d9d5491abae4b3dd4021d37fcb6a3b2ae83312b12424db8be3b55e84e7b207114c0948397575c175a601b183c2f309996152c09b4b6322f7a63cab53bebc5079d947ba3f81436ff4dc7a897b4b203a7c5ae8ec41d1ad93e1dbe9f7b9b81448b53ea9770a6e44aa74c2709535ad2975880d58840b771a1dae03245eb7613a20eaf1c4a6dfe980c9188f96c2563b8563c8e877626261c7be915819c1d42ba4af732b9533858f9e61a7f4a25c2e1faadf9aaeec5262705d8eef27bc36497e1f53c0ebf64628b4659dd3f0b864171d5147089c4429a27a652a6ddbef6022f54fcbd320b2cef9d11cc3607d7fd0ee4f2e83ef6bac05777f3cf0716052032660e8a8235bac1410f5cd36e6c7b49eaf401e912b68fe5f5b5c1f1ba2e0f0b83766672ef1cd2031659d5fad42bc61046b210c82001d31dc7f59a82c9d9dc785cf06eae394e111e2bb73126ac7843c9b0bba6ee35d7933c1d29b7edea40f7e1d1313d84956c6dec2f59ef6bafaa6f40c727fec4dc1a127461e679c270ae2ffc7a9384b3f05650b49b5117302a82d4927658d02280ac46c7f870ecc72b72cea8a7572f017f6fe46f60a077e47b6f6bf09717b008b392cc715257c9b66eafc26214c298abe019af968aaced853f906a1680edad88f86e31bd43cfee43693cae84147594137afb84f3fe7bb9b208ac47bb376166b2c1eefc9f49315448b39e20ddd7717fe15852e3787e066d71afa4ed5ba7203e39cdfcec1183dfe0d780d96074df775384c410d70cc4a4985c52ad4047c9e176bb91b60c7d69e04d5155b5ff79086aa763bd05c6f67810e1711f8ed65afa7341933ee67d22231d729b50cec6b7553fc9353b7cb20b7b340aa0e8a00ca4578859c933e2fbb2578aaabb9f6f5177f104cd98fe614922208b9f5a5ffc45b5902aae018841cad8a95f7321dfad6beabd1043909b55d0ae757876d5ebe12f34fe075c6d30aa83264a21c23e4ee6cd7b97b8fce755f188510cd9b25c14edecd7bdeff2a2f1be81db11756345eaa693cd3ca836152eb567189b6a17be72671b97981a00dbfe81127a6d6970d16f509e5ab332ccfe1ca43fcb06c30b4e6c6f7abbd1f0b18a4a057036a8dd435f17c7db98b3b506fe6fc63a896e2e79d0c3aa77ee13a8f92d04bb183f4df99749ef62e35eb84247c9b791e56f3386adc93545b08e4e02c736aad9dab1dbf8302e21760c18b8efdd5639c3a0e92a63335f17425aeb094cd258e0da933dd7213a5526fc5b66651dd5405932247540071ecfc7000d0f18052ac8ea8c52b2172cda298a8bcb989f146445866c466634e3f7bd6746ac758cc1e71d0076f3f4ce721f330898d8b73243db3fd3290fb0ca</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>个人文件</category>
-      </categories>
-      <tags>
-        <tag>配置文件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaEE-锁</title>
-    <url>/2020/02/24/%E9%94%81/</url>
-    <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
-<p>适合于多读</p>
-<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
 ]]></content>
       <categories>
         <category>JavaEE</category>
@@ -610,6 +573,43 @@ useradd -r -g mysql mysql
 
 <h3 id="拷贝"><a href="#拷贝" class="headerlink" title="拷贝"></a>拷贝</h3><p>拷贝栈中的内容</p>
 <p>正常拷贝：实现Cloneable接口， 默认clone方法，为浅拷贝<br>深拷贝：互相独立<br>需要递归所有的引用类型，数组，都拷贝一次，基本类型，String,不用拷贝</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AP配置文件</title>
+    <url>/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ebf7c5fec32fc441c0166d9eb469254d625d950164c281464804549641a11fc9">a4626797b59d51ca61698aa4c885a79dbaf4e24b070ecdbf062639dad5a2a232ae84e372eb2560f6d2baa8fedd9be3b73c9cf6bd7aeb290d0a95d232d530ba34f6256845b0d316e6d68091afa31924b6515af881d12b5202d0c165e03130cb2f8fb64160daf6fe9f22f5f34fc043230c210248507b92a662d53c33dd7219b6dd3fbc0007a943ef0a8b5a90e23868b5948694db2a30da5a4bfc2c33eb5e814721cff19a35b459cb1f9ff0012cc1d9ab5c86495a82e5d5b42712a90bbb893bd6c89fe89201b6f7a345a6f2252bd5b46470ecfecb30b3c107ef74dfda7fd44538b9ad660fe84d8febf9cb6bf0e5324c1913a0f9415ccfe95e2ef6b14b068c36c1c3bc47e638e934c5e6a0cd8082628995f6a6edc602414eed7bc66f16928c9b384cfd603db20e71a9a001f898cad03a7c23a7165f9e0d2e4c770abd63110cfd557e322af7b1189d357e1dee53727a54d1931ea4e3c1f2e0b01f8eaa8f0ce892ee18c58ecb66b0201890a1fbe38e146097f1d75eb441b7f78c9cf3d14d058d33bb8e7b89c4c5ca817b6013ba2c4aeb865c8e268f9a0eb08745cba9b7282926fc0ad4cc5c3b8ccdcd3c8aaf42f50e85ffed42a75e1adc92d41bdc539f55b7cc4f1b11b665336827a615242f26b2f93a6b2044bb024ee656646255143fc123b64e22c28960ecf448d2fce36dc47e17e23a711c051e56b83bee9915166fd9f7e11e40d2ba28e9dbdfd8fffd597f70058478be9f31cfc745ff6e84757df970b0d94741b3adf6da9a61adfdbb911e37bc1410a8b87cf711acdbfa6d39b059efd41a3f908df4bb36b77f50f200ada752a14e2a7cbbe2f60c46d85e39b50cffbefec666c1f788c55d4947217c1cee59cd7c6c5a9478e84eacfd3dea59c9f889a3fe9e922c9d8812e093e2528968d227b4da559d5d73c0690a6bb46c8f6affe8934ec12b3f3c89296121c57b0216e5d4757b7c0f76e0056149199765be06e0925f7d479045857a609907216ffb4b872367d103ddf914668a9a543445b70a46f55fc632d08ac40328075162b6341a10e076d1dee16fd7389da25a4b07ff010918f0dfd8d772cc92164a36ee775b41bcb5e846f85f9d952c34732a1591f8e9b3c5a72f8213caffc8d207e896ef47a454dc62331bd6870d3509cb3544e581508026365c262a3b5f14ead3ff48754e320c706c5c48493c23e7868dfbb31ea291c14062200d9d5491abae4b3dd4021d37fcb6a3b2ae83312b12424db8be3b55e84e7b207114c0948397575c175a601b183c2f309996152c09b4b6322f7a63cab53bebc5079d947ba3f81436ff4dc7a897b4b203a7c5ae8ec41d1ad93e1dbe9f7b9b81448b53ea9770a6e44aa74c2709535ad2975880d58840b771a1dae03245eb7613a20eaf1c4a6dfe980c9188f96c2563b8563c8e877626261c7be915819c1d42ba4af732b9533858f9e61a7f4a25c2e1faadf9aaeec5262705d8eef27bc36497e1f53c0ebf64628b4659dd3f0b864171d5147089c4429a27a652a6ddbef6022f54fcbd320b2cef9d11cc3607d7fd0ee4f2e83ef6bac05777f3cf0716052032660e8a8235bac1410f5cd36e6c7b49eaf401e912b68fe5f5b5c1f1ba2e0f0b83766672ef1cd2031659d5fad42bc61046b210c82001d31dc7f59a82c9d9dc785cf06eae394e111e2bb73126ac7843c9b0bba6ee35d7933c1d29b7edea40f7e1d1313d84956c6dec2f59ef6bafaa6f40c727fec4dc1a127461e679c270ae2ffc7a9384b3f05650b49b5117302a82d4927658d02280ac46c7f870ecc72b72cea8a7572f017f6fe46f60a077e47b6f6bf09717b008b392cc715257c9b66eafc26214c298abe019af968aaced853f906a1680edad88f86e31bd43cfee43693cae84147594137afb84f3fe7bb9b208ac47bb376166b2c1eefc9f49315448b39e20ddd7717fe15852e3787e066d71afa4ed5ba7203e39cdfcec1183dfe0d780d96074df775384c410d70cc4a4985c52ad4047c9e176bb91b60c7d69e04d5155b5ff79086aa763bd05c6f67810e1711f8ed65afa7341933ee67d22231d729b50cec6b7553fc9353b7cb20b7b340aa0e8a00ca4578859c933e2fbb2578aaabb9f6f5177f104cd98fe614922208b9f5a5ffc45b5902aae018841cad8a95f7321dfad6beabd1043909b55d0ae757876d5ebe12f34fe075c6d30aa83264a21c23e4ee6cd7b97b8fce755f188510cd9b25c14edecd7bdeff2a2f1be81db11756345eaa693cd3ca836152eb567189b6a17be72671b97981a00dbfe81127a6d6970d16f509e5ab332ccfe1ca43fcb06c30b4e6c6f7abbd1f0b18a4a057036a8dd435f17c7db98b3b506fe6fc63a896e2e79d0c3aa77ee13a8f92d04bb183f4df99749ef62e35eb84247c9b791e56f3386adc93545b08e4e02c736aad9dab1dbf8302e21760c18b8efdd5639c3a0e92a63335f17425aeb094cd258e0da933dd7213a5526fc5b66651dd5405932247540071ecfc7000d0f18052ac8ea8c52b2172cda298a8bcb989f146445866c466634e3f7bd6746ac758cc1e71d0076f3f4ce721f330898d8b73243db3fd3290fb0ca</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>个人文件</category>
+      </categories>
+      <tags>
+        <tag>配置文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaEE-锁</title>
+    <url>/2020/02/24/%E9%94%81/</url>
+    <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
+<p>适合于多读</p>
+<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
 ]]></content>
       <categories>
         <category>JavaEE</category>
