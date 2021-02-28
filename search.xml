@@ -9,9 +9,8 @@
 <li><p><code>git push -u orgin master</code><br>  将本地的最新数据推送到远程仓库<br>  第一加 <code>-u</code>后  后面可直接使用 <code>git push</code><br>  <code>pull</code>同理</p>
 </li>
 <li><p><code>git pull orgin master</code><br>  将远程仓库的最新数据同步到本地</p>
-</li>
-</ul>
-<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<span id="more"></span>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2></li>
 <li><p><code>git config user.name</code><br>  查看配置用户</p>
 </li>
 <li><p><code>git config user.email</code><br>  查看配置邮箱</p>
@@ -124,10 +123,10 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
   <entry>
     <title>VMware与Docker不兼容解决办法</title>
     <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
 <h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
 <h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-<h2 id="这俩哥们不能共存"><a href="#这俩哥们不能共存" class="headerlink" title="这俩哥们不能共存"></a>这俩哥们不能共存</h2>]]></content>
+]]></content>
       <categories>
         <category>技术储备</category>
       </categories>
@@ -136,13 +135,14 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </tags>
   </entry>
   <entry>
-    <title>常用命令</title>
+    <title>linux 常用命令</title>
     <url>/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
 <h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
 <h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
 <h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
 <p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
+<span id="more"></span>
 <h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
 <p>查看以有分区<br><code>fdisk -l</code></p>
 <p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
@@ -167,9 +167,30 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </tags>
   </entry>
   <entry>
-    <title>linux部署javaweb项目</title>
+    <title>JavaEE-多态</title>
+    <url>/2020/02/24/%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
+<span id="more"></span>
+
+<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
+<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
+<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
+<li>父类引用指向子类对象  </li>
+</ol>
+<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
+<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux部署javaWeb项目</title>
     <url>/2021/02/27/linux%E9%83%A8%E7%BD%B2javaweb%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="linux部署javaweb项目"><a href="#linux部署javaweb项目" class="headerlink" title="linux部署javaweb项目"></a>linux部署javaweb项目</h1><h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
+    <content><![CDATA[<h1 id="linux部署javaWeb项目"><a href="#linux部署javaWeb项目" class="headerlink" title="linux部署javaWeb项目"></a>linux部署javaWeb项目</h1><h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
 </code></pre>
 <h2 id="2-部署tomcat"><a href="#2-部署tomcat" class="headerlink" title="2.部署tomcat"></a>2.部署tomcat</h2><p>解压tomcat</p>
 <pre><code>tar -zxvf apache-tomcat-8.5.43.tar.gz 
@@ -177,6 +198,8 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
 <p>进入bin目录运行<code>start.sh</code></p>
 <pre><code>./start.sh
 </code></pre>
+<span id="more"></span>
+
 <p>开放8080端口</p>
 <p>先关闭防火墙–&gt;安装或更新防火墙–&gt;启动防火墙–&gt;查看防火墙状态</p>
 <pre><code>systemctl stop firewalld
@@ -238,28 +261,20 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-多态</title>
-    <url>/2020/02/24/%E5%A4%9A%E6%80%81/</url>
-    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
-<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
-<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
-<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
-<li>父类引用指向子类对象  </li>
-</ol>
-<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
-<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaEE-异常</title>
     <url>/2020/02/24/%E5%BC%82%E5%B8%B8/</url>
-    <content><![CDATA[<h2 id="运行时异常和非运行时异常的区别"><a href="#运行时异常和非运行时异常的区别" class="headerlink" title="运行时异常和非运行时异常的区别"></a>运行时异常和非运行时异常的区别</h2><h3 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h3><p>运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。</p>
+    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理，让程序继续执行下去,而不是遇到异常中断程序运行</li>
+<li>在多重catch块后面，可以加一个catch(Exception)来处理可能被遗漏的异常  </li>
+<li>对于不确定的代码，也可以加上try-catch来处理潜在的异常</li>
+<li>尽力去处理异常，切忌只是简单的调用printStackTrace()去打印输出  </li>
+<li>具体如何处理异常，要根据不同的业务需求和异常类型去决定</li>
+<li>尽量添加finally语句块去释放占用的资源</li>
+<li>不要在循环语句内使用try-catch，会占用大量资源<span id="more"></span>
+
+</li>
+</ul>
+<h3 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h3><p>运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。</p>
 <p>常见的5中运行时异常：</p>
 <p>ClassCastException(类转换异常)<br>IndexOutOfBoundsException(数组越界)<br>NullPointerException(空指针)<br>ArrayStoreException(数据存储异常，操作数组时类型不一致)<br>还有IO操作的BufferOverflowException异常</p>
 <h3 id="非运行时异常"><a href="#非运行时异常" class="headerlink" title="非运行时异常"></a>非运行时异常</h3><p>非运行时异常就必须得捕获了，强制处理异常，否则编译不过去，java编译器要求程序员必须对这种异常进行catch,Java认为Checked异常都是可以被处理（修复）的异常，所以Java程序必须显式处理Checked异常。</p>
@@ -270,15 +285,6 @@ useradd -r -g mysql mysql
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="throw和throws"><a href="#throw和throws" class="headerlink" title="throw和throws"></a>throw和throws</h2><p>1、throws出现在方法的声明中，表示该方法可能会抛出的异常，允许throws后面跟着多个异常类型<br>2、throw出现在方法体中，用于抛出异常。当方法在执行过程中遇到异常情况时，将异常信息封装为异常对象，然后throw。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理，让程序继续执行下去,而不是遇到异常中断程序运行</li>
-<li>在多重catch块后面，可以加一个catch(Exception)来处理可能被遗漏的异常  </li>
-<li>对于不确定的代码，也可以加上try-catch来处理潜在的异常</li>
-<li>尽力去处理异常，切忌只是简单的调用printStackTrace()去打印输出  </li>
-<li>具体如何处理异常，要根据不同的业务需求和异常类型去决定</li>
-<li>尽量添加finally语句块去释放占用的资源</li>
-<li>不要在循环语句内使用try-catch，会占用大量资源</li>
-</ul>
 <h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>抛出异常和捕获异常：</p>
 <p>抛出异常 为了让程序继续执行<br>让调用者捕获解决异常</p>
 <p>什么时候用 try catch ，throws ，throw：</p>
@@ -310,6 +316,8 @@ useradd -r -g mysql mysql
     <title>JavaEE-数组</title>
     <url>/2020/02/24/%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
 
 <h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
 
@@ -352,7 +360,10 @@ useradd -r -g mysql mysql
     <title>JavaEE-锁</title>
     <url>/2020/02/24/%E9%94%81/</url>
     <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
+<span id="more"></span>
+
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
+
 <p>适合于多读</p>
 <h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
 ]]></content>
@@ -490,7 +501,7 @@ useradd -r -g mysql mysql
 <p>安装参考技术储备</p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>安装命令</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo -v //查看版本</span><br></pre></td></tr></table></figure>
-
+<span id="more"></span>
 <p>在需要生成博客项目的路径下打开命令行输入</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">hexo init myblog //myblog 任意取名</span><br><span class="line"><span class="built_in">cd</span> myblog //进入项目文件</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
@@ -514,7 +525,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjMTA1OyYjMTE2OyYjeDQwOyYjMTAzOyYjeDY5OyYjeDc0OyYjeDY4OyYjeDc1OyYjeDYyOyYjNDY7JiN4NjM7JiN4NmY7JiMxMDk7">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjMTE2OyYjNjQ7JiMxMDM7JiMxMDU7JiN4NzQ7JiMxMDQ7JiN4NzU7JiM5ODsmIzQ2OyYjeDYzOyYjeDZmOyYjMTA5Ow==">&#x67;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -549,7 +560,7 @@ useradd -r -g mysql mysql
 <p>站点文件中没有node_modules原因是不是自己写的代码，且文件较大，只要目录中有package.json文件，运行npm install就会自动建立node_modules且下载原来的依赖</p>
 <h2 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h2><h3 id="博客信息"><a href="#博客信息" class="headerlink" title="博客信息"></a>博客信息</h2></h3><p><mark>站点配置文件</mark></p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Mw-Blog</span></span><br><span class="line"><span class="attr">subtitle:</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">个人博客</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Mw</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
+<!--more-->
 <h3 id="侧边栏"><a href="#侧边栏" class="headerlink" title="侧边栏"></a>侧边栏</h3><p><mark>主题配置文件</mark></p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">sidebar:</span></span><br><span class="line"><span class="comment"># Sidebar Position.</span></span><br><span class="line"><span class="attr">position:</span> <span class="string">right</span>  <span class="string">//右侧</span></span><br><span class="line"><span class="comment">#position: right</span></span><br></pre></td></tr></table></figure>
 
