@@ -230,7 +230,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-01 00:14:33" itemprop="dateModified" datetime="2021-03-01T00:14:33+08:00">2021-03-01</time>
+                <time title="修改时间：2021-03-01 00:20:01" itemprop="dateModified" datetime="2021-03-01T00:20:01+08:00">2021-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -320,7 +320,7 @@
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjMTA1OyYjeDc0OyYjeDQwOyYjeDY3OyYjMTA1OyYjMTE2OyYjMTA0OyYjeDc1OyYjeDYyOyYjNDY7JiN4NjM7JiMxMTE7JiN4NmQ7">&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjMTA1OyYjMTE2OyYjeDQwOyYjMTAzOyYjeDY5OyYjeDc0OyYjeDY4OyYjeDc1OyYjeDYyOyYjNDY7JiN4NjM7JiN4NmY7JiMxMDk7">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -336,7 +336,13 @@
 <li>添加Github Pages解析：在Hexo/source中建立CNAME文件（没有后缀），文件内容为你希望访问项目的地址如：mw-blog.chenmw.top<img src="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/QQ%E6%88%AA%E5%9B%BE20210228235810.jpg" class=""></li>
 <li>在Github仓库设置中找到Custom domain 内容设置成一样</li>
 <li>在你所购买域名网站，域名管理中找到DNS解析，添加一条主机记录为mw-blog(任意替换),记录类型为CNAME，线路类型默认，记录值为你的github pages路径<img src="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/QQ%E5%9B%BE%E7%89%8720210301001016.png" class=""></li>
-<li>项目重新部署 访问mw-blog.chenmw.top即可</li>
+<li>项目重新部署 hexo d 访问mw-blog.chenmw.top即可</li>
+</ol>
+<blockquote>
+<p>hexo-d 报Error: Spawn failed 是CNAME文件与仓库中CNAME文件不一样</p>
+</blockquote>
+<ol start="6">
+<li>项目添加了Valine功能的记得在LeanCloun 安全中心中添加Web安全域名</li>
 </ol>
 <h3 id="把代码放在github上管理"><a href="#把代码放在github上管理" class="headerlink" title="把代码放在github上管理"></a>把代码放在github上管理</h3><p><a href="#testJump">1.2.1</a>那一步创建的个人仓库只保存了个人文件和文章 github用来部署github pages的</p>
 <p>这里我们自己上传一份代码便于管理</p>
