@@ -21,20 +21,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="乐观锁大概率一个数据不会被多个线程同时修改，通过Cas总会分配一个t1优先权限，t1中的E1（预期值）&#x3D;V（主存的共享变量）说明预期值正确，执行N1&#x3D;V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V&#x3D;21，然后与t2中的E2比较 E2！&#x3D;V 重新更新主存的值到自己的副本，再次尝试，值到E2&#x3D;V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version">
+  <meta name="description" content="总结动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaEE-锁">
-<meta property="og:url" content="http://example.com/2020/02/24/%E9%94%81/index.html">
+<meta property="og:title" content="JavaEE-多态">
+<meta property="og:url" content="http://example.com/2021/02/27/%E5%A4%9A%E6%80%81/index.html">
 <meta property="og:site_name" content="Mw-Blog">
-<meta property="og:description" content="乐观锁大概率一个数据不会被多个线程同时修改，通过Cas总会分配一个t1优先权限，t1中的E1（预期值）&#x3D;V（主存的共享变量）说明预期值正确，执行N1&#x3D;V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V&#x3D;21，然后与t2中的E2比较 E2！&#x3D;V 重新更新主存的值到自己的副本，再次尝试，值到E2&#x3D;V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version">
+<meta property="og:description" content="总结动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-24T08:00:00.000Z">
-<meta property="article:modified_time" content="2021-02-28T16:35:01.733Z">
+<meta property="article:published_time" content="2021-02-27T10:57:01.845Z">
+<meta property="article:modified_time" content="2021-03-01T08:52:37.661Z">
 <meta property="article:author" content="Mw">
 <meta property="article:tag" content="JavaEE">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2020/02/24/%E9%94%81/">
+<link rel="canonical" href="http://example.com/2021/02/27/%E5%A4%9A%E6%80%81/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>JavaEE-锁 | Mw-Blog</title>
+  <title>JavaEE-多态 | Mw-Blog</title>
   
 
 
@@ -203,7 +203,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/24/%E9%94%81/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/27/%E5%A4%9A%E6%80%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/Mw.png">
@@ -216,24 +216,16 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JavaEE-锁
+          JavaEE-多态
         </h1>
 
         <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">更新于</span>
-
-              <time title="创建时间：2020-02-24 16:00:00" itemprop="dateCreated datePublished" datetime="2020-02-24T16:00:00+08:00">2020-02-24</time>
-            </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-01 00:35:01" itemprop="dateModified" datetime="2021-03-01T00:35:01+08:00">2021-03-01</time>
+                <time title="修改时间：2021-03-01 16:52:37" itemprop="dateModified" datetime="2021-03-01T16:52:37+08:00">2021-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -246,7 +238,7 @@
             </span>
 
           
-            <span id="/2020/02/24/%E9%94%81/" class="post-meta-item leancloud_visitors" data-flag-title="JavaEE-锁" title="阅读次数">
+            <span id="/2021/02/27/%E5%A4%9A%E6%80%81/" class="post-meta-item leancloud_visitors" data-flag-title="JavaEE-多态" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -261,8 +253,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/02/24/%E9%94%81/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/24/%E9%94%81/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/02/27/%E5%A4%9A%E6%80%81/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/27/%E5%A4%9A%E6%80%81/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -272,7 +264,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>541</span>
+              <span>367</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -291,13 +283,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
+        <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
 <span id="more"></span>
 
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
-
-<p>适合于多读</p>
-<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
+<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
+<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
+<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
+<li>父类引用指向子类对象  </li>
+</ol>
+<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
+<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
 
     </div>
 
@@ -316,11 +311,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/24/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/" rel="prev" title="JavaEE-集合框架">
-      <i class="fa fa-chevron-left"></i> JavaEE-集合框架
+    <a href="/2021/02/27/Git%E5%91%BD%E4%BB%A4/" rel="prev" title="Git命令">
+      <i class="fa fa-chevron-left"></i> Git命令
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/02/24/%E6%95%B0%E7%BB%84/" rel="next" title="JavaEE-数组">
+    <a href="/2021/02/27/%E6%95%B0%E7%BB%84/" rel="next" title="JavaEE-数组">
       JavaEE-数组 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -382,7 +377,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%90%E8%A7%82%E9%94%81"><span class="nav-number">1.</span> <span class="nav-text">乐观锁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%82%B2%E8%A7%82%E9%94%81"><span class="nav-number">2.</span> <span class="nav-text">悲观锁</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E6%80%81%E7%9A%84%E5%AD%98%E5%9C%A8%E6%9C%89%E4%B8%89%E4%B8%AA%E5%BF%85%E8%A6%81%E7%9A%84%E6%9D%A1%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">多态的存在有三个必要的条件</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -429,6 +424,9 @@
         <span class="exturl" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9DaGVubXc=" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;Chenmw"><i class=" fa-fw"></i>知乎</span>
       </span>
       <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vcC8xMDA1MDU2MDgyMjU0MTIyL2hvbWU/ZnJvbT1wYWdlXzEwMDUwNSZtb2Q9VEFCJmlzX2FsbD0xI3BsYWNl" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;p&#x2F;1005056082254122&#x2F;home?from&#x3D;page_100505&amp;mod&#x3D;TAB&amp;is_all&#x3D;1#place"><i class="fab fa-weibo fa-fw"></i>Weibo</span>
+      </span>
+      <span class="links-of-author-item">
         <span class="exturl" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTMyOTc4NTI3MA==" title="网易云 → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;329785270"><i class=" fa-fw"></i>网易云</span>
       </span>
   </div>
@@ -466,7 +464,7 @@
     <span class="post-meta-item-icon">
     <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">24k</span>
+    <span title="站点总字数">25k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
     <i class="fa fa-coffee"></i>

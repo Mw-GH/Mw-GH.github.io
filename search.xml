@@ -121,20 +121,6 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </tags>
   </entry>
   <entry>
-    <title>VMware与Docker不兼容解决办法</title>
-    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-      </categories>
-      <tags>
-        <tag>VMware</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux 常用命令</title>
     <url>/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
@@ -167,24 +153,17 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-多态</title>
-    <url>/2020/02/24/%E5%A4%9A%E6%80%81/</url>
-    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
-<span id="more"></span>
-
-<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
-<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
-<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
-<li>父类引用指向子类对象  </li>
-</ol>
-<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
-<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
+    <title>VMware与Docker不兼容解决办法</title>
+    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
+<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
+<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
 ]]></content>
       <categories>
-        <category>JavaEE</category>
+        <category>技术储备</category>
       </categories>
       <tags>
-        <tag>JavaEE</tag>
+        <tag>VMware</tag>
       </tags>
   </entry>
   <entry>
@@ -261,8 +240,91 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
+    <title>JavaEE-多态</title>
+    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
+<span id="more"></span>
+
+<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
+<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
+<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
+<li>父类引用指向子类对象  </li>
+</ol>
+<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
+<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaEE-数组</title>
+    <url>/2021/02/27/%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AP配置文件</title>
+    <url>/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ebf7c5fec32fc441c0166d9eb469254d625d950164c281464804549641a11fc9">a4626797b59d51ca61698aa4c885a79dbaf4e24b070ecdbf062639dad5a2a232ae84e372eb2560f6d2baa8fedd9be3b73c9cf6bd7aeb290d0a95d232d530ba34f6256845b0d316e6d68091afa31924b6515af881d12b5202d0c165e03130cb2f8fb64160daf6fe9f22f5f34fc043230c210248507b92a662d53c33dd7219b6dd3fbc0007a943ef0a8b5a90e23868b5948694db2a30da5a4bfc2c33eb5e814721cff19a35b459cb1f9ff0012cc1d9ab5c86495a82e5d5b42712a90bbb893bd6c89fe89201b6f7a345a6f2252bd5b46470ecfecb30b3c107ef74dfda7fd44538b9ad660fe84d8febf9cb6bf0e5324c1913a0f9415ccfe95e2ef6b14b068c36c1c3bc47e638e934c5e6a0cd8082628995f6a6edc602414eed7bc66f16928c9b384cfd603db20e71a9a001f898cad03a7c23a7165f9e0d2e4c770abd63110cfd557e322af7b1189d357e1dee53727a54d1931ea4e3c1f2e0b01f8eaa8f0ce892ee18c58ecb66b0201890a1fbe38e146097f1d75eb441b7f78c9cf3d14d058d33bb8e7b89c4c5ca817b6013ba2c4aeb865c8e268f9a0eb08745cba9b7282926fc0ad4cc5c3b8ccdcd3c8aaf42f50e85ffed42a75e1adc92d41bdc539f55b7cc4f1b11b665336827a615242f26b2f93a6b2044bb024ee656646255143fc123b64e22c28960ecf448d2fce36dc47e17e23a711c051e56b83bee9915166fd9f7e11e40d2ba28e9dbdfd8fffd597f70058478be9f31cfc745ff6e84757df970b0d94741b3adf6da9a61adfdbb911e37bc1410a8b87cf711acdbfa6d39b059efd41a3f908df4bb36b77f50f200ada752a14e2a7cbbe2f60c46d85e39b50cffbefec666c1f788c55d4947217c1cee59cd7c6c5a9478e84eacfd3dea59c9f889a3fe9e922c9d8812e093e2528968d227b4da559d5d73c0690a6bb46c8f6affe8934ec12b3f3c89296121c57b0216e5d4757b7c0f76e0056149199765be06e0925f7d479045857a609907216ffb4b872367d103ddf914668a9a543445b70a46f55fc632d08ac40328075162b6341a10e076d1dee16fd7389da25a4b07ff010918f0dfd8d772cc92164a36ee775b41bcb5e846f85f9d952c34732a1591f8e9b3c5a72f8213caffc8d207e896ef47a454dc62331bd6870d3509cb3544e581508026365c262a3b5f14ead3ff48754e320c706c5c48493c23e7868dfbb31ea291c14062200d9d5491abae4b3dd4021d37fcb6a3b2ae83312b12424db8be3b55e84e7b207114c0948397575c175a601b183c2f309996152c09b4b6322f7a63cab53bebc5079d947ba3f81436ff4dc7a897b4b203a7c5ae8ec41d1ad93e1dbe9f7b9b81448b53ea9770a6e44aa74c2709535ad2975880d58840b771a1dae03245eb7613a20eaf1c4a6dfe980c9188f96c2563b8563c8e877626261c7be915819c1d42ba4af732b9533858f9e61a7f4a25c2e1faadf9aaeec5262705d8eef27bc36497e1f53c0ebf64628b4659dd3f0b864171d5147089c4429a27a652a6ddbef6022f54fcbd320b2cef9d11cc3607d7fd0ee4f2e83ef6bac05777f3cf0716052032660e8a8235bac1410f5cd36e6c7b49eaf401e912b68fe5f5b5c1f1ba2e0f0b83766672ef1cd2031659d5fad42bc61046b210c82001d31dc7f59a82c9d9dc785cf06eae394e111e2bb73126ac7843c9b0bba6ee35d7933c1d29b7edea40f7e1d1313d84956c6dec2f59ef6bafaa6f40c727fec4dc1a127461e679c270ae2ffc7a9384b3f05650b49b5117302a82d4927658d02280ac46c7f870ecc72b72cea8a7572f017f6fe46f60a077e47b6f6bf09717b008b392cc715257c9b66eafc26214c298abe019af968aaced853f906a1680edad88f86e31bd43cfee43693cae84147594137afb84f3fe7bb9b208ac47bb376166b2c1eefc9f49315448b39e20ddd7717fe15852e3787e066d71afa4ed5ba7203e39cdfcec1183dfe0d780d96074df775384c410d70cc4a4985c52ad4047c9e176bb91b60c7d69e04d5155b5ff79086aa763bd05c6f67810e1711f8ed65afa7341933ee67d22231d729b50cec6b7553fc9353b7cb20b7b340aa0e8a00ca4578859c933e2fbb2578aaabb9f6f5177f104cd98fe614922208b9f5a5ffc45b5902aae018841cad8a95f7321dfad6beabd1043909b55d0ae757876d5ebe12f34fe075c6d30aa83264a21c23e4ee6cd7b97b8fce755f188510cd9b25c14edecd7bdeff2a2f1be81db11756345eaa693cd3ca836152eb567189b6a17be72671b97981a00dbfe81127a6d6970d16f509e5ab332ccfe1ca43fcb06c30b4e6c6f7abbd1f0b18a4a057036a8dd435f17c7db98b3b506fe6fc63a896e2e79d0c3aa77ee13a8f92d04bb183f4df99749ef62e35eb84247c9b791e56f3386adc93545b08e4e02c736aad9dab1dbf8302e21760c18b8efdd5639c3a0e92a63335f17425aeb094cd258e0da933dd7213a5526fc5b66651dd5405932247540071ecfc7000d0f18052ac8ea8c52b2172cda298a8bcb989f146445866c466634e3f7bd6746ac758cc1e71d0076f3f4ce721f330898d8b73243db3fd3290fb0ca</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>个人文件</category>
+      </categories>
+      <tags>
+        <tag>配置文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaEE-锁</title>
+    <url>/2021/02/27/%E9%94%81/</url>
+    <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
+<span id="more"></span>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
+
+<p>适合于多读</p>
+<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaEE-异常</title>
-    <url>/2020/02/24/%E5%BC%82%E5%B8%B8/</url>
+    <url>/2021/02/27/%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
 <li>处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理，让程序继续执行下去,而不是遇到异常中断程序运行</li>
 <li>在多重catch块后面，可以加一个catch(Exception)来处理可能被遗漏的异常  </li>
@@ -313,70 +375,8 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-数组</title>
-    <url>/2020/02/24/%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
-
-<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AP配置文件</title>
-    <url>/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="ebf7c5fec32fc441c0166d9eb469254d625d950164c281464804549641a11fc9">a4626797b59d51ca61698aa4c885a79dbaf4e24b070ecdbf062639dad5a2a232ae84e372eb2560f6d2baa8fedd9be3b73c9cf6bd7aeb290d0a95d232d530ba34f6256845b0d316e6d68091afa31924b6515af881d12b5202d0c165e03130cb2f8fb64160daf6fe9f22f5f34fc043230c210248507b92a662d53c33dd7219b6dd3fbc0007a943ef0a8b5a90e23868b5948694db2a30da5a4bfc2c33eb5e814721cff19a35b459cb1f9ff0012cc1d9ab5c86495a82e5d5b42712a90bbb893bd6c89fe89201b6f7a345a6f2252bd5b46470ecfecb30b3c107ef74dfda7fd44538b9ad660fe84d8febf9cb6bf0e5324c1913a0f9415ccfe95e2ef6b14b068c36c1c3bc47e638e934c5e6a0cd8082628995f6a6edc602414eed7bc66f16928c9b384cfd603db20e71a9a001f898cad03a7c23a7165f9e0d2e4c770abd63110cfd557e322af7b1189d357e1dee53727a54d1931ea4e3c1f2e0b01f8eaa8f0ce892ee18c58ecb66b0201890a1fbe38e146097f1d75eb441b7f78c9cf3d14d058d33bb8e7b89c4c5ca817b6013ba2c4aeb865c8e268f9a0eb08745cba9b7282926fc0ad4cc5c3b8ccdcd3c8aaf42f50e85ffed42a75e1adc92d41bdc539f55b7cc4f1b11b665336827a615242f26b2f93a6b2044bb024ee656646255143fc123b64e22c28960ecf448d2fce36dc47e17e23a711c051e56b83bee9915166fd9f7e11e40d2ba28e9dbdfd8fffd597f70058478be9f31cfc745ff6e84757df970b0d94741b3adf6da9a61adfdbb911e37bc1410a8b87cf711acdbfa6d39b059efd41a3f908df4bb36b77f50f200ada752a14e2a7cbbe2f60c46d85e39b50cffbefec666c1f788c55d4947217c1cee59cd7c6c5a9478e84eacfd3dea59c9f889a3fe9e922c9d8812e093e2528968d227b4da559d5d73c0690a6bb46c8f6affe8934ec12b3f3c89296121c57b0216e5d4757b7c0f76e0056149199765be06e0925f7d479045857a609907216ffb4b872367d103ddf914668a9a543445b70a46f55fc632d08ac40328075162b6341a10e076d1dee16fd7389da25a4b07ff010918f0dfd8d772cc92164a36ee775b41bcb5e846f85f9d952c34732a1591f8e9b3c5a72f8213caffc8d207e896ef47a454dc62331bd6870d3509cb3544e581508026365c262a3b5f14ead3ff48754e320c706c5c48493c23e7868dfbb31ea291c14062200d9d5491abae4b3dd4021d37fcb6a3b2ae83312b12424db8be3b55e84e7b207114c0948397575c175a601b183c2f309996152c09b4b6322f7a63cab53bebc5079d947ba3f81436ff4dc7a897b4b203a7c5ae8ec41d1ad93e1dbe9f7b9b81448b53ea9770a6e44aa74c2709535ad2975880d58840b771a1dae03245eb7613a20eaf1c4a6dfe980c9188f96c2563b8563c8e877626261c7be915819c1d42ba4af732b9533858f9e61a7f4a25c2e1faadf9aaeec5262705d8eef27bc36497e1f53c0ebf64628b4659dd3f0b864171d5147089c4429a27a652a6ddbef6022f54fcbd320b2cef9d11cc3607d7fd0ee4f2e83ef6bac05777f3cf0716052032660e8a8235bac1410f5cd36e6c7b49eaf401e912b68fe5f5b5c1f1ba2e0f0b83766672ef1cd2031659d5fad42bc61046b210c82001d31dc7f59a82c9d9dc785cf06eae394e111e2bb73126ac7843c9b0bba6ee35d7933c1d29b7edea40f7e1d1313d84956c6dec2f59ef6bafaa6f40c727fec4dc1a127461e679c270ae2ffc7a9384b3f05650b49b5117302a82d4927658d02280ac46c7f870ecc72b72cea8a7572f017f6fe46f60a077e47b6f6bf09717b008b392cc715257c9b66eafc26214c298abe019af968aaced853f906a1680edad88f86e31bd43cfee43693cae84147594137afb84f3fe7bb9b208ac47bb376166b2c1eefc9f49315448b39e20ddd7717fe15852e3787e066d71afa4ed5ba7203e39cdfcec1183dfe0d780d96074df775384c410d70cc4a4985c52ad4047c9e176bb91b60c7d69e04d5155b5ff79086aa763bd05c6f67810e1711f8ed65afa7341933ee67d22231d729b50cec6b7553fc9353b7cb20b7b340aa0e8a00ca4578859c933e2fbb2578aaabb9f6f5177f104cd98fe614922208b9f5a5ffc45b5902aae018841cad8a95f7321dfad6beabd1043909b55d0ae757876d5ebe12f34fe075c6d30aa83264a21c23e4ee6cd7b97b8fce755f188510cd9b25c14edecd7bdeff2a2f1be81db11756345eaa693cd3ca836152eb567189b6a17be72671b97981a00dbfe81127a6d6970d16f509e5ab332ccfe1ca43fcb06c30b4e6c6f7abbd1f0b18a4a057036a8dd435f17c7db98b3b506fe6fc63a896e2e79d0c3aa77ee13a8f92d04bb183f4df99749ef62e35eb84247c9b791e56f3386adc93545b08e4e02c736aad9dab1dbf8302e21760c18b8efdd5639c3a0e92a63335f17425aeb094cd258e0da933dd7213a5526fc5b66651dd5405932247540071ecfc7000d0f18052ac8ea8c52b2172cda298a8bcb989f146445866c466634e3f7bd6746ac758cc1e71d0076f3f4ce721f330898d8b73243db3fd3290fb0ca</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>个人文件</category>
-      </categories>
-      <tags>
-        <tag>配置文件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaEE-锁</title>
-    <url>/2020/02/24/%E9%94%81/</url>
-    <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
-<span id="more"></span>
-
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
-
-<p>适合于多读</p>
-<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaEE-集合框架</title>
-    <url>/2020/02/24/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</url>
+    <url>/2021/02/26/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h1 id="JAVA集合框架"><a href="#JAVA集合框架" class="headerlink" title="JAVA集合框架"></a>JAVA集合框架</h1><ul>
 <li><p><strong>概念:</strong> 对象的容器，实现了对象常用的操作，类似与数组的功能</p>
 </li>
@@ -493,15 +493,30 @@ useradd -r -g mysql mysql
   <entry>
     <title>Hexo博客搭建</title>
     <url>/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="Hexo博客基础搭建"><a href="#Hexo博客基础搭建" class="headerlink" title="Hexo博客基础搭建"></a>Hexo博客基础搭建</h1><p>需要环境</p>
-<ol>
+    <content><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><blockquote>
+<p>持续更新… 待工期间感觉无聊，一直觉得程序猿一定要有一个属于自己的博客，记录自己的学习过程、笔记，于是重新捡起了Hexo，完整的记录我搭建Hexo Next主题博客的过程,只有自己才明白其中的艰辛，其中碰到无数的坑，掉了无数的头发，才勉勉强强搭建成现在的样子，给新手朋友一些建议，碰到问题多百度，多尝试，由于Next主题版本的原因，网上的方法不一定行，但一定有解决的办法，多参考一些大神的博客。你们也可以在下面评论给我提出建议。慢慢完成、完善后你会继续感到无尽寂寞（无敌）….</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="参考博客：-强烈感谢以下博主，存在copy的地方请见谅"><a href="#参考博客：-强烈感谢以下博主，存在copy的地方请见谅" class="headerlink" title="参考博客： 强烈感谢以下博主，存在copy的地方请见谅"></a>参考博客： 强烈感谢以下博主，存在copy的地方请见谅</h2><ol>
+<li><p><span class="exturl" data-url="aHR0cDovL3NhaWxpLnNjaWVuY2UvZ2l0Lw==">http://saili.science/git/<i class="fa fa-external-link-alt"></i></span></p>
+</li>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9sYXp5ZG9nMDM2LmdpdGVlLmlvLw==">https://lazydog036.gitee.io/<i class="fa fa-external-link-alt"></i></span></p>
+</li>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9ub3Rlcy5kb3VibGVtaW5lLm1lLw==">https://notes.doublemine.me/<i class="fa fa-external-link-alt"></i></span></p>
+</li>
+<li><p>QQ群：722344383 里面全是大佬</p>
+</li>
+</ol>
+<h2 id="需要环境"><a href="#需要环境" class="headerlink" title="需要环境"></a>需要环境</h2><ol>
 <li>Git</li>
 <li>Node.js</li>
 </ol>
 <p>安装参考技术储备</p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>安装命令</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo -v //查看版本</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo -v //查看版本</span><br><span class="line">//hexo: <span class="number">5</span>.<span class="number">4</span>.<span class="number">0</span></span><br><span class="line">//hexo-cli: <span class="number">4</span>.<span class="number">2</span>.<span class="number">0</span></span><br><span class="line">//node: <span class="number">12</span>.<span class="number">21</span>.<span class="number">0</span>  不建议使用太高的版本，坑挺多</span><br></pre></td></tr></table></figure>
+
+
 <p>在需要生成博客项目的路径下打开命令行输入</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">hexo init myblog //myblog 任意取名</span><br><span class="line"><span class="built_in">cd</span> myblog //进入项目文件</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
@@ -518,6 +533,12 @@ useradd -r -g mysql mysql
 
 <p>打开hexo的服务，在浏览器输入localhost:4000访问博客</p>
 <p>ctrl+c关闭服务</p>
+<h3 id="放置主题"><a href="#放置主题" class="headerlink" title="放置主题"></a>放置主题</h3><ol>
+<li><p>将下载好的主题文件 放入Hexo\themes文件下 我这里使用的是<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0">hexo-theme-next v7.8.0<i class="fa fa-external-link-alt"></i></span></p>
+</li>
+<li><p>更改<mark>站点配置文件</mark>中的theme: hexo-theme-next即可</p>
+</li>
+</ol>
 <h2 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a><div id="testJump">将Hexo部署到GitHub</div></h2><h3 id="创建GitPage"><a href="#创建GitPage" class="headerlink" title="创建GitPage"></a>创建GitPage</h3><p>创建一个和你用户名相同的仓库，后面加.github,只有这样，将来要部署到GitHub page的时候，才会被识别, mw-gh.github.io</p>
 <h3 id="绑定github"><a href="#绑定github" class="headerlink" title="绑定github"></a>绑定github</h3><p>绑定github用户名和邮箱</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br><span class="line"></span><br><span class="line">git config user.name</span><br><span class="line">git config user.email  //检查</span><br></pre></td></tr></table></figure>
@@ -525,7 +546,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjMTE2OyYjNjQ7JiMxMDM7JiMxMDU7JiN4NzQ7JiMxMDQ7JiN4NzU7JiM5ODsmIzQ2OyYjeDYzOyYjeDZmOyYjMTA5Ow==">&#x67;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjMTAzOyYjMTA1OyYjMTE2OyYjNjQ7JiN4Njc7JiN4Njk7JiMxMTY7JiN4Njg7JiMxMTc7JiM5ODsmIzQ2OyYjOTk7JiN4NmY7JiMxMDk7">&#103;&#105;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -655,13 +676,21 @@ useradd -r -g mysql mysql
 </li>
 </ol>
 <h3 id="文章排序"><a href="#文章排序" class="headerlink" title="文章排序"></a>文章排序</h3><ol>
-<li><p>手动修改/node_modules/hexo-generator-index/lib/generator.js</p>
- <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> pagination = <span class="built_in">require</span>(<span class="string">&#x27;hexo-pagination&#x27;</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> config = <span class="built_in">this</span>.config;</span><br><span class="line">    <span class="keyword">var</span> posts = locals.posts;</span><br><span class="line">    posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a.top &amp;&amp; b.top) &#123; <span class="comment">// 两篇文章top都有定义</span></span><br><span class="line">            <span class="keyword">if</span>(a.top == b.top) <span class="keyword">return</span> b.date - a.date; <span class="comment">// 若top值一样则按照文章日期降序排</span></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> a.top - b.top; <span class="comment">// 否则按照top值升序排</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(a.top &amp;&amp; !b.top) &#123; <span class="comment">// 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）</span></span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> b.date - a.date; <span class="comment">// 都没定义按照文章日期降序排</span></span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">&#x27;page&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span> pagination(<span class="string">&#x27;&#x27;</span>, posts, &#123;</span><br><span class="line">        perPage: config.index_generator.per_page,</span><br><span class="line">        layout: [<span class="string">&#x27;index&#x27;</span>, <span class="string">&#x27;archive&#x27;</span>],</span><br><span class="line">        format: paginationDir + <span class="string">&#x27;/%d/&#x27;</span>,</span><br><span class="line">        data: &#123;</span><br><span class="line">        __index: <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在文章头添加top值，值越小文章越靠前</p>
- <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Linux常用命令 长期更新</span><br><span class="line">date: 2019-09-03</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">    -</span> 技术储备</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">    -</span> Linux</span><br><span class="line">top: 1</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
+<li>手动修改/node_modules/hexo-generator-index/lib/generator.js</li>
 </ol>
+<blockquote>
+<p>网上的方法，个人不采用，node_modules文件不上传到github 不便于后期维护</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> pagination = <span class="built_in">require</span>(<span class="string">&#x27;hexo-pagination&#x27;</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> config = <span class="built_in">this</span>.config;</span><br><span class="line">    <span class="keyword">var</span> posts = locals.posts;</span><br><span class="line">    posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a.top &amp;&amp; b.top) &#123; <span class="comment">// 两篇文章top都有定义</span></span><br><span class="line">            <span class="keyword">if</span>(a.top == b.top) <span class="keyword">return</span> b.date - a.date; <span class="comment">// 若top值一样则按照文章日期降序排</span></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> a.top - b.top; <span class="comment">// 否则按照top值升序排</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(a.top &amp;&amp; !b.top) &#123; <span class="comment">// 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）</span></span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> b.date - a.date; <span class="comment">// 都没定义按照文章日期降序排</span></span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">&#x27;page&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span> pagination(<span class="string">&#x27;&#x27;</span>, posts, &#123;</span><br><span class="line">        perPage: config.index_generator.per_page,</span><br><span class="line">        layout: [<span class="string">&#x27;index&#x27;</span>, <span class="string">&#x27;archive&#x27;</span>],</span><br><span class="line">        format: paginationDir + <span class="string">&#x27;/%d/&#x27;</span>,</span><br><span class="line">        data: &#123;</span><br><span class="line">        __index: <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>在文章title添加top值，值越大文章越靠前</li>
+</ol>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Linux常用命令 长期更新</span><br><span class="line">date: 2019-09-03</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">    -</span> 技术储备</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">    -</span> Linux</span><br><span class="line">top: 1</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>我个人关闭了主题配置文件中的created_at: false和不要文章title中的date 即创建时间，主页和文章仅显示更新时间，Hexo会已更新时间自动进行排序，然后加入top指定文章排序 普通文章设定为0(必须每篇文章都设定，这有点搞心态)，指定文章设定为1，2，3 值越大排序越靠前</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>个人博客搭建</category>
