@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Tomcat 中文乱码解决</title>
+    <url>/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>在开发过程或者更换开发环境中经常遇到tomcat中文乱码问题，在此记录已方便查看.</p>
+<span id="more"></span>
+
+<h2 id="控制台中文乱码"><a href="#控制台中文乱码" class="headerlink" title="控制台中文乱码"></a>控制台中文乱码</h2><p>注释掉<code>tomcat/conf/logging.properties</code>中</p>
+<pre><code>java.util.logging.ConsoleHandler.encoding = UTF-8
+</code></pre>
+<h2 id="前端传递参数到后端（JSP接受）"><a href="#前端传递参数到后端（JSP接受）" class="headerlink" title="前端传递参数到后端（JSP接受）"></a>前端传递参数到后端（JSP接受）</h2><p>修改<code>tomcat/conf/server.xml</code>文件中</p>
+<pre><code>&lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;
+connectionTimeout=&quot;20000&quot;
+redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=&quot;UTF-8&quot; useBodyEncodingForURI=&quot;true&quot;/&gt;
+</code></pre>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+      </categories>
+      <tags>
+        <tag>Tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git命令</title>
     <url>/2021/02/27/Git%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h1><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
@@ -96,28 +118,6 @@
       </categories>
       <tags>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tomcat 中文乱码解决</title>
-    <url>/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>在开发过程或者更换开发环境中经常遇到tomcat中文乱码问题，在此记录已方便查看.</p>
-<span id="more"></span>
-
-<h2 id="控制台中文乱码"><a href="#控制台中文乱码" class="headerlink" title="控制台中文乱码"></a>控制台中文乱码</h2><p>注释掉<code>tomcat/conf/logging.properties</code>中</p>
-<pre><code>java.util.logging.ConsoleHandler.encoding = UTF-8
-</code></pre>
-<h2 id="前端传递参数到后端（JSP接受）"><a href="#前端传递参数到后端（JSP接受）" class="headerlink" title="前端传递参数到后端（JSP接受）"></a>前端传递参数到后端（JSP接受）</h2><p>修改<code>tomcat/conf/server.xml</code>文件中</p>
-<pre><code>&lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;
-connectionTimeout=&quot;20000&quot;
-redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=&quot;UTF-8&quot; useBodyEncodingForURI=&quot;true&quot;/&gt;
-</code></pre>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-      </categories>
-      <tags>
-        <tag>Tomcat</tag>
       </tags>
   </entry>
   <entry>
@@ -240,27 +240,6 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-多态</title>
-    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
-    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
-<span id="more"></span>
-
-<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
-<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
-<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
-<li>父类引用指向子类对象  </li>
-</ol>
-<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
-<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaEE-异常</title>
     <url>/2021/02/27/%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
@@ -304,6 +283,27 @@ useradd -r -g mysql mysql
  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaEE-多态</title>
+    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
+<span id="more"></span>
+
+<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
+<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
+<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
+<li>父类引用指向子类对象  </li>
+</ol>
+<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
+<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
 ]]></content>
       <categories>
         <category>JavaEE</category>
@@ -546,7 +546,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjMTAzOyYjMTA1OyYjeDc0OyYjNjQ7JiN4Njc7JiMxMDU7JiN4NzQ7JiN4Njg7JiMxMTc7JiM5ODsmI3gyZTsmIzk5OyYjeDZmOyYjMTA5Ow==">&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjMTAzOyYjMTA1OyYjMTE2OyYjNjQ7JiMxMDM7JiMxMDU7JiMxMTY7JiN4Njg7JiN4NzU7JiM5ODsmIzQ2OyYjOTk7JiN4NmY7JiN4NmQ7">&#103;&#105;&#116;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -561,8 +561,8 @@ useradd -r -g mysql mysql
 <li>购买域名 我是在腾讯云上购买的是chenmw.top</li>
 <li>添加Github Pages解析：在Hexo/source中建立CNAME文件（没有后缀），文件内容为你希望访问项目的地址如：mw-blog.chenmw.top<img src="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/QQ%E6%88%AA%E5%9B%BE20210228235810.jpg" class=""></li>
 <li>在Github仓库设置中找到Custom domain 内容设置成一样</li>
-<li>在你所购买域名网站，域名管理中找到DNS解析，添加一条主机记录为mw-blog(任意替换),记录类型为CNAME，线路类型默认，记录值为你的github pages路径<img src="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/QQ%E5%9B%BE%E7%89%8720210301001016.png" class=""></li>
-<li>项目重新部署 hexo d 访问mw-blog.chenmw.top即可</li>
+<li>在你所购买域名网站，域名管理中找到DNS解析，添加一条主机记录为@,记录类型为CNAME，线路类型默认，记录值为你的github pages路径<img src="/2021/02/27/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/QQ%E5%9B%BE%E7%89%8720210301001016.png" class=""></li>
+<li>项目重新部署 hexo d 访问chenmw.top即可</li>
 </ol>
 <blockquote>
 <p>hexo-d 报Error: Spawn failed 是CNAME文件与仓库中CNAME文件不一样</p>
