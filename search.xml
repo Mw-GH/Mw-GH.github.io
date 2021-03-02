@@ -99,6 +99,20 @@
       </tags>
   </entry>
   <entry>
+    <title>VMware与Docker不兼容解决办法</title>
+    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
+<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
+<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+      </categories>
+      <tags>
+        <tag>VMware</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Tomcat 中文乱码解决</title>
     <url>/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
     <content><![CDATA[<p>在开发过程或者更换开发环境中经常遇到tomcat中文乱码问题，在此记录已方便查看.</p>
@@ -118,20 +132,6 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </categories>
       <tags>
         <tag>Tomcat</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VMware与Docker不兼容解决办法</title>
-    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-      </categories>
-      <tags>
-        <tag>VMware</tag>
       </tags>
   </entry>
   <entry>
@@ -240,6 +240,49 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
+    <title>JavaEE-多态</title>
+    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
+<span id="more"></span>
+
+<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
+<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
+<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
+<li>父类引用指向子类对象  </li>
+</ol>
+<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
+<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaEE-数组</title>
+    <url>/2021/02/27/%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaEE-异常</title>
     <url>/2021/02/27/%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
@@ -283,49 +326,6 @@ useradd -r -g mysql mysql
  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaEE-多态</title>
-    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
-    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
-<span id="more"></span>
-
-<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
-<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
-<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
-<li>父类引用指向子类对象  </li>
-</ol>
-<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
-<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaEE-数组</title>
-    <url>/2021/02/27/%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
-
-<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>JavaEE</category>
@@ -546,7 +546,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjeDc0OyYjeDQwOyYjMTAzOyYjeDY5OyYjMTE2OyYjMTA0OyYjeDc1OyYjeDYyOyYjNDY7JiM5OTsmI3g2ZjsmIzEwOTs=">&#x67;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjMTE2OyYjeDQwOyYjMTAzOyYjeDY5OyYjMTE2OyYjMTA0OyYjMTE3OyYjeDYyOyYjeDJlOyYjeDYzOyYjeDZmOyYjMTA5Ow==">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
