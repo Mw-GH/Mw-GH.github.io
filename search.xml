@@ -99,20 +99,6 @@
       </tags>
   </entry>
   <entry>
-    <title>VMware与Docker不兼容解决办法</title>
-    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-      </categories>
-      <tags>
-        <tag>VMware</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Tomcat 中文乱码解决</title>
     <url>/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
     <content><![CDATA[<p>在开发过程或者更换开发环境中经常遇到tomcat中文乱码问题，在此记录已方便查看.</p>
@@ -132,6 +118,20 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </categories>
       <tags>
         <tag>Tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VMware与Docker不兼容解决办法</title>
+    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
+<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
+<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+      </categories>
+      <tags>
+        <tag>VMware</tag>
       </tags>
   </entry>
   <entry>
@@ -261,28 +261,6 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-数组</title>
-    <url>/2021/02/27/%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
-
-<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaEE-异常</title>
     <url>/2021/02/27/%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
@@ -335,6 +313,46 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
+    <title>JavaEE-数组</title>
+    <url>/2021/02/27/%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaEE-锁</title>
+    <url>/2021/02/27/%E9%94%81/</url>
+    <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
+<span id="more"></span>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
+
+<p>适合于多读</p>
+<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AP配置文件</title>
     <url>/2019/09/03/%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -354,24 +372,6 @@ useradd -r -g mysql mysql
       </categories>
       <tags>
         <tag>配置文件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaEE-锁</title>
-    <url>/2021/02/27/%E9%94%81/</url>
-    <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
-<span id="more"></span>
-
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
-
-<p>适合于多读</p>
-<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
       </tags>
   </entry>
   <entry>
@@ -546,7 +546,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjMTE2OyYjeDQwOyYjMTAzOyYjeDY5OyYjMTE2OyYjMTA0OyYjMTE3OyYjeDYyOyYjeDJlOyYjeDYzOyYjeDZmOyYjMTA5Ow==">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjMTA1OyYjeDc0OyYjNjQ7JiMxMDM7JiMxMDU7JiMxMTY7JiMxMDQ7JiN4NzU7JiM5ODsmIzQ2OyYjOTk7JiN4NmY7JiMxMDk7">&#x67;&#105;&#x74;&#64;&#103;&#105;&#116;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
