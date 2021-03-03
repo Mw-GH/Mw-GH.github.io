@@ -99,20 +99,6 @@
       </tags>
   </entry>
   <entry>
-    <title>VMware与Docker不兼容解决办法</title>
-    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-      </categories>
-      <tags>
-        <tag>VMware</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Tomcat 中文乱码解决</title>
     <url>/2021/02/27/Tomcat%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
     <content><![CDATA[<p>在开发过程或者更换开发环境中经常遇到tomcat中文乱码问题，在此记录已方便查看.</p>
@@ -132,6 +118,20 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </categories>
       <tags>
         <tag>Tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VMware与Docker不兼容解决办法</title>
+    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
+<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
+<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+      </categories>
+      <tags>
+        <tag>VMware</tag>
       </tags>
   </entry>
   <entry>
@@ -240,27 +240,6 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-多态</title>
-    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
-    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
-<span id="more"></span>
-
-<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
-<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
-<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
-<li>父类引用指向子类对象  </li>
-</ol>
-<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
-<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaEE-异常</title>
     <url>/2021/02/27/%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
@@ -313,6 +292,27 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
+    <title>JavaEE-多态</title>
+    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
+<span id="more"></span>
+
+<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
+<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
+<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
+<li>父类引用指向子类对象  </li>
+</ol>
+<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
+<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaEE-数组</title>
     <url>/2021/02/27/%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
@@ -326,24 +326,6 @@ useradd -r -g mysql mysql
 <h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> a[<span class="number">3</span>]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType []arrayName=new arrayName[arraySize]&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>JavaEE</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaEE-锁</title>
-    <url>/2021/02/27/%E9%94%81/</url>
-    <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
-<span id="more"></span>
-
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
-
-<p>适合于多读</p>
-<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
 ]]></content>
       <categories>
         <category>JavaEE</category>
@@ -372,6 +354,24 @@ useradd -r -g mysql mysql
       </categories>
       <tags>
         <tag>配置文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaEE-锁</title>
+    <url>/2021/02/27/%E9%94%81/</url>
+    <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
+<span id="more"></span>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">之前不能防止ABA的正常修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue where value = #&#123;oldValue&#125;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>oldValue就是我们执行前查询出来的值 </span><br><span class="line">带版本号能防止ABA的修改：</span><br><span class="line"></span><br><span class="line">update table set value = newValue ，vision = vision + 1 where value = #&#123;oldValue&#125; and vision = #&#123;vision&#125; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 判断原来的值和版本号是否匹配，中间有别的线程修改，值可能相等，但是版本号<span class="number">100</span><span class="operator">%</span>不一样</span><br></pre></td></tr></table></figure>
+
+<p>适合于多读</p>
+<h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
       </tags>
   </entry>
   <entry>
@@ -423,7 +423,7 @@ useradd -r -g mysql mysql
 <p>代码实列</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> conllection.collection;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Collection;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* Collection接口使用一</span></span><br><span class="line"><span class="comment">* 1.添加元素</span></span><br><span class="line"><span class="comment">* 2.删除元素</span></span><br><span class="line"><span class="comment">* 3.遍历元素</span></span><br><span class="line"><span class="comment">* 4.判断</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建集合</span></span><br><span class="line">        Collection collection = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="comment">//1.添加元素</span></span><br><span class="line">        collection.add(<span class="string">&quot;苹果&quot;</span>);</span><br><span class="line">        collection.add(<span class="string">&quot;橘子&quot;</span>);</span><br><span class="line">        collection.add(<span class="string">&quot;香蕉&quot;</span>);</span><br><span class="line">        System.out.println(collection);</span><br><span class="line">        System.out.println(<span class="string">&quot;元素个数：&quot;</span>+collection.size());</span><br><span class="line">        <span class="comment">//2.删除元素</span></span><br><span class="line">        collection.remove(<span class="string">&quot;苹果&quot;</span>);</span><br><span class="line">        System.out.println(collection);</span><br><span class="line">        <span class="comment">//3.遍历元素</span></span><br><span class="line">        <span class="comment">//foreach</span></span><br><span class="line">        System.out.println(<span class="string">&quot;------------&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (Object obj:collection) &#123;</span><br><span class="line">            System.out.println(obj.toString());</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//使用迭代器</span></span><br><span class="line">        <span class="comment">//hasnext();判断是否有下一个元素</span></span><br><span class="line">        <span class="comment">//next();获取下一个元素</span></span><br><span class="line">        <span class="comment">//remove();删除下一个元素</span></span><br><span class="line">        System.out.println(<span class="string">&quot;------------&quot;</span>);</span><br><span class="line">        Iterator iterator = collection.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext())&#123;</span><br><span class="line">            System.out.println(iterator.next());</span><br><span class="line">            iterator.remove();</span><br><span class="line">            <span class="comment">//删除操作</span></span><br><span class="line">            <span class="comment">//collection.remove(s);引发错误：并发修改异常</span></span><br><span class="line">            <span class="comment">//iterator.remove();应使用迭代器的方法</span></span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;------------&quot;</span>);</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext())&#123;</span><br><span class="line">            System.out.println(iterator.next());</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;被迭代器删除后 集合没有元素了&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;------------&quot;</span>);</span><br><span class="line">        <span class="comment">//4.判断</span></span><br><span class="line">        System.out.println(collection.contains(<span class="string">&quot;橘子&quot;</span>));<span class="comment">//false</span></span><br><span class="line">        System.out.println(collection.isEmpty());<span class="comment">//true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="Collection子接口"><a href="#Collection子接口" class="headerlink" title="Collection子接口"></a>Collection子接口</h2><h3 id="List接口"><a href="#List接口" class="headerlink" title="List接口"></a>List接口</h3><ul>
+<h2 id="Collection子接口"><a href="#Collection子接口" class="headerlink" title="Collection子接口"></a>Collection子接口</h2><h3 id="List集合"><a href="#List集合" class="headerlink" title="List集合"></a>List集合</h3><ul>
 <li><strong>特点：</strong> 有序、有下标、元素可以重复</li>
 <li><strong>常用方法：</strong><ul>
 <li>void add(int index,Object o) //在index位置插入对象o。</li>
@@ -433,7 +433,7 @@ useradd -r -g mysql mysql
 </ul>
 </li>
 </ul>
-<h4 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h4><h3 id="Set接口"><a href="#Set接口" class="headerlink" title="Set接口"></a>Set接口</h3><h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h2><ul>
+<h3 id="List实现类"><a href="#List实现类" class="headerlink" title="List实现类"></a>List实现类</h3><h4 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h4><h4 id="ArraryList源码解析"><a href="#ArraryList源码解析" class="headerlink" title="ArraryList源码解析"></a>ArraryList源码解析</h4><h4 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h4><h4 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h4><h4 id="LinkedList源码解析"><a href="#LinkedList源码解析" class="headerlink" title="LinkedList源码解析"></a>LinkedList源码解析</h4><h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><ul>
 <li><p>Java泛型是JDK1.5中引入的一个新特性，其本质是参数化类型，把类型作为参数传递。</p>
 </li>
 <li><p>常见形式有泛型类、泛型接口、泛型方法。</p>
@@ -476,11 +476,7 @@ useradd -r -g mysql mysql
 </ul>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;String&gt; strings = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-<h3 id="拷贝"><a href="#拷贝" class="headerlink" title="拷贝"></a>拷贝</h3><p>拷贝栈中的内容</p>
+<h3 id="Set集合"><a href="#Set集合" class="headerlink" title="Set集合"></a>Set集合</h3><h3 id="Set实现类"><a href="#Set实现类" class="headerlink" title="Set实现类"></a>Set实现类</h3><h3 id="拷贝"><a href="#拷贝" class="headerlink" title="拷贝"></a>拷贝</h3><p>拷贝栈中的内容</p>
 <p>正常拷贝：实现Cloneable接口， 默认clone方法，为浅拷贝<br>深拷贝：互相独立<br>需要递归所有的引用类型，数组，都拷贝一次，基本类型，String,不用拷贝</p>
 ]]></content>
       <categories>
@@ -546,7 +542,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjMTAzOyYjMTA1OyYjMTE2OyYjeDQwOyYjMTAzOyYjMTA1OyYjeDc0OyYjMTA0OyYjMTE3OyYjeDYyOyYjNDY7JiN4NjM7JiN4NmY7JiMxMDk7">&#103;&#105;&#116;&#x40;&#103;&#105;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjeDc0OyYjNjQ7JiMxMDM7JiN4Njk7JiMxMTY7JiN4Njg7JiMxMTc7JiN4NjI7JiM0NjsmI3g2MzsmI3g2ZjsmI3g2ZDs=">&#x67;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
