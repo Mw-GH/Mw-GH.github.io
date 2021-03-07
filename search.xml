@@ -104,17 +104,124 @@
       </tags>
   </entry>
   <entry>
-    <title>VMware与Docker不兼容解决办法</title>
-    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
+    <title>Idea 2019.1激活</title>
+    <url>/2021/03/05/Idea%202019.1%E6%BF%80%E6%B4%BB/</url>
+    <content><![CDATA[<p>原理应该是让idea拉回激活信息失败</p>
+<p>hosts 文件添加</p>
+<p>0.0.0.0 account.jetbrains.com<br>0.0.0.0 <span class="exturl" data-url="aHR0cDovL3d3dy5qZXRicmFpbnMuY29tLw==">www.jetbrains.com<i class="fa fa-external-link-alt"></i></span></p>
+<p>激活码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MNQ043JMTU-eyJsaWNlbnNlSWQiOiJNTlEwNDNKTVRVIiwibGljZW5zZWVOYW1lIjoiR1VPIEJJTiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNC0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNC0wNCJ9XSwiaGFzaCI6IjEyNjIxNDIwLzBwIiwiZ3JhY2VQZXJpb2REYXlzIjo3LCJhdXRvUHJvbG9uZ2F0ZWQiOnRydWUsImlzQXV0b1Byb2xvbmdhdGVkIjp0cnVlfQ&#x3D;&#x3D;-Zmbxcn7NPlqBNqAURX0uiLzybnruyx6PG+6KYZrpzm&#x2F;IJJs5nnIogGgdfIJoifO6fbaaJYc5pjds7CHdrt&#x2F;neIpvF2o&#x2F;HvIjMEF4&#x2F;AhNV7HUGsAa9zpMszc6YBIkMmVFh4Y7GPKOStA14&#x2F;Ld83AC7kGnwL1Fq7eAXKJFljc00GMejPpfE0zDqTN634bC+0ojfklhWXaLqhUt230SiE8onnd3quvEaH5NsW7sIQm2spyONZI+iHvHFtl4EvG7tlRlD1StsfhrbgNNxz61FOEEQ+GtZIzMx+T4sbpfoRyms7lbWQecrbAtE0c2sR98esm4PcDUhrFVBxGorPC1ppOLSQ&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO&#x2F;5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij&#x2F;78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB&#x2F;xVy&#x2F;VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE&#x2F;EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn&#x2F;72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN&#x2F;lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D&#x2F;cXmgpOyW&#x2F;1SmBz3XjVIi&#x2F;zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV&#x2F;bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit&#x2F;pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>idea</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux 常用命令</title>
+    <url>/2021/02/27/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
+<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
+<p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
+<span id="more"></span>
+<h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
+<p>查看以有分区<br><code>fdisk -l</code></p>
+<p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
+<p>重启<br><code>reboot</code></p>
+<p>查看分区情况<br><code>df -h</code></p>
+<p>格式化<br><code>mkfs -t ext4 /dev/sda4</code></p>
+<p>不挂载直接给根目录扩容</p>
+<p>进入lvm管理<br><code>lvm</code></p>
+<p>初始化分区<br><code>pvcreate /dev/sda3</code></p>
+<p>将初始化过的分区加入到虚拟卷组vg_dc01<br><code>vgextend centos /dev/sda3</code></p>
+<p>扩展已有的卷的容量<br><code>lvextend -L +50G /dev/mapper/centos-root</code></p>
+<p>查看卷容量<br><code>pvdisplay</code></p>
+<h2 id="设置开机启动之nexus3"><a href="#设置开机启动之nexus3" class="headerlink" title="设置开机启动之nexus3"></a>设置开机启动之nexus3</h2><p>创建软连接<br><code>ln -s /opt/nexus-3.21.1-01/bin/nexus /etc/init.d/nexus</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;init.d</span><br><span class="line">sudo chkconfig --add nexus</span><br><span class="line">sudo chkconfig --levels 345 nexus on</span><br><span class="line">sudo service nexus start</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术储备</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>VMware</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux部署JavaWeb项目</title>
+    <url>/2021/02/27/Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="linux部署javaWeb项目"><a href="#linux部署javaWeb项目" class="headerlink" title="linux部署javaWeb项目"></a>linux部署javaWeb项目</h1><h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
+</code></pre>
+<h2 id="2-部署tomcat"><a href="#2-部署tomcat" class="headerlink" title="2.部署tomcat"></a>2.部署tomcat</h2><p>解压tomcat</p>
+<pre><code>tar -zxvf apache-tomcat-8.5.43.tar.gz 
+</code></pre>
+<p>进入bin目录运行<code>start.sh</code></p>
+<pre><code>./start.sh
+</code></pre>
+<span id="more"></span>
+
+<p>开放8080端口</p>
+<p>先关闭防火墙–&gt;安装或更新防火墙–&gt;启动防火墙–&gt;查看防火墙状态</p>
+<pre><code>systemctl stop firewalld
+yum install iptables-services
+systemctl enable iptables
+systemctl start iptables
+</code></pre>
+<p>查看正在运行的程序信息(端口)</p>
+<pre><code>netstat -tunlp
+</code></pre>
+<h2 id="3-部署mysql"><a href="#3-部署mysql" class="headerlink" title="3.部署mysql"></a>3.部署mysql</h2><p>解压mysql</p>
+<pre><code>tar xvf mysql-8.0.19-linux-glibc2.12-x86_64.tar.xz
+</code></pre>
+<p>移动并修改文件名</p>
+<pre><code>mv mysql-5.7.17-linux-glibc2.5-x86_64 /usr/saplc-gc/mysql
+</code></pre>
+<p>添加mysql 用户</p>
+<pre><code>groupadd mysql
+useradd -r -g mysql mysql
+</code></pre>
+<p>切换到/usr/saplc-gc/mysql 改变目录拥有者为 mysql</p>
+<pre><code>chown -R mysql.mysql /usr/saplc-gc/mysql
+</code></pre>
+<p>安装mysql</p>
+<pre><code>bin/mysqld --initialize --user=mysql --basedir=/usr/saplc-gc/mysql --datadir=/usr/saplc-gc/mysql/data
+</code></pre>
+<p><strong>填坑</strong><br>在linux系统，默认设置下：</p>
+<ul>
+<li>数据库名与表名是严格区分大小写的；</li>
+<li>列名与列的别名在所有的情况下均是忽略大小写的；</li>
+<li>变量名也是严格区分大小写的；</li>
+</ul>
+<p>在windows系统，默认设置下：</p>
+<ul>
+<li>都不区分大小写</li>
+</ul>
+<p><strong>解决方法</strong><br>以root用户登录数据库服务器,修改<code>/etc/my.cnf</code>文件:</p>
+<ol>
+<li><p>在[mysqld]下加入代码:</p>
+<pre><code> lower_case_table_names=1
+</code></pre>
+</li>
+<li><p>重启数据库</p>
+<pre><code> service mysqld restart
+</code></pre>
+</li>
+<li><p>验证lower_case_table_names的值,0代表区分大小写,1代表不区分大小写</p>
+</li>
+</ol>
+<p><strong>建议</strong><br>为了避免大小写引发的问题，一种推荐的命名规则是：在定义数据库、表、列的时候全部采用小写字母加下划线的方式，不使用任何大写字母。</p>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>JavaWeb</tag>
       </tags>
   </entry>
   <entry>
@@ -236,128 +343,21 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </tags>
   </entry>
   <entry>
-    <title>idea 2019.1激活</title>
-    <url>/2021/03/05/idea%202019.1%E6%BF%80%E6%B4%BB/</url>
-    <content><![CDATA[<p>原理应该是让idea拉回激活信息失败</p>
-<p>hosts 文件添加</p>
-<p>0.0.0.0 account.jetbrains.com<br>0.0.0.0 <span class="exturl" data-url="aHR0cDovL3d3dy5qZXRicmFpbnMuY29tLw==">www.jetbrains.com<i class="fa fa-external-link-alt"></i></span></p>
-<p>激活码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MNQ043JMTU-eyJsaWNlbnNlSWQiOiJNTlEwNDNKTVRVIiwibGljZW5zZWVOYW1lIjoiR1VPIEJJTiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNC0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNC0wNCJ9XSwiaGFzaCI6IjEyNjIxNDIwLzBwIiwiZ3JhY2VQZXJpb2REYXlzIjo3LCJhdXRvUHJvbG9uZ2F0ZWQiOnRydWUsImlzQXV0b1Byb2xvbmdhdGVkIjp0cnVlfQ&#x3D;&#x3D;-Zmbxcn7NPlqBNqAURX0uiLzybnruyx6PG+6KYZrpzm&#x2F;IJJs5nnIogGgdfIJoifO6fbaaJYc5pjds7CHdrt&#x2F;neIpvF2o&#x2F;HvIjMEF4&#x2F;AhNV7HUGsAa9zpMszc6YBIkMmVFh4Y7GPKOStA14&#x2F;Ld83AC7kGnwL1Fq7eAXKJFljc00GMejPpfE0zDqTN634bC+0ojfklhWXaLqhUt230SiE8onnd3quvEaH5NsW7sIQm2spyONZI+iHvHFtl4EvG7tlRlD1StsfhrbgNNxz61FOEEQ+GtZIzMx+T4sbpfoRyms7lbWQecrbAtE0c2sR98esm4PcDUhrFVBxGorPC1ppOLSQ&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO&#x2F;5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij&#x2F;78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB&#x2F;xVy&#x2F;VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE&#x2F;EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn&#x2F;72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN&#x2F;lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D&#x2F;cXmgpOyW&#x2F;1SmBz3XjVIi&#x2F;zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV&#x2F;bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit&#x2F;pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>idea</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux 常用命令</title>
-    <url>/2021/02/27/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
-<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
-<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
-<p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
-<span id="more"></span>
-<h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
-<p>查看以有分区<br><code>fdisk -l</code></p>
-<p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
-<p>重启<br><code>reboot</code></p>
-<p>查看分区情况<br><code>df -h</code></p>
-<p>格式化<br><code>mkfs -t ext4 /dev/sda4</code></p>
-<p>不挂载直接给根目录扩容</p>
-<p>进入lvm管理<br><code>lvm</code></p>
-<p>初始化分区<br><code>pvcreate /dev/sda3</code></p>
-<p>将初始化过的分区加入到虚拟卷组vg_dc01<br><code>vgextend centos /dev/sda3</code></p>
-<p>扩展已有的卷的容量<br><code>lvextend -L +50G /dev/mapper/centos-root</code></p>
-<p>查看卷容量<br><code>pvdisplay</code></p>
-<h2 id="设置开机启动之nexus3"><a href="#设置开机启动之nexus3" class="headerlink" title="设置开机启动之nexus3"></a>设置开机启动之nexus3</h2><p>创建软连接<br><code>ln -s /opt/nexus-3.21.1-01/bin/nexus /etc/init.d/nexus</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;init.d</span><br><span class="line">sudo chkconfig --add nexus</span><br><span class="line">sudo chkconfig --levels 345 nexus on</span><br><span class="line">sudo service nexus start</span><br></pre></td></tr></table></figure>
+    <title>VMware与Docker不兼容解决办法</title>
+    <url>/2019/08/30/VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
+<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
+<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
 ]]></content>
       <categories>
         <category>技术储备</category>
-        <category>Linux</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>VMware</tag>
       </tags>
   </entry>
   <entry>
-    <title>linux部署javaWeb项目</title>
-    <url>/2021/02/27/linux%E9%83%A8%E7%BD%B2javaweb%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="linux部署javaWeb项目"><a href="#linux部署javaWeb项目" class="headerlink" title="linux部署javaWeb项目"></a>linux部署javaWeb项目</h1><h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
-</code></pre>
-<h2 id="2-部署tomcat"><a href="#2-部署tomcat" class="headerlink" title="2.部署tomcat"></a>2.部署tomcat</h2><p>解压tomcat</p>
-<pre><code>tar -zxvf apache-tomcat-8.5.43.tar.gz 
-</code></pre>
-<p>进入bin目录运行<code>start.sh</code></p>
-<pre><code>./start.sh
-</code></pre>
-<span id="more"></span>
-
-<p>开放8080端口</p>
-<p>先关闭防火墙–&gt;安装或更新防火墙–&gt;启动防火墙–&gt;查看防火墙状态</p>
-<pre><code>systemctl stop firewalld
-yum install iptables-services
-systemctl enable iptables
-systemctl start iptables
-</code></pre>
-<p>查看正在运行的程序信息(端口)</p>
-<pre><code>netstat -tunlp
-</code></pre>
-<h2 id="3-部署mysql"><a href="#3-部署mysql" class="headerlink" title="3.部署mysql"></a>3.部署mysql</h2><p>解压mysql</p>
-<pre><code>tar xvf mysql-8.0.19-linux-glibc2.12-x86_64.tar.xz
-</code></pre>
-<p>移动并修改文件名</p>
-<pre><code>mv mysql-5.7.17-linux-glibc2.5-x86_64 /usr/saplc-gc/mysql
-</code></pre>
-<p>添加mysql 用户</p>
-<pre><code>groupadd mysql
-useradd -r -g mysql mysql
-</code></pre>
-<p>切换到/usr/saplc-gc/mysql 改变目录拥有者为 mysql</p>
-<pre><code>chown -R mysql.mysql /usr/saplc-gc/mysql
-</code></pre>
-<p>安装mysql</p>
-<pre><code>bin/mysqld --initialize --user=mysql --basedir=/usr/saplc-gc/mysql --datadir=/usr/saplc-gc/mysql/data
-</code></pre>
-<p><strong>填坑</strong><br>在linux系统，默认设置下：</p>
-<ul>
-<li>数据库名与表名是严格区分大小写的；</li>
-<li>列名与列的别名在所有的情况下均是忽略大小写的；</li>
-<li>变量名也是严格区分大小写的；</li>
-</ul>
-<p>在windows系统，默认设置下：</p>
-<ul>
-<li>都不区分大小写</li>
-</ul>
-<p><strong>解决方法</strong><br>以root用户登录数据库服务器,修改<code>/etc/my.cnf</code>文件:</p>
-<ol>
-<li><p>在[mysqld]下加入代码:</p>
-<pre><code> lower_case_table_names=1
-</code></pre>
-</li>
-<li><p>重启数据库</p>
-<pre><code> service mysqld restart
-</code></pre>
-</li>
-<li><p>验证lower_case_table_names的值,0代表区分大小写,1代表不区分大小写</p>
-</li>
-</ol>
-<p><strong>建议</strong><br>为了避免大小写引发的问题，一种推荐的命名规则是：在定义数据库、表、列的时候全部采用小写字母加下划线的方式，不使用任何大写字母。</p>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>JavaWeb</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaEE-多态</title>
+    <title>JavaSE-多态</title>
     <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
 <span id="more"></span>
@@ -371,14 +371,14 @@ useradd -r -g mysql mysql
 <p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
 ]]></content>
       <categories>
-        <category>JavaEE</category>
+        <category>JavaSE</category>
       </categories>
       <tags>
-        <tag>JavaEE</tag>
+        <tag>JavaSE</tag>
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-异常</title>
+    <title>JavaSE-异常</title>
     <url>/2021/02/27/%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
 <li>处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理，让程序继续执行下去,而不是遇到异常中断程序运行</li>
@@ -423,14 +423,14 @@ useradd -r -g mysql mysql
 </ol>
 ]]></content>
       <categories>
-        <category>JavaEE</category>
+        <category>JavaSE</category>
       </categories>
       <tags>
-        <tag>JavaEE</tag>
+        <tag>JavaSE</tag>
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-数组</title>
+    <title>JavaSE-数组</title>
     <url>/2021/02/27/%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
 
@@ -447,10 +447,10 @@ useradd -r -g mysql mysql
 <h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>JavaEE</category>
+        <category>JavaSE</category>
       </categories>
       <tags>
-        <tag>JavaEE</tag>
+        <tag>JavaSE</tag>
       </tags>
   </entry>
   <entry>
@@ -476,7 +476,7 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-锁</title>
+    <title>JavaSE-锁</title>
     <url>/2021/02/27/%E9%94%81/</url>
     <content><![CDATA[<h2 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h2><p>大概率一个数据不会被多个线程同时修改，<br>通过Cas总会分配一个t1优先权限，t1中的E1（预期值）=V（主存的共享变量）说明预期值正确，执行N1=V1+1，然后将N1值覆盖主存的值，线程t2执行 拿到主存中的值V=21，然后与t2中的E2比较 E2！=V 重新更新主存的值到自己的副本，再次尝试，值到E2=V 说明没有别的线程对旧值进行更改，则继续执行，优化 加版本号 version</p>
 <span id="more"></span>
@@ -487,10 +487,10 @@ useradd -r -g mysql mysql
 <h2 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h2><p>大概率一个数据会被多个线程同时修改，<br>每次拿到数据就上锁，别的线程拿数据就会阻塞直到拿到锁， t1上锁， t2阻塞，t1执行完后，t2上锁以此类推<br>适合于多写</p>
 ]]></content>
       <categories>
-        <category>JavaEE</category>
+        <category>JavaSE</category>
       </categories>
       <tags>
-        <tag>JavaEE</tag>
+        <tag>JavaSE</tag>
       </tags>
   </entry>
   <entry>
@@ -549,7 +549,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjMTAzOyYjeDY5OyYjeDc0OyYjNjQ7JiN4Njc7JiN4Njk7JiMxMTY7JiMxMDQ7JiN4NzU7JiM5ODsmI3gyZTsmIzk5OyYjMTExOyYjeDZkOw==">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjMTA1OyYjeDc0OyYjNjQ7JiMxMDM7JiMxMDU7JiN4NzQ7JiMxMDQ7JiN4NzU7JiM5ODsmI3gyZTsmI3g2MzsmIzExMTsmIzEwOTs=">&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -703,10 +703,10 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-IO流</title>
-    <url>/2021/03/03/JavaEE-IO%E6%B5%81/</url>
+    <title>JavaSE-IO流</title>
+    <url>/2021/03/03/JavaSE-IO%E6%B5%81/</url>
     <content><![CDATA[<h2 id="流的概念"><a href="#流的概念" class="headerlink" title="流的概念"></a><strong>流的概念</strong></h2><ul>
-<li><strong>概念</strong>：内存与存储设备之间传输数据的通道。<img src="/2021/03/03/JavaEE-IO%E6%B5%81/1.png" class=""></li>
+<li><strong>概念</strong>：内存与存储设备之间传输数据的通道。<img src="/2021/03/03/JavaSE-IO%E6%B5%81/1.png" class=""></li>
 <li>水借助管道传输；数据借助流传输。<span id="more"></span>
 </li>
 </ul>
@@ -715,7 +715,7 @@ useradd -r -g mysql mysql
 <li><strong>输入流</strong>：将&lt;存储设备&gt;中的内容读入到&lt;内存&gt;中。</li>
 <li><strong>输出流</strong>：将&lt;内存&gt;中的内容写入到&lt;存储设备&gt;中。</li>
 </ul>
-<img src="/2021/03/03/JavaEE-IO%E6%B5%81/2.png" class="">
+<img src="/2021/03/03/JavaSE-IO%E6%B5%81/2.png" class="">
 
 <h3 id="按单位"><a href="#按单位" class="headerlink" title="按单位"></a><strong>按单位</strong></h3><ul>
 <li><strong>字节流</strong>：以字节为单位，可以读写所有数据。</li>
@@ -726,7 +726,7 @@ useradd -r -g mysql mysql
 <li><strong>过滤流</strong>：在节点流的基础之上增强功能。</li>
 </ul>
 <hr>
-<h2 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a><strong>字节流</strong></h2><img src="/2021/03/03/JavaEE-IO%E6%B5%81/3.png" class="">
+<h2 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a><strong>字节流</strong></h2><img src="/2021/03/03/JavaSE-IO%E6%B5%81/3.png" class="">
 
 <h3 id="字节流的父类（抽象类）"><a href="#字节流的父类（抽象类）" class="headerlink" title="字节流的父类（抽象类）"></a><strong>字节流的父类（抽象类）</strong></h3><ul>
 <li><p>InputStream</p>
@@ -849,7 +849,7 @@ useradd -r -g mysql mysql
 </ul>
 <p><strong>当编码方式和解码方式不一致时，会出现乱码。</strong>假如Demo1中的文件内容不是字母而是“<strong>我爱中国</strong>”这样的汉字，那么读取出来的信息就是乱码。因为字节流按字节输入输出，而这四个汉字占了12个字节，把一个汉字按一个一个字节读入自然会出现问题，这时就需要使用字符流。</p>
 <hr>
-<h2 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a><strong>字符流</strong></h2><img src="/2021/03/03/JavaEE-IO%E6%B5%81/4.png" class="">
+<h2 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a><strong>字符流</strong></h2><img src="/2021/03/03/JavaSE-IO%E6%B5%81/4.png" class="">
 
 <h3 id="字符流的父类（抽象类）"><a href="#字符流的父类（抽象类）" class="headerlink" title="字符流的父类（抽象类）"></a>字符流的父类（抽象类）</h3><ul>
 <li><p><strong>Reader：</strong>字符输入流</p>
@@ -1035,10 +1035,10 @@ useradd -r -g mysql mysql
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 演示集合properties的使用</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo1</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">	Properties properties=<span class="keyword">new</span> Properties();</span><br><span class="line">	<span class="comment">//添加数据</span></span><br><span class="line">	properties.setProperty(<span class="string">&quot;username&quot;</span>, <span class="string">&quot;tangrui&quot;</span>);</span><br><span class="line">	properties.setProperty(<span class="string">&quot;age&quot;</span>, <span class="string">&quot;21&quot;</span>);</span><br><span class="line">	System.out.println(properties.toString());</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//遍历</span></span><br><span class="line">	<span class="comment">//3.1 keySet 略</span></span><br><span class="line">	<span class="comment">//3.2 entrySet 略</span></span><br><span class="line">	<span class="comment">//3.3 stringPropertyNames()</span></span><br><span class="line">	Set&lt;String&gt; set=properties.stringPropertyNames();</span><br><span class="line">	<span class="keyword">for</span> (String string : set) &#123;</span><br><span class="line">	System.out.println(string+<span class="string">&quot; &quot;</span>+properties.getProperty(string));</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//和流有关的方法</span></span><br><span class="line">	<span class="comment">//list</span></span><br><span class="line">	PrintWriter printWriter=<span class="keyword">new</span> PrintWriter(<span class="string">&quot;d:\\print.txt&quot;</span>);</span><br><span class="line">	properties.list(printWriter);</span><br><span class="line">	printWriter.close();</span><br><span class="line">	<span class="comment">//store保存</span></span><br><span class="line">	FileOutputStream fileOutputStream=<span class="keyword">new</span> FileOutputStream(<span class="string">&quot;d:\\s.properties&quot;</span>);</span><br><span class="line">	properties.store(fileOutputStream, <span class="string">&quot;NOTES&quot;</span>);</span><br><span class="line">	fileOutputStream.close();</span><br><span class="line">	<span class="comment">//load加载</span></span><br><span class="line">	Properties properties2=<span class="keyword">new</span> Properties();</span><br><span class="line">	FileInputStream fileInputStream=<span class="keyword">new</span> FileInputStream(<span class="string">&quot;d:\\s.properties&quot;</span>);</span><br><span class="line">	properties2.load(fileInputStream);</span><br><span class="line">	fileInputStream.close();</span><br><span class="line">	System.out.println(properties2.toString());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>JavaEE</category>
+        <category>JavaSE</category>
       </categories>
       <tags>
-        <tag>JavaEE</tag>
+        <tag>JavaSE</tag>
       </tags>
   </entry>
   <entry>
@@ -1453,8 +1453,8 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaEE-集合框架</title>
-    <url>/2021/03/03/JavaEE-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</url>
+    <title>JavaSE-集合框架</title>
+    <url>/2021/03/03/JavaSE-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h1 id="集合框架"><a href="#集合框架" class="headerlink" title="集合框架"></a>集合框架</h1><ul>
 <li><p><strong>概念:</strong> 对象的容器，实现了对象常用的操作，类似与数组的功能</p>
 </li>
@@ -1596,13 +1596,13 @@ useradd -r -g mysql mysql
 <h4 id="LinkedList源码解析"><a href="#LinkedList源码解析" class="headerlink" title="LinkedList源码解析"></a>LinkedList源码解析</h4><p>属性：<br>    size //列表大小<br>    Node<E> first  //第一个节点<br>    Node<E> last   //最后一个节点<br>        prev   //节点指针  指向上一个节点<br>        element  //节点元素数据<br>        next  //节点指针  指向下一个节点</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span> </span>&#123;</span><br><span class="line">    linkLast(e);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">linkLast</span><span class="params">(E e)</span> </span>&#123;          <span class="comment">//第一次add    第二次</span></span><br><span class="line">    <span class="keyword">final</span> Node&lt;E&gt; l = last;   <span class="comment">//将最后一个节点赋值给l</span></span><br><span class="line">    <span class="keyword">final</span> Node&lt;E&gt; newNode = <span class="keyword">new</span> Node&lt;&gt;(l, e, <span class="keyword">null</span>);  <span class="comment">//新建一个节点 上一个节点=最后一个节点，下一个节点=null</span></span><br><span class="line">    last = newNode;     <span class="comment">//最后一个节点=新的节点</span></span><br><span class="line">    <span class="keyword">if</span> (l == <span class="keyword">null</span>)            <span class="comment">//成立         不成立</span></span><br><span class="line">        first = newNode;  <span class="comment">//第一个节点=新的节点</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        l.next = newNode;     <span class="comment">//上一次最后节点的下一个节点=新的节点</span></span><br><span class="line">    size++;            <span class="comment">//列表大小+1</span></span><br><span class="line">    modCount++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<img src="/2021/03/03/JavaEE-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/QQ%E6%88%AA%E5%9B%BE20210305181826.jpg" class="">
+<img src="/2021/03/03/JavaSE-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/QQ%E6%88%AA%E5%9B%BE20210305181826.jpg" class="">
 
 <h4 id="ArraryList和LinkedList区别"><a href="#ArraryList和LinkedList区别" class="headerlink" title="ArraryList和LinkedList区别"></a>ArraryList和LinkedList区别</h4><ul>
 <li>ArrayList：必须开辟连续空间，查询快，增删慢。</li>
 <li>LinkedList：无需开辟连续空间，查询慢，增删快。</li>
 </ul>
-<img src="/2021/03/03/JavaEE-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/febe000331d03d391696.png" class="">
+<img src="/2021/03/03/JavaSE-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/febe000331d03d391696.png" class="">
 
 <h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><ul>
 <li><strong>概述:</strong><ul>
@@ -1679,7 +1679,7 @@ useradd -r -g mysql mysql
 <li>元素对象的类型必须实现Comparable接口，指定排序规则。</li>
 <li>通过CompareTo方法确定是否为重复元素。</li>
 </ul>
-<img src="/2021/03/03/JavaEE-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/QQ%E6%88%AA%E5%9B%BE20210305233210.jpg" class="">
+<img src="/2021/03/03/JavaSE-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/QQ%E6%88%AA%E5%9B%BE20210305233210.jpg" class="">
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 使用TreeSet保存数据</span></span><br><span class="line"><span class="comment"> * 存储结构：红黑树</span></span><br><span class="line"><span class="comment"> * 要求：元素类必须实现Comparable接口，compareTo方法返回0，认为是重复元素</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        TreeSet&lt;Person&gt; persons=<span class="keyword">new</span> TreeSet&lt;Person&gt;();</span><br><span class="line">        Person p1=<span class="keyword">new</span> Person(<span class="string">&quot;张三&quot;</span>,<span class="number">21</span>);</span><br><span class="line">        Person p2=<span class="keyword">new</span> Person(<span class="string">&quot;李四&quot;</span>, <span class="number">22</span>);</span><br><span class="line">        Person p3=<span class="keyword">new</span> Person(<span class="string">&quot;王五&quot;</span>, <span class="number">21</span>);</span><br><span class="line">        <span class="comment">//1.添加元素</span></span><br><span class="line">        persons.add(p1);</span><br><span class="line">        persons.add(p2);</span><br><span class="line">        persons.add(p3);</span><br><span class="line">        persons.add(p3);</span><br><span class="line">        System.out.println(<span class="string">&quot;-----------&quot;</span>);</span><br><span class="line">        <span class="comment">//注：直接添加会报类型转换错误，需要实现Comparable接口</span></span><br><span class="line">        System.out.println(persons.toString());</span><br><span class="line">        <span class="comment">//2.删除元素</span></span><br><span class="line">        persons.remove(p1);</span><br><span class="line">        persons.remove(<span class="keyword">new</span> Person(<span class="string">&quot;李四&quot;</span>, <span class="number">22</span>));</span><br><span class="line">        System.out.println(persons.toString());</span><br><span class="line">        <span class="comment">//3.遍历（略）</span></span><br><span class="line">        <span class="comment">//4.判断</span></span><br><span class="line">        System.out.println(persons.contains(<span class="keyword">new</span> Person(<span class="string">&quot;张三&quot;</span>, <span class="number">21</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -1834,10 +1834,10 @@ useradd -r -g mysql mysql
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 演示Collections工具类的使用</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo4</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    List&lt;Integer&gt; list=<span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">    list.add(<span class="number">20</span>);</span><br><span class="line">    list.add(<span class="number">10</span>);</span><br><span class="line">    list.add(<span class="number">30</span>);</span><br><span class="line">    list.add(<span class="number">90</span>);</span><br><span class="line">    list.add(<span class="number">70</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//sort排序</span></span><br><span class="line">    System.out.println(list.toString());</span><br><span class="line">    Collections.sort(list);</span><br><span class="line">    System.out.println(list.toString());</span><br><span class="line">    System.out.println(<span class="string">&quot;---------&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//binarySearch二分查找</span></span><br><span class="line">    <span class="keyword">int</span> i=Collections.binarySearch(list, <span class="number">10</span>);</span><br><span class="line">    System.out.println(i);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//复制</span></span><br><span class="line">    List&lt;Integer&gt; list2=<span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i1=<span class="number">0</span>;i1&lt;<span class="number">5</span>;++i1) &#123;</span><br><span class="line">        list2.add(<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//该方法要求目标元素容量大于等于源目标</span></span><br><span class="line">    Collections.(list2, list);</span><br><span class="line">    System.out.println(list2.toString());</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//reserve反转</span></span><br><span class="line">    Collections.reverse(list2);</span><br><span class="line">    System.out.println(list2.toString());</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//shuffle 打乱</span></span><br><span class="line">    Collections.shuffle(list2);</span><br><span class="line">    System.out.println(list2.toString());</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//补充：list转成数组</span></span><br><span class="line">    Integer[] arr=list.toArray(<span class="keyword">new</span> Integer[<span class="number">0</span>]);</span><br><span class="line">    System.out.println(arr.length);</span><br><span class="line">    <span class="comment">//补充：数组转成集合 </span></span><br><span class="line">    String[] nameStrings= &#123;<span class="string">&quot;tang&quot;</span>,<span class="string">&quot;he&quot;</span>,<span class="string">&quot;yu&quot;</span>&#125;;</span><br><span class="line">    <span class="comment">//受限集合，不能添加和删除</span></span><br><span class="line">    List&lt;String&gt; list3=Arrays.asList(nameStrings);</span><br><span class="line">    System.out.println(list3);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//注：基本类型转成集合时需要修改为包装类</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>JavaEE</category>
+        <category>JavaSE</category>
       </categories>
       <tags>
-        <tag>JavaEE</tag>
+        <tag>JavaSE</tag>
       </tags>
   </entry>
 </search>
