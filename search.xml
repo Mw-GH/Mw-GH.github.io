@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/2021/03/07/testTypora/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Git命令</title>
     <url>/2021/02/27/Git%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h1><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
@@ -357,27 +352,6 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
       </tags>
   </entry>
   <entry>
-    <title>JavaSE-多态</title>
-    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
-    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
-<span id="more"></span>
-
-<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
-<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
-<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
-<li>父类引用指向子类对象  </li>
-</ol>
-<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
-<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
-]]></content>
-      <categories>
-        <category>JavaSE</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaSE-异常</title>
     <url>/2021/02/27/%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
@@ -421,6 +395,27 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>JavaSE</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaSE-多态</title>
+    <url>/2021/02/27/%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
+<span id="more"></span>
+
+<h2 id="多态的存在有三个必要的条件"><a href="#多态的存在有三个必要的条件" class="headerlink" title="多态的存在有三个必要的条件"></a>多态的存在有三个必要的条件</h2><ol>
+<li>要有继承（两个类之间存在继承关系，子类继承父类)</li>
+<li>要有重写（在子类里面重写从父类继承下来的方法）</li>
+<li>父类引用指向子类对象  </li>
+</ol>
+<p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
+<p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
 ]]></content>
       <categories>
         <category>JavaSE</category>
@@ -549,7 +544,7 @@ redirectPort=&quot;8443&quot; disableUploadTimeout=&quot;true&quot; URIEncoding=
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjMTA1OyYjeDc0OyYjNjQ7JiMxMDM7JiMxMDU7JiN4NzQ7JiMxMDQ7JiN4NzU7JiM5ODsmI3gyZTsmI3g2MzsmIzExMTsmIzEwOTs=">&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjMTAzOyYjeDY5OyYjeDc0OyYjNjQ7JiN4Njc7JiMxMDU7JiN4NzQ7JiMxMDQ7JiN4NzU7JiM5ODsmI3gyZTsmI3g2MzsmIzExMTsmIzEwOTs=">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
