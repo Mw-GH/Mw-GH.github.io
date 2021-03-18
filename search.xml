@@ -99,22 +99,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Idea 2019.1激活</title>
-    <url>/2020-10-Idea-2019-1%E6%BF%80%E6%B4%BB/</url>
-    <content><![CDATA[<p>原理应该是让idea拉回激活信息失败</p>
-<p>hosts 文件添加</p>
-<p>0.0.0.0 account.jetbrains.com<br>0.0.0.0 <span class="exturl" data-url="aHR0cDovL3d3dy5qZXRicmFpbnMuY29tLw==">www.jetbrains.com<i class="fa fa-external-link-alt"></i></span></p>
-<p>激活码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MNQ043JMTU-eyJsaWNlbnNlSWQiOiJNTlEwNDNKTVRVIiwibGljZW5zZWVOYW1lIjoiR1VPIEJJTiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNC0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNC0wNCJ9XSwiaGFzaCI6IjEyNjIxNDIwLzBwIiwiZ3JhY2VQZXJpb2REYXlzIjo3LCJhdXRvUHJvbG9uZ2F0ZWQiOnRydWUsImlzQXV0b1Byb2xvbmdhdGVkIjp0cnVlfQ&#x3D;&#x3D;-Zmbxcn7NPlqBNqAURX0uiLzybnruyx6PG+6KYZrpzm&#x2F;IJJs5nnIogGgdfIJoifO6fbaaJYc5pjds7CHdrt&#x2F;neIpvF2o&#x2F;HvIjMEF4&#x2F;AhNV7HUGsAa9zpMszc6YBIkMmVFh4Y7GPKOStA14&#x2F;Ld83AC7kGnwL1Fq7eAXKJFljc00GMejPpfE0zDqTN634bC+0ojfklhWXaLqhUt230SiE8onnd3quvEaH5NsW7sIQm2spyONZI+iHvHFtl4EvG7tlRlD1StsfhrbgNNxz61FOEEQ+GtZIzMx+T4sbpfoRyms7lbWQecrbAtE0c2sR98esm4PcDUhrFVBxGorPC1ppOLSQ&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO&#x2F;5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij&#x2F;78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB&#x2F;xVy&#x2F;VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE&#x2F;EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn&#x2F;72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN&#x2F;lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D&#x2F;cXmgpOyW&#x2F;1SmBz3XjVIi&#x2F;zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV&#x2F;bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit&#x2F;pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>idea</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux 常用命令</title>
     <url>/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
@@ -144,6 +128,22 @@
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Idea 2019.1激活</title>
+    <url>/2020-10-Idea-2019-1%E6%BF%80%E6%B4%BB/</url>
+    <content><![CDATA[<p>原理应该是让idea拉回激活信息失败</p>
+<p>hosts 文件添加</p>
+<p>0.0.0.0 account.jetbrains.com<br>0.0.0.0 <span class="exturl" data-url="aHR0cDovL3d3dy5qZXRicmFpbnMuY29tLw==">www.jetbrains.com<i class="fa fa-external-link-alt"></i></span></p>
+<p>激活码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MNQ043JMTU-eyJsaWNlbnNlSWQiOiJNTlEwNDNKTVRVIiwibGljZW5zZWVOYW1lIjoiR1VPIEJJTiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNC0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNC0wNCJ9XSwiaGFzaCI6IjEyNjIxNDIwLzBwIiwiZ3JhY2VQZXJpb2REYXlzIjo3LCJhdXRvUHJvbG9uZ2F0ZWQiOnRydWUsImlzQXV0b1Byb2xvbmdhdGVkIjp0cnVlfQ&#x3D;&#x3D;-Zmbxcn7NPlqBNqAURX0uiLzybnruyx6PG+6KYZrpzm&#x2F;IJJs5nnIogGgdfIJoifO6fbaaJYc5pjds7CHdrt&#x2F;neIpvF2o&#x2F;HvIjMEF4&#x2F;AhNV7HUGsAa9zpMszc6YBIkMmVFh4Y7GPKOStA14&#x2F;Ld83AC7kGnwL1Fq7eAXKJFljc00GMejPpfE0zDqTN634bC+0ojfklhWXaLqhUt230SiE8onnd3quvEaH5NsW7sIQm2spyONZI+iHvHFtl4EvG7tlRlD1StsfhrbgNNxz61FOEEQ+GtZIzMx+T4sbpfoRyms7lbWQecrbAtE0c2sR98esm4PcDUhrFVBxGorPC1ppOLSQ&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO&#x2F;5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij&#x2F;78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB&#x2F;xVy&#x2F;VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE&#x2F;EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn&#x2F;72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN&#x2F;lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D&#x2F;cXmgpOyW&#x2F;1SmBz3XjVIi&#x2F;zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV&#x2F;bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit&#x2F;pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>idea</tag>
       </tags>
   </entry>
   <entry>
@@ -277,50 +277,6 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>AP配置文件</title>
-    <url>/2020-10-%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="ebf7c5fec32fc441c0166d9eb469254d625d950164c281464804549641a11fc9">a4626797b59d51ca61698aa4c885a79dbaf4e24b070ecdbf062639dad5a2a232ae84e372eb2560f6d2baa8fedd9be3b73c9cf6bd7aeb290d0a95d232d530ba34f6256845b0d316e6d68091afa31924b6515af881d12b5202d0c165e03130cb2f8fb64160daf6fe9f22f5f34fc043230c210248507b92a662d53c33dd7219b6dd3fbc0007a943ef0a8b5a90e23868b5948694db2a30da5a4bfc2c33eb5e814721cff19a35b459cb1f9ff0012cc1d9ab5c86495a82e5d5b42712a90bbb893bd6c89fe89201b6f7a345a6f2252bd5b46470ecfecb30b3c107ef74dfda7fd44538b9ad660fe84d8febf9cb6bf0e5324c1913a0f9415ccfe95e2ef6b14b068c36c1c3bc47e638e934c5e6a0cd8082628995f6a6edc602414eed7bc66f16928c9b384cfd603db20e71a9a001f898cad03a7c23a7165f9e0d2e4c770abd63110cfd557e322af7b1189d357e1dee53727a54d1931ea4e3c1f2e0b01f8eaa8f0ce892ee18c58ecb66b0201890a1fbe38e146097f1d75eb441b7f78c9cf3d14d058d33bb8e7b89c4c5ca817b6013ba2c4aeb865c8e268f9a0eb08745cba9b7282926fc0ad4cc5c3b8ccdcd3c8aaf42f50e85ffed42a75e1adc92d41bdc539f55b7cc4f1b11b665336827a615242f26b2f93a6b2044bb024ee656646255143fc123b64e22c28960ecf448d2fce36dc47e17e23a711c051e56b83bee9915166fd9f7e11e40d2ba28e9dbdfd8fffd597f70058478be9f31cfc745ff6e84757df970b0d94741b3adf6da9a61adfdbb911e37bc1410a8b87cf711acdbfa6d39b059efd41a3f908df4bb36b77f50f200ada752a14e2a7cbbe2f60c46d85e39b50cffbefec666c1f788c55d4947217c1cee59cd7c6c5a9478e84eacfd3dea59c9f889a3fe9e922c9d8812e093e2528968d227b4da559d5d73c0690a6bb46c8f6affe8934ec12b3f3c89296121c57b0216e5d4757b7c0f76e0056149199765be06e0925f7d479045857a609907216ffb4b872367d103ddf914668a9a543445b70a46f55fc632d08ac40328075162b6341a10e076d1dee16fd7389da25a4b07ff010918f0dfd8d772cc92164a36ee775b41bcb5e846f85f9d952c34732a1591f8e9b3c5a72f8213caffc8d207e896ef47a454dc62331bd6870d3509cb3544e581508026365c262a3b5f14ead3ff48754e320c706c5c48493c23e7868dfbb31ea291c14062200d9d5491abae4b3dd4021d37fcb6a3b2ae83312b12424db8be3b55e84e7b207114c0948397575c175a601b183c2f309996152c09b4b6322f7a63cab53bebc5079d947ba3f81436ff4dc7a897b4b203a7c5ae8ec41d1ad93e1dbe9f7b9b81448b53ea9770a6e44aa74c2709535ad2975880d58840b771a1dae03245eb7613a20eaf1c4a6dfe980c9188f96c2563b8563c8e877626261c7be915819c1d42ba4af732b9533858f9e61a7f4a25c2e1faadf9aaeec5262705d8eef27bc36497e1f53c0ebf64628b4659dd3f0b864171d5147089c4429a27a652a6ddbef6022f54fcbd320b2cef9d11cc3607d7fd0ee4f2e83ef6bac05777f3cf0716052032660e8a8235bac1410f5cd36e6c7b49eaf401e912b68fe5f5b5c1f1ba2e0f0b83766672ef1cd2031659d5fad42bc61046b210c82001d31dc7f59a82c9d9dc785cf06eae394e111e2bb73126ac7843c9b0bba6ee35d7933c1d29b7edea40f7e1d1313d84956c6dec2f59ef6bafaa6f40c727fec4dc1a127461e679c270ae2ffc7a9384b3f05650b49b5117302a82d4927658d02280ac46c7f870ecc72b72cea8a7572f017f6fe46f60a077e47b6f6bf09717b008b392cc715257c9b66eafc26214c298abe019af968aaced853f906a1680edad88f86e31bd43cfee43693cae84147594137afb84f3fe7bb9b208ac47bb376166b2c1eefc9f49315448b39e20ddd7717fe15852e3787e066d71afa4ed5ba7203e39cdfcec1183dfe0d780d96074df775384c410d70cc4a4985c52ad4047c9e176bb91b60c7d69e04d5155b5ff79086aa763bd05c6f67810e1711f8ed65afa7341933ee67d22231d729b50cec6b7553fc9353b7cb20b7b340aa0e8a00ca4578859c933e2fbb2578aaabb9f6f5177f104cd98fe614922208b9f5a5ffc45b5902aae018841cad8a95f7321dfad6beabd1043909b55d0ae757876d5ebe12f34fe075c6d30aa83264a21c23e4ee6cd7b97b8fce755f188510cd9b25c14edecd7bdeff2a2f1be81db11756345eaa693cd3ca836152eb567189b6a17be72671b97981a00dbfe81127a6d6970d16f509e5ab332ccfe1ca43fcb06c30b4e6c6f7abbd1f0b18a4a057036a8dd435f17c7db98b3b506fe6fc63a896e2e79d0c3aa77ee13a8f92d04bb183f4df99749ef62e35eb84247c9b791e56f3386adc93545b08e4e02c736aad9dab1dbf8302e21760c18b8efdd5639c3a0e92a63335f17425aeb094cd258e0da933dd7213a5526fc5b66651dd5405932247540071ecfc7000d0f18052ac8ea8c52b2172cda298a8bcb989f146445866c466634e3f7bd6746ac758cc1e71d0076f3f4ce721f330898d8b73243db3fd3290fb0ca</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>个人文件</category>
-      </categories>
-      <tags>
-        <tag>配置文件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaSE-数组</title>
-    <url>/2020-10-%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
-
-<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//指定大小</span></span><br><span class="line"><span class="keyword">int</span>[] a=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line"><span class="comment">//指定元素</span></span><br><span class="line"><span class="keyword">int</span> []a=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType [] arrayName=&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>JavaSE</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaSE-异常</title>
     <url>/2020-10-%E5%BC%82%E5%B8%B8/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
@@ -370,6 +326,50 @@ useradd -r -g mysql mysql
       </categories>
       <tags>
         <tag>JavaSE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaSE-数组</title>
+    <url>/2020-10-%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h2 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> <span class="keyword">int</span> [] a;  <span class="keyword">int</span> [][]b;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="keyword">int</span> a[]; <span class="comment">//不是首选</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h2 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a=<span class="keyword">new</span> a[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<h2 id="实列数组对象"><a href="#实列数组对象" class="headerlink" title="实列数组对象"></a>实列数组对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">a[<span class="number">1</span>]=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="声明创建实列三合一"><a href="#声明创建实列三合一" class="headerlink" title="声明创建实列三合一"></a>声明创建实列三合一</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//指定大小</span></span><br><span class="line"><span class="keyword">int</span>[] a=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line"><span class="comment">//指定元素</span></span><br><span class="line"><span class="keyword">int</span> []a=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//dateType [] arrayName=&#123;arrayValue1,arrayValue2,arrayValue3&#125;;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：for循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">    System.out.println(array[i]);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//方式二： 增强for循环 foreach  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> a:array)&#123;  </span><br><span class="line">    System.out.println(a);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>JavaSE</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AP配置文件</title>
+    <url>/2020-10-%E8%B4%A6%E6%88%B7%E7%A7%98%E5%AF%86%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ebf7c5fec32fc441c0166d9eb469254d625d950164c281464804549641a11fc9">a4626797b59d51ca61698aa4c885a79dbaf4e24b070ecdbf062639dad5a2a232ae84e372eb2560f6d2baa8fedd9be3b73c9cf6bd7aeb290d0a95d232d530ba34f6256845b0d316e6d68091afa31924b6515af881d12b5202d0c165e03130cb2f8fb64160daf6fe9f22f5f34fc043230c210248507b92a662d53c33dd7219b6dd3fbc0007a943ef0a8b5a90e23868b5948694db2a30da5a4bfc2c33eb5e814721cff19a35b459cb1f9ff0012cc1d9ab5c86495a82e5d5b42712a90bbb893bd6c89fe89201b6f7a345a6f2252bd5b46470ecfecb30b3c107ef74dfda7fd44538b9ad660fe84d8febf9cb6bf0e5324c1913a0f9415ccfe95e2ef6b14b068c36c1c3bc47e638e934c5e6a0cd8082628995f6a6edc602414eed7bc66f16928c9b384cfd603db20e71a9a001f898cad03a7c23a7165f9e0d2e4c770abd63110cfd557e322af7b1189d357e1dee53727a54d1931ea4e3c1f2e0b01f8eaa8f0ce892ee18c58ecb66b0201890a1fbe38e146097f1d75eb441b7f78c9cf3d14d058d33bb8e7b89c4c5ca817b6013ba2c4aeb865c8e268f9a0eb08745cba9b7282926fc0ad4cc5c3b8ccdcd3c8aaf42f50e85ffed42a75e1adc92d41bdc539f55b7cc4f1b11b665336827a615242f26b2f93a6b2044bb024ee656646255143fc123b64e22c28960ecf448d2fce36dc47e17e23a711c051e56b83bee9915166fd9f7e11e40d2ba28e9dbdfd8fffd597f70058478be9f31cfc745ff6e84757df970b0d94741b3adf6da9a61adfdbb911e37bc1410a8b87cf711acdbfa6d39b059efd41a3f908df4bb36b77f50f200ada752a14e2a7cbbe2f60c46d85e39b50cffbefec666c1f788c55d4947217c1cee59cd7c6c5a9478e84eacfd3dea59c9f889a3fe9e922c9d8812e093e2528968d227b4da559d5d73c0690a6bb46c8f6affe8934ec12b3f3c89296121c57b0216e5d4757b7c0f76e0056149199765be06e0925f7d479045857a609907216ffb4b872367d103ddf914668a9a543445b70a46f55fc632d08ac40328075162b6341a10e076d1dee16fd7389da25a4b07ff010918f0dfd8d772cc92164a36ee775b41bcb5e846f85f9d952c34732a1591f8e9b3c5a72f8213caffc8d207e896ef47a454dc62331bd6870d3509cb3544e581508026365c262a3b5f14ead3ff48754e320c706c5c48493c23e7868dfbb31ea291c14062200d9d5491abae4b3dd4021d37fcb6a3b2ae83312b12424db8be3b55e84e7b207114c0948397575c175a601b183c2f309996152c09b4b6322f7a63cab53bebc5079d947ba3f81436ff4dc7a897b4b203a7c5ae8ec41d1ad93e1dbe9f7b9b81448b53ea9770a6e44aa74c2709535ad2975880d58840b771a1dae03245eb7613a20eaf1c4a6dfe980c9188f96c2563b8563c8e877626261c7be915819c1d42ba4af732b9533858f9e61a7f4a25c2e1faadf9aaeec5262705d8eef27bc36497e1f53c0ebf64628b4659dd3f0b864171d5147089c4429a27a652a6ddbef6022f54fcbd320b2cef9d11cc3607d7fd0ee4f2e83ef6bac05777f3cf0716052032660e8a8235bac1410f5cd36e6c7b49eaf401e912b68fe5f5b5c1f1ba2e0f0b83766672ef1cd2031659d5fad42bc61046b210c82001d31dc7f59a82c9d9dc785cf06eae394e111e2bb73126ac7843c9b0bba6ee35d7933c1d29b7edea40f7e1d1313d84956c6dec2f59ef6bafaa6f40c727fec4dc1a127461e679c270ae2ffc7a9384b3f05650b49b5117302a82d4927658d02280ac46c7f870ecc72b72cea8a7572f017f6fe46f60a077e47b6f6bf09717b008b392cc715257c9b66eafc26214c298abe019af968aaced853f906a1680edad88f86e31bd43cfee43693cae84147594137afb84f3fe7bb9b208ac47bb376166b2c1eefc9f49315448b39e20ddd7717fe15852e3787e066d71afa4ed5ba7203e39cdfcec1183dfe0d780d96074df775384c410d70cc4a4985c52ad4047c9e176bb91b60c7d69e04d5155b5ff79086aa763bd05c6f67810e1711f8ed65afa7341933ee67d22231d729b50cec6b7553fc9353b7cb20b7b340aa0e8a00ca4578859c933e2fbb2578aaabb9f6f5177f104cd98fe614922208b9f5a5ffc45b5902aae018841cad8a95f7321dfad6beabd1043909b55d0ae757876d5ebe12f34fe075c6d30aa83264a21c23e4ee6cd7b97b8fce755f188510cd9b25c14edecd7bdeff2a2f1be81db11756345eaa693cd3ca836152eb567189b6a17be72671b97981a00dbfe81127a6d6970d16f509e5ab332ccfe1ca43fcb06c30b4e6c6f7abbd1f0b18a4a057036a8dd435f17c7db98b3b506fe6fc63a896e2e79d0c3aa77ee13a8f92d04bb183f4df99749ef62e35eb84247c9b791e56f3386adc93545b08e4e02c736aad9dab1dbf8302e21760c18b8efdd5639c3a0e92a63335f17425aeb094cd258e0da933dd7213a5526fc5b66651dd5405932247540071ecfc7000d0f18052ac8ea8c52b2172cda298a8bcb989f146445866c466634e3f7bd6746ac758cc1e71d0076f3f4ce721f330898d8b73243db3fd3290fb0ca</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>个人文件</category>
+      </categories>
+      <tags>
+        <tag>配置文件</tag>
       </tags>
   </entry>
   <entry>
@@ -703,7 +703,6 @@ useradd -r -g mysql mysql
     <content><![CDATA[]]></content>
       <categories>
         <category>Java</category>
-        <category>框架</category>
         <category>SpringBoot</category>
       </categories>
       <tags>
@@ -744,10 +743,37 @@ useradd -r -g mysql mysql
       <categories>
         <category>Java</category>
         <category>SSM</category>
-        <category>SpringBoot</category>
+        <category>Spring</category>
       </categories>
       <tags>
         <tag>Spring注解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开发报错集合</title>
+    <url>/2021-03-%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><h3 id="Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml"><a href="#Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml" class="headerlink" title="Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml"></a>Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml</h3><p>原因：idea不会编译src的java目录的xml文件</p>
+<p>所以解决思路就是：将IDEA maven项目中src源代码下的xml等资源文件编译进classes文件夹</p>
+<p>具体操作方法就是：配置maven的pom文件配置，在节点下添加代码：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="attempted-to-return-null-from-a-method-with-a-primitive-return-type-int"><a href="#attempted-to-return-null-from-a-method-with-a-primitive-return-type-int" class="headerlink" title="attempted to return null from a method with a primitive return type (int)"></a>attempted to return null from a method with a primitive return type (int)</h3><p>sql语句返回为空，但是mapper.xml定义的返回类型为int<br>int默认为0，不支持空  改为java.lang.Integer即可<br>这就是基本类型int和包装类Integer的区别</p>
+<h2 id="Spring-Mybatis"><a href="#Spring-Mybatis" class="headerlink" title="Spring Mybatis"></a>Spring Mybatis</h2><h3 id="事务不生效问题"><a href="#事务不生效问题" class="headerlink" title="事务不生效问题"></a>事务不生效问题</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tx:advice</span> <span class="attr">id</span>=<span class="string">&quot;txAdvice&quot;</span> <span class="attr">transaction-manager</span>=<span class="string">&quot;transactionManager&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--给哪些方法添加事务--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--传播特性 默认REQUIRED--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;addUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;deleteUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;update&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;selectUser&quot;</span> <span class="attr">read-only</span>=<span class="string">&quot;true&quot;</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--&lt;tx:method name=&quot;*&quot; propagation=&quot;REQUIRED&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tx:advice</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>方法名与被事务的方法名名必须相同， 或则使用”<em>“ 所有方法,我出错的原因是写成了”</em>/“ 然后测试发现方法名不同也会不生效</p>
+<h3 id="Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml"><a href="#Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml" class="headerlink" title="Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]"></a>Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]</h3><p>mybatis-config.xml和spring-config.xml重复扫描mapper造成的,注释掉mybatis-config.xml里面的</p>
+<p>spring-config.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--生成代理器--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;sqlSessionFactory&quot;</span> <span class="attr">class</span>=<span class="string">&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;dataSource&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;dataSource&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;configLocation&quot;</span> <span class="attr">value</span>=<span class="string">&quot;mybatis-config.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;mapperLocations&quot;</span> <span class="attr">value</span>=<span class="string">&quot;classpath:top/chenmw/mapper/*.xml&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>mybatis-config.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描直接文件--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--&lt;mapper resource=&quot;top/chenmw/mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描指定包--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;top.chenmw.mapper&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>Error</category>
+      </categories>
+      <tags>
+        <tag>Error</tag>
       </tags>
   </entry>
   <entry>
@@ -817,33 +843,6 @@ useradd -r -g mysql mysql
       </categories>
       <tags>
         <tag>乱码 - 编码utf-8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开发报错集合</title>
-    <url>/2021-03-%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><h3 id="Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml"><a href="#Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml" class="headerlink" title="Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml"></a>Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml</h3><p>原因：idea不会编译src的java目录的xml文件</p>
-<p>所以解决思路就是：将IDEA maven项目中src源代码下的xml等资源文件编译进classes文件夹</p>
-<p>具体操作方法就是：配置maven的pom文件配置，在节点下添加代码：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="attempted-to-return-null-from-a-method-with-a-primitive-return-type-int"><a href="#attempted-to-return-null-from-a-method-with-a-primitive-return-type-int" class="headerlink" title="attempted to return null from a method with a primitive return type (int)"></a>attempted to return null from a method with a primitive return type (int)</h3><p>sql语句返回为空，但是mapper.xml定义的返回类型为int<br>int默认为0，不支持空  改为java.lang.Integer即可<br>这就是基本类型int和包装类Integer的区别</p>
-<h2 id="Spring-Mybatis"><a href="#Spring-Mybatis" class="headerlink" title="Spring Mybatis"></a>Spring Mybatis</h2><h3 id="事务不生效问题"><a href="#事务不生效问题" class="headerlink" title="事务不生效问题"></a>事务不生效问题</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tx:advice</span> <span class="attr">id</span>=<span class="string">&quot;txAdvice&quot;</span> <span class="attr">transaction-manager</span>=<span class="string">&quot;transactionManager&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--给哪些方法添加事务--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--传播特性 默认REQUIRED--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;addUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;deleteUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;update&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;selectUser&quot;</span> <span class="attr">read-only</span>=<span class="string">&quot;true&quot;</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--&lt;tx:method name=&quot;*&quot; propagation=&quot;REQUIRED&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tx:advice</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>方法名与被事务的方法名名必须相同， 或则使用”<em>“ 所有方法,我出错的原因是写成了”</em>/“ 然后测试发现方法名不同也会不生效</p>
-<h3 id="Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml"><a href="#Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml" class="headerlink" title="Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]"></a>Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]</h3><p>mybatis-config.xml和spring-config.xml重复扫描mapper造成的,注释掉mybatis-config.xml里面的</p>
-<p>spring-config.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--生成代理器--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;sqlSessionFactory&quot;</span> <span class="attr">class</span>=<span class="string">&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;dataSource&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;dataSource&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;configLocation&quot;</span> <span class="attr">value</span>=<span class="string">&quot;mybatis-config.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;mapperLocations&quot;</span> <span class="attr">value</span>=<span class="string">&quot;classpath:top/chenmw/mapper/*.xml&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>mybatis-config.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描直接文件--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--&lt;mapper resource=&quot;top/chenmw/mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描指定包--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;top.chenmw.mapper&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Java</category>
-        <category>Error</category>
-      </categories>
-      <tags>
-        <tag>Error</tag>
       </tags>
   </entry>
   <entry>
@@ -1683,7 +1682,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjMTE2OyYjNjQ7JiN4Njc7JiN4Njk7JiN4NzQ7JiMxMDQ7JiMxMTc7JiM5ODsmI3gyZTsmI3g2MzsmIzExMTsmIzEwOTs=">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjMTA1OyYjeDc0OyYjNjQ7JiN4Njc7JiMxMDU7JiN4NzQ7JiN4Njg7JiN4NzU7JiM5ODsmIzQ2OyYjeDYzOyYjMTExOyYjeDZkOw==">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#x6d;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -4720,7 +4719,6 @@ useradd -r -g mysql mysql
 ]]></content>
       <categories>
         <category>Java</category>
-        <category>SSM</category>
         <category>Spring</category>
       </categories>
       <tags>
@@ -5840,7 +5838,6 @@ useradd -r -g mysql mysql
 ]]></content>
       <categories>
         <category>Java</category>
-        <category>SSM</category>
         <category>SpringMVC</category>
       </categories>
       <tags>
