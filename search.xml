@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>linux 常用命令</title>
-    <url>/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
-<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
-<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
-<p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
-<span id="more"></span>
-<h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
-<p>查看以有分区<br><code>fdisk -l</code></p>
-<p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
-<p>重启<br><code>reboot</code></p>
-<p>查看分区情况<br><code>df -h</code></p>
-<p>格式化<br><code>mkfs -t ext4 /dev/sda4</code></p>
-<p>不挂载直接给根目录扩容</p>
-<p>进入lvm管理<br><code>lvm</code></p>
-<p>初始化分区<br><code>pvcreate /dev/sda3</code></p>
-<p>将初始化过的分区加入到虚拟卷组vg_dc01<br><code>vgextend centos /dev/sda3</code></p>
-<p>扩展已有的卷的容量<br><code>lvextend -L +50G /dev/mapper/centos-root</code></p>
-<p>查看卷容量<br><code>pvdisplay</code></p>
-<h2 id="设置开机启动之nexus3"><a href="#设置开机启动之nexus3" class="headerlink" title="设置开机启动之nexus3"></a>设置开机启动之nexus3</h2><p>创建软连接<br><code>ln -s /opt/nexus-3.21.1-01/bin/nexus /etc/init.d/nexus</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;init.d</span><br><span class="line">sudo chkconfig --add nexus</span><br><span class="line">sudo chkconfig --levels 345 nexus on</span><br><span class="line">sudo service nexus start</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git命令</title>
     <url>/2020-10-Git%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h1><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
@@ -148,6 +116,52 @@
       </tags>
   </entry>
   <entry>
+    <title>linux 常用命令</title>
+    <url>/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
+<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
+<p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
+<span id="more"></span>
+<h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
+<p>查看以有分区<br><code>fdisk -l</code></p>
+<p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
+<p>重启<br><code>reboot</code></p>
+<p>查看分区情况<br><code>df -h</code></p>
+<p>格式化<br><code>mkfs -t ext4 /dev/sda4</code></p>
+<p>不挂载直接给根目录扩容</p>
+<p>进入lvm管理<br><code>lvm</code></p>
+<p>初始化分区<br><code>pvcreate /dev/sda3</code></p>
+<p>将初始化过的分区加入到虚拟卷组vg_dc01<br><code>vgextend centos /dev/sda3</code></p>
+<p>扩展已有的卷的容量<br><code>lvextend -L +50G /dev/mapper/centos-root</code></p>
+<p>查看卷容量<br><code>pvdisplay</code></p>
+<h2 id="设置开机启动之nexus3"><a href="#设置开机启动之nexus3" class="headerlink" title="设置开机启动之nexus3"></a>设置开机启动之nexus3</h2><p>创建软连接<br><code>ln -s /opt/nexus-3.21.1-01/bin/nexus /etc/init.d/nexus</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;init.d</span><br><span class="line">sudo chkconfig --add nexus</span><br><span class="line">sudo chkconfig --levels 345 nexus on</span><br><span class="line">sudo service nexus start</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VMware与Docker不兼容解决办法</title>
+    <url>/2020-10-VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
+<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
+<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+      </categories>
+      <tags>
+        <tag>VMware</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux部署JavaWeb项目</title>
     <url>/2020-10-Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<h1 id="linux部署javaWeb项目"><a href="#linux部署javaWeb项目" class="headerlink" title="linux部署javaWeb项目"></a>linux部署javaWeb项目</h1><h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
@@ -218,20 +232,6 @@ useradd -r -g mysql mysql
       <tags>
         <tag>Linux</tag>
         <tag>JavaWeb</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VMware与Docker不兼容解决办法</title>
-    <url>/2020-10-VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-      </categories>
-      <tags>
-        <tag>VMware</tag>
       </tags>
   </entry>
   <entry>
@@ -585,6 +585,102 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
+    <title>MarkDown-lint规则</title>
+    <url>/2021-02-MarkDown-lint%E8%A7%84%E5%88%99/</url>
+    <content><![CDATA[<p>markdownlint是vscode上一款非常好用的 Markdown 格式检查扩展工具，它规定了许多规则并实时对文档进行检查，防止一些语法错误，同时维持文档风格的统一，使用此工具有助于形成一个良好的写作习惯和规范。但因其规则较多，写文档时很容易就出错（或不符合规则），所以需要对工具的规则有一个详细的了解，另外，有时工作要求的文档风格与markdownlint工具规定的规则并不相同，比如标题、列表的创建格式，缩进的空格数等等，这时就需要对规则进行一定的设置。</p>
+<p>本文主要参考markdownlint的<span class="exturl" data-url="aHR0cHM6Ly9saW5rcy5qaWFuc2h1LmNvbS9nbz90bz1odHRwczovL2dpdGh1Yi5jb20vRGF2aWRBbnNvbi9tYXJrZG93bmxpbnQvYmxvYi9tYXN0ZXIvZG9jL1J1bGVzLm1kJTIzbWQwMDItLS1maXJzdC1oZWFkaW5nLXNob3VsZC1iZS1hLXRvcC1sZXZlbC1oZWFkaW5n">rules文档<i class="fa fa-external-link-alt"></i></span>，对每一个规则都进行了说明，指明了一些规则中可以设置的参数，便于用户设置相应的规则。</p>
+<span id="more"></span>
+
+<h2 id="MD001-Heading-levels-should-only-increment-by-one-level-at-a-time"><a href="#MD001-Heading-levels-should-only-increment-by-one-level-at-a-time" class="headerlink" title="MD001 - Heading levels should only increment by one level at a time"></a>MD001 - Heading levels should only increment by one level at a time</h2><p>标题级数每次只能扩大1, 也就是不能隔级创建标题（从1级到6级的顺序）</p>
+<h2 id="MD002-First-heading-should-be-a-top-level-heading"><a href="#MD002-First-heading-should-be-a-top-level-heading" class="headerlink" title="MD002 - First heading should be a top level heading"></a>MD002 - First heading should be a top level heading</h2><p>文档的第一个标题必须是最高级的标题（标题等级1级到6级逐渐降低）</p>
+<p>参数：<br> “level”：指定最高级标题的级数，默认是1</p>
+<h2 id="MD003-Heading-style"><a href="#MD003-Heading-style" class="headerlink" title="MD003 - Heading style"></a>MD003 - Heading style</h2><p>整篇文档要采用一致的标题格式</p>
+<p>参数：<br> “style”：字符串，指定文档标题的格式，有(“consistent”, “atx”, “atx_closed”, “setext”, “setext_with_atx”, “setext_with_atx_closed”)五种，默认是”consistent”，也就是整篇文档一致</p>
+<p>标题格式必须统一，一般不能混用，但”setext_with_atx”, “setext_with_atx_closed”格式可以在”setext”格式二级标题后接着使用”atx”或”atx_closed”格式的标题</p>
+<h2 id="MD004-Unordered-list-style"><a href="#MD004-Unordered-list-style" class="headerlink" title="MD004 - Unordered list style"></a>MD004 - Unordered list style</h2><p>整篇文档定义无序列表的格式要一致</p>
+<p>参数：<br> “style”：字符串，指定无序列表的定义格式，有(“consistent”, “asterisk”, “plus”, “dash”, “sublist”)五种，分别表示“定义时符号前后一致”，“用星号定义”，“用加号定义”，“用减号定义”，“定义多重列表时用不同的符号定义”，默认是”consistent”</p>
+<h2 id="MD005-Inconsistent-indentation-for-list-items-at-the-same-level"><a href="#MD005-Inconsistent-indentation-for-list-items-at-the-same-level" class="headerlink" title="MD005 - Inconsistent indentation for list items at the same level"></a>MD005 - Inconsistent indentation for list items at the same level</h2><p>同一级的列表缩进必须一致<br> 在有序列表中，前面的数字序号可以左对齐，也可以右对齐</p>
+<h2 id="MD006-Consider-starting-bulleted-lists-at-the-beginning-of-the-line"><a href="#MD006-Consider-starting-bulleted-lists-at-the-beginning-of-the-line" class="headerlink" title="MD006 - Consider starting bulleted lists at the beginning of the line"></a>MD006 - Consider starting bulleted lists at the beginning of the line</h2><p>1级列表不能缩进</p>
+<h2 id="MD007-Unordered-list-indentation"><a href="#MD007-Unordered-list-indentation" class="headerlink" title="MD007 - Unordered list indentation"></a>MD007 - Unordered list indentation</h2><p>无序列表嵌套缩进时默认采用两个空格</p>
+<p>参数：<br> “ident”：指定无序列表嵌套时缩进的空格数，默认是2</p>
+<h2 id="MD009-Trailing-spaces"><a href="#MD009-Trailing-spaces" class="headerlink" title="MD009 - Trailing spaces"></a>MD009 - Trailing spaces</h2><p>行尾最多可以添加两个空格，超过会给出警告，两个空格正好可以用于换行</p>
+<p>参数：<br> “br_spaces”：指定在行尾可以添加的空格数目，空格数目建议大于等于2，如果小于2，会默认为0，也就是不允许任何行尾的空格<br> “list_item_empty_lines”：字符串，指定在列表中是否(true or false)用默认的空格数缩进空行，有的解释器会要求列表中的空行要缩进</p>
+<h2 id="MD010-Hard-tabs"><a href="#MD010-Hard-tabs" class="headerlink" title="MD010 - Hard tabs"></a>MD010 - Hard tabs</h2><p>不能使用tab键缩进，要使用空格</p>
+<p>参数：<br> “code_blocks”：指定本条规则在代码块里是否(true or false)生效</p>
+<h2 id="MD011-Reversed-link-syntax"><a href="#MD011-Reversed-link-syntax" class="headerlink" title="MD011 - Reversed link syntax"></a>MD011 - Reversed link syntax</h2><p>检查内联形式的链接的创建方式是否错误，中括号和圆括号是否用对</p>
+<h2 id="MD012-Multiple-consecutive-blank-lines"><a href="#MD012-Multiple-consecutive-blank-lines" class="headerlink" title="MD012 - Multiple consecutive blank lines"></a>MD012 - Multiple consecutive blank lines</h2><p>文档中不能有连续的空行，在代码块中此规则不会生效</p>
+<p>参数：<br> “maximum”：指定文档中可以连续的最多空行数，默认值是1</p>
+<h2 id="MD013-Line-length"><a href="#MD013-Line-length" class="headerlink" title="MD013 - Line length"></a>MD013 - Line length</h2><p>默认行的最大长度是80，此规则对代码块、表格、标题也生效</p>
+<p>参数：<br> “line_length”：指定行的最大长度，默认是80<br> “heading_line_length”：指定标题行的最大长度，默认是80<br> “code_blocks”：指定规则是否(true or false)对代码块生效，默认true<br> “tables”：指定规则是否(true or false)对表格生效，默认true<br> “hesdings”：指定规则是否(true or false)对标题生效，默认true</p>
+<h2 id="MD014-Dollar-signs-used-before-commands-without-showing-output"><a href="#MD014-Dollar-signs-used-before-commands-without-showing-output" class="headerlink" title="MD014 - Dollar signs used before commands without showing output"></a>MD014 - Dollar signs used before commands without showing output</h2><p>在代码块中，终端命令前不需要有美元符号($)<br> 如果代码块中既有终端命令，也有命令的输出，则终端命令前可以有美元符号($)，如：</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="variable">$ </span>ls</span><br><span class="line">foo bar</span><br><span class="line"><span class="variable">$ </span>cat foo</span><br><span class="line">hello world</span><br></pre></td></tr></table></figure>
+
+<h2 id="MD018-No-space-after-hash-on-atx-style-heading"><a href="#MD018-No-space-after-hash-on-atx-style-heading" class="headerlink" title="MD018 - No space after hash on atx style heading"></a>MD018 - No space after hash on atx style heading</h2><p>在”atx”格式的标题中，#号和文字间需用一个空格隔开</p>
+<h2 id="MD019-Multiple-spaces-after-hash-on-atx-style-heading"><a href="#MD019-Multiple-spaces-after-hash-on-atx-style-heading" class="headerlink" title="MD019 - Multiple spaces after hash on atx style heading"></a>MD019 - Multiple spaces after hash on atx style heading</h2><p>在”atx”格式的标题中，#号和文字间只能用一个空格隔开，不能有多余的空格</p>
+<h2 id="MD020-No-space-inside-hashes-on-closed-atx-style-heading"><a href="#MD020-No-space-inside-hashes-on-closed-atx-style-heading" class="headerlink" title="MD020 - No space inside hashes on closed atx style heading"></a>MD020 - No space inside hashes on closed atx style heading</h2><p>在”closed_atx”格式的标题中，文字和前后的#号之间需用一个空格隔开</p>
+<h2 id="MD021-Multiple-spaces-inside-hashes-on-closed-atx-style-heading"><a href="#MD021-Multiple-spaces-inside-hashes-on-closed-atx-style-heading" class="headerlink" title="MD021 - Multiple spaces inside hashes on closed atx style heading"></a>MD021 - Multiple spaces inside hashes on closed atx style heading</h2><p>在”closed_atx”格式的标题中，文字和前后的#号之间只能用一个空格隔开，不能有多余的空格</p>
+<h2 id="MD022-Headings-should-be-surrounded-by-blank-lines"><a href="#MD022-Headings-should-be-surrounded-by-blank-lines" class="headerlink" title="MD022 - Headings should be surrounded by blank lines"></a>MD022 - Headings should be surrounded by blank lines</h2><p>标题行的上下行必须都是空行</p>
+<p>参数：<br> “lines_above”：指定标题行上方的空行数，默认为1，可以设为更大或0<br> “lines_below”：指定标题行下方的空行数，默认为1，可以设为更大或0</p>
+<p>注意当此处的空行设为比1大的数时，规则MD012的设置也要改</p>
+<h2 id="MD023-Headings-must-start-at-the-beginning-of-the-line"><a href="#MD023-Headings-must-start-at-the-beginning-of-the-line" class="headerlink" title="MD023 - Headings must start at the beginning of the line"></a>MD023 - Headings must start at the beginning of the line</h2><p>标题行不能缩进</p>
+<h2 id="MD024-Multiple-headings-with-the-same-content"><a href="#MD024-Multiple-headings-with-the-same-content" class="headerlink" title="MD024 - Multiple headings with the same content"></a>MD024 - Multiple headings with the same content</h2><p>文档不能有内容重复的标题</p>
+<p>参数：<br> “siblings_only”：默认为false，设为true时，不同标题下的子标题内容可以重复</p>
+<h2 id="MD025-Multiple-top-level-headings-in-the-same-document"><a href="#MD025-Multiple-top-level-headings-in-the-same-document" class="headerlink" title="MD025 - Multiple top level headings in the same document"></a>MD025 - Multiple top level headings in the same document</h2><p>同一文档只能有一个最高级的标题，默认是只能有一个1级标题</p>
+<p>参数：<br> “level”：指定文档最高级的标题，默认是1<br> “front_matter_title”：字符串，指定在文档开头处的front matter中的标题，这个标题将作为整篇文档的最高级标题，如果文档中再次出现最高级标题，将会给出警告，另外，如果不想在front matter中指定标题，就把本参数的值设置为””</p>
+<h2 id="MD026-Trailing-punctuation-in-heading"><a href="#MD026-Trailing-punctuation-in-heading" class="headerlink" title="MD026 - Trailing punctuation in heading"></a>MD026 - Trailing punctuation in heading</h2><p>标题行末尾不能有以下标点符号：”.,;:!?”</p>
+<p>参数：<br> “punctuation”：字符串，指定标题行尾不能有的标点符号，默认是”.,;:!?”</p>
+<p>此规则默认的是英文的标点符号，中文标点符号不在规则之内</p>
+<h2 id="MD027-Multiple-spaces-after-blockquote-symbol"><a href="#MD027-Multiple-spaces-after-blockquote-symbol" class="headerlink" title="MD027 - Multiple spaces after blockquote symbol"></a>MD027 - Multiple spaces after blockquote symbol</h2><p>创建引用区块时，右尖括号 ( &gt; ) 和文字之间有且只能有一个空格</p>
+<h2 id="MD028-Blank-line-inside-blockquote"><a href="#MD028-Blank-line-inside-blockquote" class="headerlink" title="MD028 - Blank line inside blockquote"></a>MD028 - Blank line inside blockquote</h2><p>两个引用区块间不能仅用一个空行隔开或者同一引用区块中不能有空行，如果一行中没有内容，则这一行要用&gt;开头</p>
+<h2 id="MD029-Ordered-list-item-prefix"><a href="#MD029-Ordered-list-item-prefix" class="headerlink" title="MD029 - Ordered list item prefix"></a>MD029 - Ordered list item prefix</h2><p>有序列表的前缀序号格式必须只用1或者从1开始的加1递增数字(“one_or_ordered”)</p>
+<p>参数：<br> “style”：字符串，指定前缀序号的格式，(“one”,”ordered”,”one_or_ordered”,”zero”)，分别表示只用1做前缀，用从1开始的加1递增数字做前缀，只用1或者从1开始的加1递增数字做前缀，只用0做前缀，默认值是”one_or_ordered”</p>
+<p>本条规则支持在前缀序号中补0，以实现对齐，如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line">08.  one</span><br><span class="line">09.  two</span><br><span class="line">10.  three</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h2 id="MD030-Spaces-after-list-markers"><a href="#MD030-Spaces-after-list-markers" class="headerlink" title="MD030 - Spaces after list markers"></a>MD030 - Spaces after list markers</h2><p>列表（有序、无序）的前缀符号和文字之间用1个空格隔开<br> 在列表嵌套或者同一列表项中有多个段落时，无序列表缩进两个空格，有序列表缩进3个空格</p>
+<p>参数：<br> “ul_single”,”ol_single”,”ul_multi”,”ol_multi”：分别规定无序列表单个段落，有序列表单个段落，无序列表多个段落，有序列表多个段落的前缀符号和文字之间的空格数，默认是1</p>
+<h2 id="MD031-Fenced-code-blocks-should-be-surrounded-by-blank-lines"><a href="#MD031-Fenced-code-blocks-should-be-surrounded-by-blank-lines" class="headerlink" title="MD031 - Fenced code blocks should be surrounded by blank lines"></a>MD031 - Fenced code blocks should be surrounded by blank lines</h2><p>单独的代码块前后需要用空行隔开（除非是在文档开头或末尾），否则有些解释器不会解释为代码块</p>
+<h2 id="MD032-Lists-should-be-surrounded-by-blank-lines"><a href="#MD032-Lists-should-be-surrounded-by-blank-lines" class="headerlink" title="MD032 - Lists should be surrounded by blank lines"></a>MD032 - Lists should be surrounded by blank lines</h2><p>列表（有序、无序）前后需要用空行隔开，否则有些解释器不会解释为列表<br> 列表的缩进必须一致，否则会警告</p>
+<h2 id="MD033-Inline-HTML"><a href="#MD033-Inline-HTML" class="headerlink" title="MD033 - Inline HTML"></a>MD033 - Inline HTML</h2><p>文档中不允许使用HTML语句</p>
+<p>参数：<br> “allowed_elements”：自定义允许的元素，是一个字符串数组，默认是空(empty)</p>
+<h2 id="MD034-Bare-URL-used"><a href="#MD034-Bare-URL-used" class="headerlink" title="MD034 - Bare URL used"></a>MD034 - Bare URL used</h2><p>单纯的链接地址需要用尖括号 (&lt;&gt;) 包裹，否则有些解释器不会解释为链接</p>
+<h2 id="MD035-Horizontal-rule-style"><a href="#MD035-Horizontal-rule-style" class="headerlink" title="MD035 - Horizontal rule style"></a>MD035 - Horizontal rule style</h2><p>创建水平线时整篇文档要统一(consistent)，要和文档中第一次创建水平线使用的符号一致</p>
+<p>参数：<br> “style”：字符串，指定创建水平线的方式，值有：(“consistent”,”***”,”—“,”___”)，默认是”consistent”</p>
+<h2 id="MD036-Emphasis-used-instead-of-a-heading"><a href="#MD036-Emphasis-used-instead-of-a-heading" class="headerlink" title="MD036 - Emphasis used instead of a heading"></a>MD036 - Emphasis used instead of a heading</h2><p>不能用强调代替标题</p>
+<p>参数：<br> “punctuation”：字符串，指定用于结尾的标点符号，以此符号结尾的强调不会被视为以强调代替标题，默认值是”.,;:!?”</p>
+<p>此规则会检查只包含强调的单行段落，如果这种段落不是以指定的标点符号结尾，则会被视为以强调代替标题，会给出警告</p>
+<h2 id="MD037-Spaces-inside-emphasis-markers"><a href="#MD037-Spaces-inside-emphasis-markers" class="headerlink" title="MD037 - Spaces inside emphasis markers"></a>MD037 - Spaces inside emphasis markers</h2><p>用于创建强调的符号和强调的的文字之间不能有空格</p>
+<h2 id="MD038-Spaces-inside-code-span-elements"><a href="#MD038-Spaces-inside-code-span-elements" class="headerlink" title="MD038 - Spaces inside code span elements"></a>MD038 - Spaces inside code span elements</h2><p>当用单反引号创建代码段的时候，单反引号和它们之间的代码不能有空格<br> 如果要把单反引号嵌入到代码段的首尾，创建代码段的单反引号和嵌入的单反引号间要有一个空格隔开</p>
+<h2 id="MD039-Spaces-inside-link-text"><a href="#MD039-Spaces-inside-link-text" class="headerlink" title="MD039 - Spaces inside link text"></a>MD039 - Spaces inside link text</h2><p>链接名和包围它的中括号之间不能有空格，但链接名中间可以有空格，如：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">[<span class="meta">百 度</span>](http:<span class="comment">//www.baidu.com &quot;百 度&quot;)</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="MD040-Fenced-code-blocks-should-have-a-language-specified"><a href="#MD040-Fenced-code-blocks-should-have-a-language-specified" class="headerlink" title="MD040 - Fenced code blocks should have a language specified"></a>MD040 - Fenced code blocks should have a language specified</h2><p>单独的代码块（此处是指上下用三个反引号包围的代码块）应该指定代码块的编程语言，这一点有助于解释器对代码进行代码高亮</p>
+<h2 id="MD041-First-line-in-file-should-be-a-top-level-heading"><a href="#MD041-First-line-in-file-should-be-a-top-level-heading" class="headerlink" title="MD041 - First line in file should be a top level heading"></a>MD041 - First line in file should be a top level heading</h2><p>文档的第一个非空行应该是文档最高级的标题，默认是1级标题</p>
+<p>参数：<br> “level”：指定文档最高级的标题，默认是1<br> “front_matter_title”：字符串，指定在文档开头处的front matter中的标题，这个标题将作为整篇文档的最高级标题，另外，如果不想在front matter中指定标题，就把本参数的值设置为””</p>
+<h2 id="MD042-No-empty-links"><a href="#MD042-No-empty-links" class="headerlink" title="MD042 - No empty links"></a>MD042 - No empty links</h2><p>链接的地址不能为空</p>
+<h2 id="MD043-Required-heading-structure"><a href="#MD043-Required-heading-structure" class="headerlink" title="MD043 - Required heading structure"></a>MD043 - Required heading structure</h2><p>要求标题遵循一定的结构，默认是没有规定的结构(“null”)</p>
+<p>参数：<br> “headings”：字符串数组，指定标题需要遵循的结构，默认是”null”，可以自行指定结构，如；</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">[</span><br><span class="line">    <span class="string">&quot;# head&quot;</span>,</span><br><span class="line">    <span class="string">&quot;## item&quot;</span>,</span><br><span class="line">    <span class="string">&quot;### detail&quot;</span>,</span><br><span class="line">    <span class="string">&quot;*&quot;</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p>星号(*)表示对应的标题是可选的，没有强制要求，本条具体可以参照<span class="exturl" data-url="aHR0cHM6Ly9saW5rcy5qaWFuc2h1LmNvbS9nbz90bz1odHRwczovL2dpdGh1Yi5jb20vRGF2aWRBbnNvbi9tYXJrZG93bmxpbnQvYmxvYi9tYXN0ZXIvZG9jL1J1bGVzLm1kJTIzbWQwNDMtLS1yZXF1aXJlZC1oZWFkaW5nLXN0cnVjdHVyZQ==">MD043<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="MD044-Proper-names-should-have-the-correct-capitalization"><a href="#MD044-Proper-names-should-have-the-correct-capitalization" class="headerlink" title="MD044 - Proper names should have the correct capitalization"></a>MD044 - Proper names should have the correct capitalization</h2><p>指定一些名称，会检查它是否有正确的大写</p>
+<p>参数：<br> “names”：字符串数组，指定要检查需要大写的名称，默认是空(“null”)<br> “code_blocks”：指定本规则是否(true or false)对代码块生效，默认是true<br> 一些经常使用的名称可以使用本规则防止其拼写错误，比如JavaScript中字母J和S需要大写，就可以写到参数”names”中，防止写错</p>
+<h2 id="MD045-Images-should-have-alternate-text-alt-text"><a href="#MD045-Images-should-have-alternate-text-alt-text" class="headerlink" title="MD045 - Images should have alternate text (alt text)"></a>MD045 - Images should have alternate text (alt text)</h2><p>图片链接必须包含描述文本（alt text）</p>
+<h2 id="MD046-Code-block-style"><a href="#MD046-Code-block-style" class="headerlink" title="MD046 - Code block style"></a>MD046 - Code block style</h2><p>整篇文档采用一致的代码格式</p>
+<p>参数：<br> “style”: 字符串，指定代码块定义格式，有（”consistent”,”fenced”,”indented”）三种，分别代表：文档上下文一致，使用三个反引号隔开，使用缩进，默认是上下文一致</p>
+<h2 id="MD047-Files-should-end-with-a-single-newline-character"><a href="#MD047-Files-should-end-with-a-single-newline-character" class="headerlink" title="MD047 - Files should end with a single newline character"></a>MD047 - Files should end with a single newline character</h2><p>文档需用一个空行结尾</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><span class="exturl" data-url="aHR0cHM6Ly9saW5rcy5qaWFuc2h1LmNvbS9nbz90bz1odHRwczovL2dpdGh1Yi5jb20vRGF2aWRBbnNvbi9tYXJrZG93bmxpbnQvYmxvYi9tYXN0ZXIvZG9jL1J1bGVzLm1kJTIzbWQwMDItLS1maXJzdC1oZWFkaW5nLXNob3VsZC1iZS1hLXRvcC1sZXZlbC1oZWFkaW5n">rules文档<i class="fa fa-external-link-alt"></i></span></p>
+<p>原文作者：夜行的鸟<br>链接：<span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81MTUyM2ExYzZmZTE=">https://www.jianshu.com/p/51523a1c6fe1<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+        <category>MarkDown</category>
+      </categories>
+      <tags>
+        <tag>MarkDown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SpringBoot</title>
     <url>/2021-03-SpringBoot/</url>
     <content><![CDATA[<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2>]]></content>
@@ -594,6 +690,36 @@ useradd -r -g mysql mysql
       </categories>
       <tags>
         <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开发报错集合</title>
+    <url>/2021-03-%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><h3 id="Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml"><a href="#Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml" class="headerlink" title="Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml"></a>Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml</h3><p>原因：idea不会编译src的java目录的xml文件</p>
+<p>所以解决思路就是：将IDEA maven项目中src源代码下的xml等资源文件编译进classes文件夹</p>
+<p>具体操作方法就是：配置maven的pom文件配置，在节点下添加代码：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="attempted-to-return-null-from-a-method-with-a-primitive-return-type-int"><a href="#attempted-to-return-null-from-a-method-with-a-primitive-return-type-int" class="headerlink" title="attempted to return null from a method with a primitive return type (int)"></a>attempted to return null from a method with a primitive return type (int)</h3><p>sql语句返回为空，但是mapper.xml定义的返回类型为int<br>int默认为0，不支持空  改为java.lang.Integer即可<br>这就是基本类型int和包装类Integer的区别</p>
+<h2 id="Spring-Mybatis"><a href="#Spring-Mybatis" class="headerlink" title="Spring Mybatis"></a>Spring Mybatis</h2><h3 id="事务不生效问题"><a href="#事务不生效问题" class="headerlink" title="事务不生效问题"></a>事务不生效问题</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tx:advice</span> <span class="attr">id</span>=<span class="string">&quot;txAdvice&quot;</span> <span class="attr">transaction-manager</span>=<span class="string">&quot;transactionManager&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--给哪些方法添加事务--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--传播特性 默认REQUIRED--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;addUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;deleteUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;update&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;selectUser&quot;</span> <span class="attr">read-only</span>=<span class="string">&quot;true&quot;</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--&lt;tx:method name=&quot;*&quot; propagation=&quot;REQUIRED&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tx:advice</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>方法名与被事务的方法名名必须相同， 或则使用”<em>“ 所有方法,我出错的原因是写成了”</em>/“ 然后测试发现方法名不同也会不生效</p>
+<h3 id="Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml"><a href="#Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml" class="headerlink" title="Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]"></a>Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]</h3><p>mybatis-config.xml和spring-config.xml重复扫描mapper造成的,注释掉mybatis-config.xml里面的</p>
+<p>spring-config.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--生成代理器--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;sqlSessionFactory&quot;</span> <span class="attr">class</span>=<span class="string">&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;dataSource&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;dataSource&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;configLocation&quot;</span> <span class="attr">value</span>=<span class="string">&quot;mybatis-config.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;mapperLocations&quot;</span> <span class="attr">value</span>=<span class="string">&quot;classpath:top/chenmw/mapper/*.xml&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>mybatis-config.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描直接文件--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--&lt;mapper resource=&quot;top/chenmw/mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描指定包--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;top.chenmw.mapper&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><h3 id="配置项目名后静态资源路径问题不拼接项目名"><a href="#配置项目名后静态资源路径问题不拼接项目名" class="headerlink" title="配置项目名后静态资源路径问题不拼接项目名"></a>配置项目名后静态资源路径问题不拼接项目名</h3><p>原因：配置项目名使用的是 spring-mvc-servlet-path： /chenmw</p>
+<p>解决：改为使用 server-servlet-context-path： /chenmw</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>Error</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -705,132 +831,6 @@ useradd -r -g mysql mysql
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开发报错集合</title>
-    <url>/2021-03-%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><h3 id="Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml"><a href="#Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml" class="headerlink" title="Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml"></a>Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml</h3><p>原因：idea不会编译src的java目录的xml文件</p>
-<p>所以解决思路就是：将IDEA maven项目中src源代码下的xml等资源文件编译进classes文件夹</p>
-<p>具体操作方法就是：配置maven的pom文件配置，在节点下添加代码：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="attempted-to-return-null-from-a-method-with-a-primitive-return-type-int"><a href="#attempted-to-return-null-from-a-method-with-a-primitive-return-type-int" class="headerlink" title="attempted to return null from a method with a primitive return type (int)"></a>attempted to return null from a method with a primitive return type (int)</h3><p>sql语句返回为空，但是mapper.xml定义的返回类型为int<br>int默认为0，不支持空  改为java.lang.Integer即可<br>这就是基本类型int和包装类Integer的区别</p>
-<h2 id="Spring-Mybatis"><a href="#Spring-Mybatis" class="headerlink" title="Spring Mybatis"></a>Spring Mybatis</h2><h3 id="事务不生效问题"><a href="#事务不生效问题" class="headerlink" title="事务不生效问题"></a>事务不生效问题</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tx:advice</span> <span class="attr">id</span>=<span class="string">&quot;txAdvice&quot;</span> <span class="attr">transaction-manager</span>=<span class="string">&quot;transactionManager&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--给哪些方法添加事务--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--传播特性 默认REQUIRED--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;addUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;deleteUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;update&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;selectUser&quot;</span> <span class="attr">read-only</span>=<span class="string">&quot;true&quot;</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--&lt;tx:method name=&quot;*&quot; propagation=&quot;REQUIRED&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tx:advice</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>方法名与被事务的方法名名必须相同， 或则使用”<em>“ 所有方法,我出错的原因是写成了”</em>/“ 然后测试发现方法名不同也会不生效</p>
-<h3 id="Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml"><a href="#Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml" class="headerlink" title="Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]"></a>Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]</h3><p>mybatis-config.xml和spring-config.xml重复扫描mapper造成的,注释掉mybatis-config.xml里面的</p>
-<p>spring-config.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--生成代理器--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;sqlSessionFactory&quot;</span> <span class="attr">class</span>=<span class="string">&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;dataSource&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;dataSource&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;configLocation&quot;</span> <span class="attr">value</span>=<span class="string">&quot;mybatis-config.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;mapperLocations&quot;</span> <span class="attr">value</span>=<span class="string">&quot;classpath:top/chenmw/mapper/*.xml&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>mybatis-config.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描直接文件--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--&lt;mapper resource=&quot;top/chenmw/mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描指定包--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;top.chenmw.mapper&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><h3 id="配置项目名后静态资源路径问题不拼接项目名"><a href="#配置项目名后静态资源路径问题不拼接项目名" class="headerlink" title="配置项目名后静态资源路径问题不拼接项目名"></a>配置项目名后静态资源路径问题不拼接项目名</h3><p>原因：配置项目名使用的是 spring-mvc-servlet-path： /chenmw</p>
-<p>解决：改为使用 server-servlet-context-path： /chenmw</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-        <category>Error</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MarkDown-lint规则</title>
-    <url>/2021-02-MarkDown-lint%E8%A7%84%E5%88%99/</url>
-    <content><![CDATA[<p>markdownlint是vscode上一款非常好用的 Markdown 格式检查扩展工具，它规定了许多规则并实时对文档进行检查，防止一些语法错误，同时维持文档风格的统一，使用此工具有助于形成一个良好的写作习惯和规范。但因其规则较多，写文档时很容易就出错（或不符合规则），所以需要对工具的规则有一个详细的了解，另外，有时工作要求的文档风格与markdownlint工具规定的规则并不相同，比如标题、列表的创建格式，缩进的空格数等等，这时就需要对规则进行一定的设置。</p>
-<p>本文主要参考markdownlint的<span class="exturl" data-url="aHR0cHM6Ly9saW5rcy5qaWFuc2h1LmNvbS9nbz90bz1odHRwczovL2dpdGh1Yi5jb20vRGF2aWRBbnNvbi9tYXJrZG93bmxpbnQvYmxvYi9tYXN0ZXIvZG9jL1J1bGVzLm1kJTIzbWQwMDItLS1maXJzdC1oZWFkaW5nLXNob3VsZC1iZS1hLXRvcC1sZXZlbC1oZWFkaW5n">rules文档<i class="fa fa-external-link-alt"></i></span>，对每一个规则都进行了说明，指明了一些规则中可以设置的参数，便于用户设置相应的规则。</p>
-<span id="more"></span>
-
-<h2 id="MD001-Heading-levels-should-only-increment-by-one-level-at-a-time"><a href="#MD001-Heading-levels-should-only-increment-by-one-level-at-a-time" class="headerlink" title="MD001 - Heading levels should only increment by one level at a time"></a>MD001 - Heading levels should only increment by one level at a time</h2><p>标题级数每次只能扩大1, 也就是不能隔级创建标题（从1级到6级的顺序）</p>
-<h2 id="MD002-First-heading-should-be-a-top-level-heading"><a href="#MD002-First-heading-should-be-a-top-level-heading" class="headerlink" title="MD002 - First heading should be a top level heading"></a>MD002 - First heading should be a top level heading</h2><p>文档的第一个标题必须是最高级的标题（标题等级1级到6级逐渐降低）</p>
-<p>参数：<br> “level”：指定最高级标题的级数，默认是1</p>
-<h2 id="MD003-Heading-style"><a href="#MD003-Heading-style" class="headerlink" title="MD003 - Heading style"></a>MD003 - Heading style</h2><p>整篇文档要采用一致的标题格式</p>
-<p>参数：<br> “style”：字符串，指定文档标题的格式，有(“consistent”, “atx”, “atx_closed”, “setext”, “setext_with_atx”, “setext_with_atx_closed”)五种，默认是”consistent”，也就是整篇文档一致</p>
-<p>标题格式必须统一，一般不能混用，但”setext_with_atx”, “setext_with_atx_closed”格式可以在”setext”格式二级标题后接着使用”atx”或”atx_closed”格式的标题</p>
-<h2 id="MD004-Unordered-list-style"><a href="#MD004-Unordered-list-style" class="headerlink" title="MD004 - Unordered list style"></a>MD004 - Unordered list style</h2><p>整篇文档定义无序列表的格式要一致</p>
-<p>参数：<br> “style”：字符串，指定无序列表的定义格式，有(“consistent”, “asterisk”, “plus”, “dash”, “sublist”)五种，分别表示“定义时符号前后一致”，“用星号定义”，“用加号定义”，“用减号定义”，“定义多重列表时用不同的符号定义”，默认是”consistent”</p>
-<h2 id="MD005-Inconsistent-indentation-for-list-items-at-the-same-level"><a href="#MD005-Inconsistent-indentation-for-list-items-at-the-same-level" class="headerlink" title="MD005 - Inconsistent indentation for list items at the same level"></a>MD005 - Inconsistent indentation for list items at the same level</h2><p>同一级的列表缩进必须一致<br> 在有序列表中，前面的数字序号可以左对齐，也可以右对齐</p>
-<h2 id="MD006-Consider-starting-bulleted-lists-at-the-beginning-of-the-line"><a href="#MD006-Consider-starting-bulleted-lists-at-the-beginning-of-the-line" class="headerlink" title="MD006 - Consider starting bulleted lists at the beginning of the line"></a>MD006 - Consider starting bulleted lists at the beginning of the line</h2><p>1级列表不能缩进</p>
-<h2 id="MD007-Unordered-list-indentation"><a href="#MD007-Unordered-list-indentation" class="headerlink" title="MD007 - Unordered list indentation"></a>MD007 - Unordered list indentation</h2><p>无序列表嵌套缩进时默认采用两个空格</p>
-<p>参数：<br> “ident”：指定无序列表嵌套时缩进的空格数，默认是2</p>
-<h2 id="MD009-Trailing-spaces"><a href="#MD009-Trailing-spaces" class="headerlink" title="MD009 - Trailing spaces"></a>MD009 - Trailing spaces</h2><p>行尾最多可以添加两个空格，超过会给出警告，两个空格正好可以用于换行</p>
-<p>参数：<br> “br_spaces”：指定在行尾可以添加的空格数目，空格数目建议大于等于2，如果小于2，会默认为0，也就是不允许任何行尾的空格<br> “list_item_empty_lines”：字符串，指定在列表中是否(true or false)用默认的空格数缩进空行，有的解释器会要求列表中的空行要缩进</p>
-<h2 id="MD010-Hard-tabs"><a href="#MD010-Hard-tabs" class="headerlink" title="MD010 - Hard tabs"></a>MD010 - Hard tabs</h2><p>不能使用tab键缩进，要使用空格</p>
-<p>参数：<br> “code_blocks”：指定本条规则在代码块里是否(true or false)生效</p>
-<h2 id="MD011-Reversed-link-syntax"><a href="#MD011-Reversed-link-syntax" class="headerlink" title="MD011 - Reversed link syntax"></a>MD011 - Reversed link syntax</h2><p>检查内联形式的链接的创建方式是否错误，中括号和圆括号是否用对</p>
-<h2 id="MD012-Multiple-consecutive-blank-lines"><a href="#MD012-Multiple-consecutive-blank-lines" class="headerlink" title="MD012 - Multiple consecutive blank lines"></a>MD012 - Multiple consecutive blank lines</h2><p>文档中不能有连续的空行，在代码块中此规则不会生效</p>
-<p>参数：<br> “maximum”：指定文档中可以连续的最多空行数，默认值是1</p>
-<h2 id="MD013-Line-length"><a href="#MD013-Line-length" class="headerlink" title="MD013 - Line length"></a>MD013 - Line length</h2><p>默认行的最大长度是80，此规则对代码块、表格、标题也生效</p>
-<p>参数：<br> “line_length”：指定行的最大长度，默认是80<br> “heading_line_length”：指定标题行的最大长度，默认是80<br> “code_blocks”：指定规则是否(true or false)对代码块生效，默认true<br> “tables”：指定规则是否(true or false)对表格生效，默认true<br> “hesdings”：指定规则是否(true or false)对标题生效，默认true</p>
-<h2 id="MD014-Dollar-signs-used-before-commands-without-showing-output"><a href="#MD014-Dollar-signs-used-before-commands-without-showing-output" class="headerlink" title="MD014 - Dollar signs used before commands without showing output"></a>MD014 - Dollar signs used before commands without showing output</h2><p>在代码块中，终端命令前不需要有美元符号($)<br> 如果代码块中既有终端命令，也有命令的输出，则终端命令前可以有美元符号($)，如：</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="variable">$ </span>ls</span><br><span class="line">foo bar</span><br><span class="line"><span class="variable">$ </span>cat foo</span><br><span class="line">hello world</span><br></pre></td></tr></table></figure>
-
-<h2 id="MD018-No-space-after-hash-on-atx-style-heading"><a href="#MD018-No-space-after-hash-on-atx-style-heading" class="headerlink" title="MD018 - No space after hash on atx style heading"></a>MD018 - No space after hash on atx style heading</h2><p>在”atx”格式的标题中，#号和文字间需用一个空格隔开</p>
-<h2 id="MD019-Multiple-spaces-after-hash-on-atx-style-heading"><a href="#MD019-Multiple-spaces-after-hash-on-atx-style-heading" class="headerlink" title="MD019 - Multiple spaces after hash on atx style heading"></a>MD019 - Multiple spaces after hash on atx style heading</h2><p>在”atx”格式的标题中，#号和文字间只能用一个空格隔开，不能有多余的空格</p>
-<h2 id="MD020-No-space-inside-hashes-on-closed-atx-style-heading"><a href="#MD020-No-space-inside-hashes-on-closed-atx-style-heading" class="headerlink" title="MD020 - No space inside hashes on closed atx style heading"></a>MD020 - No space inside hashes on closed atx style heading</h2><p>在”closed_atx”格式的标题中，文字和前后的#号之间需用一个空格隔开</p>
-<h2 id="MD021-Multiple-spaces-inside-hashes-on-closed-atx-style-heading"><a href="#MD021-Multiple-spaces-inside-hashes-on-closed-atx-style-heading" class="headerlink" title="MD021 - Multiple spaces inside hashes on closed atx style heading"></a>MD021 - Multiple spaces inside hashes on closed atx style heading</h2><p>在”closed_atx”格式的标题中，文字和前后的#号之间只能用一个空格隔开，不能有多余的空格</p>
-<h2 id="MD022-Headings-should-be-surrounded-by-blank-lines"><a href="#MD022-Headings-should-be-surrounded-by-blank-lines" class="headerlink" title="MD022 - Headings should be surrounded by blank lines"></a>MD022 - Headings should be surrounded by blank lines</h2><p>标题行的上下行必须都是空行</p>
-<p>参数：<br> “lines_above”：指定标题行上方的空行数，默认为1，可以设为更大或0<br> “lines_below”：指定标题行下方的空行数，默认为1，可以设为更大或0</p>
-<p>注意当此处的空行设为比1大的数时，规则MD012的设置也要改</p>
-<h2 id="MD023-Headings-must-start-at-the-beginning-of-the-line"><a href="#MD023-Headings-must-start-at-the-beginning-of-the-line" class="headerlink" title="MD023 - Headings must start at the beginning of the line"></a>MD023 - Headings must start at the beginning of the line</h2><p>标题行不能缩进</p>
-<h2 id="MD024-Multiple-headings-with-the-same-content"><a href="#MD024-Multiple-headings-with-the-same-content" class="headerlink" title="MD024 - Multiple headings with the same content"></a>MD024 - Multiple headings with the same content</h2><p>文档不能有内容重复的标题</p>
-<p>参数：<br> “siblings_only”：默认为false，设为true时，不同标题下的子标题内容可以重复</p>
-<h2 id="MD025-Multiple-top-level-headings-in-the-same-document"><a href="#MD025-Multiple-top-level-headings-in-the-same-document" class="headerlink" title="MD025 - Multiple top level headings in the same document"></a>MD025 - Multiple top level headings in the same document</h2><p>同一文档只能有一个最高级的标题，默认是只能有一个1级标题</p>
-<p>参数：<br> “level”：指定文档最高级的标题，默认是1<br> “front_matter_title”：字符串，指定在文档开头处的front matter中的标题，这个标题将作为整篇文档的最高级标题，如果文档中再次出现最高级标题，将会给出警告，另外，如果不想在front matter中指定标题，就把本参数的值设置为””</p>
-<h2 id="MD026-Trailing-punctuation-in-heading"><a href="#MD026-Trailing-punctuation-in-heading" class="headerlink" title="MD026 - Trailing punctuation in heading"></a>MD026 - Trailing punctuation in heading</h2><p>标题行末尾不能有以下标点符号：”.,;:!?”</p>
-<p>参数：<br> “punctuation”：字符串，指定标题行尾不能有的标点符号，默认是”.,;:!?”</p>
-<p>此规则默认的是英文的标点符号，中文标点符号不在规则之内</p>
-<h2 id="MD027-Multiple-spaces-after-blockquote-symbol"><a href="#MD027-Multiple-spaces-after-blockquote-symbol" class="headerlink" title="MD027 - Multiple spaces after blockquote symbol"></a>MD027 - Multiple spaces after blockquote symbol</h2><p>创建引用区块时，右尖括号 ( &gt; ) 和文字之间有且只能有一个空格</p>
-<h2 id="MD028-Blank-line-inside-blockquote"><a href="#MD028-Blank-line-inside-blockquote" class="headerlink" title="MD028 - Blank line inside blockquote"></a>MD028 - Blank line inside blockquote</h2><p>两个引用区块间不能仅用一个空行隔开或者同一引用区块中不能有空行，如果一行中没有内容，则这一行要用&gt;开头</p>
-<h2 id="MD029-Ordered-list-item-prefix"><a href="#MD029-Ordered-list-item-prefix" class="headerlink" title="MD029 - Ordered list item prefix"></a>MD029 - Ordered list item prefix</h2><p>有序列表的前缀序号格式必须只用1或者从1开始的加1递增数字(“one_or_ordered”)</p>
-<p>参数：<br> “style”：字符串，指定前缀序号的格式，(“one”,”ordered”,”one_or_ordered”,”zero”)，分别表示只用1做前缀，用从1开始的加1递增数字做前缀，只用1或者从1开始的加1递增数字做前缀，只用0做前缀，默认值是”one_or_ordered”</p>
-<p>本条规则支持在前缀序号中补0，以实现对齐，如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line">08.  one</span><br><span class="line">09.  two</span><br><span class="line">10.  three</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<h2 id="MD030-Spaces-after-list-markers"><a href="#MD030-Spaces-after-list-markers" class="headerlink" title="MD030 - Spaces after list markers"></a>MD030 - Spaces after list markers</h2><p>列表（有序、无序）的前缀符号和文字之间用1个空格隔开<br> 在列表嵌套或者同一列表项中有多个段落时，无序列表缩进两个空格，有序列表缩进3个空格</p>
-<p>参数：<br> “ul_single”,”ol_single”,”ul_multi”,”ol_multi”：分别规定无序列表单个段落，有序列表单个段落，无序列表多个段落，有序列表多个段落的前缀符号和文字之间的空格数，默认是1</p>
-<h2 id="MD031-Fenced-code-blocks-should-be-surrounded-by-blank-lines"><a href="#MD031-Fenced-code-blocks-should-be-surrounded-by-blank-lines" class="headerlink" title="MD031 - Fenced code blocks should be surrounded by blank lines"></a>MD031 - Fenced code blocks should be surrounded by blank lines</h2><p>单独的代码块前后需要用空行隔开（除非是在文档开头或末尾），否则有些解释器不会解释为代码块</p>
-<h2 id="MD032-Lists-should-be-surrounded-by-blank-lines"><a href="#MD032-Lists-should-be-surrounded-by-blank-lines" class="headerlink" title="MD032 - Lists should be surrounded by blank lines"></a>MD032 - Lists should be surrounded by blank lines</h2><p>列表（有序、无序）前后需要用空行隔开，否则有些解释器不会解释为列表<br> 列表的缩进必须一致，否则会警告</p>
-<h2 id="MD033-Inline-HTML"><a href="#MD033-Inline-HTML" class="headerlink" title="MD033 - Inline HTML"></a>MD033 - Inline HTML</h2><p>文档中不允许使用HTML语句</p>
-<p>参数：<br> “allowed_elements”：自定义允许的元素，是一个字符串数组，默认是空(empty)</p>
-<h2 id="MD034-Bare-URL-used"><a href="#MD034-Bare-URL-used" class="headerlink" title="MD034 - Bare URL used"></a>MD034 - Bare URL used</h2><p>单纯的链接地址需要用尖括号 (&lt;&gt;) 包裹，否则有些解释器不会解释为链接</p>
-<h2 id="MD035-Horizontal-rule-style"><a href="#MD035-Horizontal-rule-style" class="headerlink" title="MD035 - Horizontal rule style"></a>MD035 - Horizontal rule style</h2><p>创建水平线时整篇文档要统一(consistent)，要和文档中第一次创建水平线使用的符号一致</p>
-<p>参数：<br> “style”：字符串，指定创建水平线的方式，值有：(“consistent”,”***”,”—“,”___”)，默认是”consistent”</p>
-<h2 id="MD036-Emphasis-used-instead-of-a-heading"><a href="#MD036-Emphasis-used-instead-of-a-heading" class="headerlink" title="MD036 - Emphasis used instead of a heading"></a>MD036 - Emphasis used instead of a heading</h2><p>不能用强调代替标题</p>
-<p>参数：<br> “punctuation”：字符串，指定用于结尾的标点符号，以此符号结尾的强调不会被视为以强调代替标题，默认值是”.,;:!?”</p>
-<p>此规则会检查只包含强调的单行段落，如果这种段落不是以指定的标点符号结尾，则会被视为以强调代替标题，会给出警告</p>
-<h2 id="MD037-Spaces-inside-emphasis-markers"><a href="#MD037-Spaces-inside-emphasis-markers" class="headerlink" title="MD037 - Spaces inside emphasis markers"></a>MD037 - Spaces inside emphasis markers</h2><p>用于创建强调的符号和强调的的文字之间不能有空格</p>
-<h2 id="MD038-Spaces-inside-code-span-elements"><a href="#MD038-Spaces-inside-code-span-elements" class="headerlink" title="MD038 - Spaces inside code span elements"></a>MD038 - Spaces inside code span elements</h2><p>当用单反引号创建代码段的时候，单反引号和它们之间的代码不能有空格<br> 如果要把单反引号嵌入到代码段的首尾，创建代码段的单反引号和嵌入的单反引号间要有一个空格隔开</p>
-<h2 id="MD039-Spaces-inside-link-text"><a href="#MD039-Spaces-inside-link-text" class="headerlink" title="MD039 - Spaces inside link text"></a>MD039 - Spaces inside link text</h2><p>链接名和包围它的中括号之间不能有空格，但链接名中间可以有空格，如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">[<span class="meta">百 度</span>](http:<span class="comment">//www.baidu.com &quot;百 度&quot;)</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="MD040-Fenced-code-blocks-should-have-a-language-specified"><a href="#MD040-Fenced-code-blocks-should-have-a-language-specified" class="headerlink" title="MD040 - Fenced code blocks should have a language specified"></a>MD040 - Fenced code blocks should have a language specified</h2><p>单独的代码块（此处是指上下用三个反引号包围的代码块）应该指定代码块的编程语言，这一点有助于解释器对代码进行代码高亮</p>
-<h2 id="MD041-First-line-in-file-should-be-a-top-level-heading"><a href="#MD041-First-line-in-file-should-be-a-top-level-heading" class="headerlink" title="MD041 - First line in file should be a top level heading"></a>MD041 - First line in file should be a top level heading</h2><p>文档的第一个非空行应该是文档最高级的标题，默认是1级标题</p>
-<p>参数：<br> “level”：指定文档最高级的标题，默认是1<br> “front_matter_title”：字符串，指定在文档开头处的front matter中的标题，这个标题将作为整篇文档的最高级标题，另外，如果不想在front matter中指定标题，就把本参数的值设置为””</p>
-<h2 id="MD042-No-empty-links"><a href="#MD042-No-empty-links" class="headerlink" title="MD042 - No empty links"></a>MD042 - No empty links</h2><p>链接的地址不能为空</p>
-<h2 id="MD043-Required-heading-structure"><a href="#MD043-Required-heading-structure" class="headerlink" title="MD043 - Required heading structure"></a>MD043 - Required heading structure</h2><p>要求标题遵循一定的结构，默认是没有规定的结构(“null”)</p>
-<p>参数：<br> “headings”：字符串数组，指定标题需要遵循的结构，默认是”null”，可以自行指定结构，如；</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">[</span><br><span class="line">    <span class="string">&quot;# head&quot;</span>,</span><br><span class="line">    <span class="string">&quot;## item&quot;</span>,</span><br><span class="line">    <span class="string">&quot;### detail&quot;</span>,</span><br><span class="line">    <span class="string">&quot;*&quot;</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-
-<p>星号(*)表示对应的标题是可选的，没有强制要求，本条具体可以参照<span class="exturl" data-url="aHR0cHM6Ly9saW5rcy5qaWFuc2h1LmNvbS9nbz90bz1odHRwczovL2dpdGh1Yi5jb20vRGF2aWRBbnNvbi9tYXJrZG93bmxpbnQvYmxvYi9tYXN0ZXIvZG9jL1J1bGVzLm1kJTIzbWQwNDMtLS1yZXF1aXJlZC1oZWFkaW5nLXN0cnVjdHVyZQ==">MD043<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="MD044-Proper-names-should-have-the-correct-capitalization"><a href="#MD044-Proper-names-should-have-the-correct-capitalization" class="headerlink" title="MD044 - Proper names should have the correct capitalization"></a>MD044 - Proper names should have the correct capitalization</h2><p>指定一些名称，会检查它是否有正确的大写</p>
-<p>参数：<br> “names”：字符串数组，指定要检查需要大写的名称，默认是空(“null”)<br> “code_blocks”：指定本规则是否(true or false)对代码块生效，默认是true<br> 一些经常使用的名称可以使用本规则防止其拼写错误，比如JavaScript中字母J和S需要大写，就可以写到参数”names”中，防止写错</p>
-<h2 id="MD045-Images-should-have-alternate-text-alt-text"><a href="#MD045-Images-should-have-alternate-text-alt-text" class="headerlink" title="MD045 - Images should have alternate text (alt text)"></a>MD045 - Images should have alternate text (alt text)</h2><p>图片链接必须包含描述文本（alt text）</p>
-<h2 id="MD046-Code-block-style"><a href="#MD046-Code-block-style" class="headerlink" title="MD046 - Code block style"></a>MD046 - Code block style</h2><p>整篇文档采用一致的代码格式</p>
-<p>参数：<br> “style”: 字符串，指定代码块定义格式，有（”consistent”,”fenced”,”indented”）三种，分别代表：文档上下文一致，使用三个反引号隔开，使用缩进，默认是上下文一致</p>
-<h2 id="MD047-Files-should-end-with-a-single-newline-character"><a href="#MD047-Files-should-end-with-a-single-newline-character" class="headerlink" title="MD047 - Files should end with a single newline character"></a>MD047 - Files should end with a single newline character</h2><p>文档需用一个空行结尾</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><span class="exturl" data-url="aHR0cHM6Ly9saW5rcy5qaWFuc2h1LmNvbS9nbz90bz1odHRwczovL2dpdGh1Yi5jb20vRGF2aWRBbnNvbi9tYXJrZG93bmxpbnQvYmxvYi9tYXN0ZXIvZG9jL1J1bGVzLm1kJTIzbWQwMDItLS1maXJzdC1oZWFkaW5nLXNob3VsZC1iZS1hLXRvcC1sZXZlbC1oZWFkaW5n">rules文档<i class="fa fa-external-link-alt"></i></span></p>
-<p>原文作者：夜行的鸟<br>链接：<span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81MTUyM2ExYzZmZTE=">https://www.jianshu.com/p/51523a1c6fe1<i class="fa fa-external-link-alt"></i></span></p>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-        <category>MarkDown</category>
-      </categories>
-      <tags>
-        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
@@ -1670,7 +1670,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjMTA1OyYjeDc0OyYjNjQ7JiMxMDM7JiMxMDU7JiN4NzQ7JiMxMDQ7JiMxMTc7JiM5ODsmI3gyZTsmI3g2MzsmIzExMTsmI3g2ZDs=">&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjMTAzOyYjeDY5OyYjMTE2OyYjNjQ7JiMxMDM7JiN4Njk7JiN4NzQ7JiMxMDQ7JiMxMTc7JiN4NjI7JiM0NjsmIzk5OyYjeDZmOyYjMTA5Ow==">&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
