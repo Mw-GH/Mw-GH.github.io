@@ -3,14 +3,17 @@
   <entry>
     <title>Git命令</title>
     <url>/2020-10-Git%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h1><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
 <li><p><code>git clone https://github.com/Mw-GH/GitLearning.git</code>     从远程仓库上克隆项目</p>
 </li>
 <li><p><code>git push -u orgin master</code><br>  将本地的最新数据推送到远程仓库<br>  第一加 <code>-u</code>后  后面可直接使用 <code>git push</code><br>  <code>pull</code>同理</p>
 </li>
 <li><p><code>git pull orgin master</code><br>  将远程仓库的最新数据同步到本地</p>
-<span id="more"></span>
-<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2></li>
+</li>
+</ul>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
 <li><p><code>git config user.name</code><br>  查看配置用户</p>
 </li>
 <li><p><code>git config user.email</code><br>  查看配置邮箱</p>
@@ -99,14 +102,47 @@
       </tags>
   </entry>
   <entry>
+    <title>Idea 2019.1激活</title>
+    <url>/2020-10-Idea-2019-1%E6%BF%80%E6%B4%BB/</url>
+    <content><![CDATA[<p>原理应该是让idea拉回激活信息失败</p>
+<p>hosts 文件添加</p>
+<p>0.0.0.0 account.jetbrains.com<br>0.0.0.0 <span class="exturl" data-url="aHR0cDovL3d3dy5qZXRicmFpbnMuY29tLw==">www.jetbrains.com<i class="fa fa-external-link-alt"></i></span></p>
+<p>激活码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MNQ043JMTU-eyJsaWNlbnNlSWQiOiJNTlEwNDNKTVRVIiwibGljZW5zZWVOYW1lIjoiR1VPIEJJTiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNC0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNC0wNCJ9XSwiaGFzaCI6IjEyNjIxNDIwLzBwIiwiZ3JhY2VQZXJpb2REYXlzIjo3LCJhdXRvUHJvbG9uZ2F0ZWQiOnRydWUsImlzQXV0b1Byb2xvbmdhdGVkIjp0cnVlfQ&#x3D;&#x3D;-Zmbxcn7NPlqBNqAURX0uiLzybnruyx6PG+6KYZrpzm&#x2F;IJJs5nnIogGgdfIJoifO6fbaaJYc5pjds7CHdrt&#x2F;neIpvF2o&#x2F;HvIjMEF4&#x2F;AhNV7HUGsAa9zpMszc6YBIkMmVFh4Y7GPKOStA14&#x2F;Ld83AC7kGnwL1Fq7eAXKJFljc00GMejPpfE0zDqTN634bC+0ojfklhWXaLqhUt230SiE8onnd3quvEaH5NsW7sIQm2spyONZI+iHvHFtl4EvG7tlRlD1StsfhrbgNNxz61FOEEQ+GtZIzMx+T4sbpfoRyms7lbWQecrbAtE0c2sR98esm4PcDUhrFVBxGorPC1ppOLSQ&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO&#x2F;5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij&#x2F;78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB&#x2F;xVy&#x2F;VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE&#x2F;EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn&#x2F;72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN&#x2F;lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D&#x2F;cXmgpOyW&#x2F;1SmBz3XjVIi&#x2F;zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV&#x2F;bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit&#x2F;pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>software</category>
+        <category>idea</category>
+      </categories>
+      <tags>
+        <tag>Idea</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VMware与Docker不兼容解决办法</title>
+    <url>/2020-10-VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
+<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
+<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
+]]></content>
+      <categories>
+        <category>技术储备</category>
+      </categories>
+      <tags>
+        <tag>VMware</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux 常用命令</title>
     <url>/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
 <h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
 <h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
 <h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
 <p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
-<span id="more"></span>
+<!-- more -->
 <h2 id="磁盘扩容"><a href="#磁盘扩容" class="headerlink" title="磁盘扩容"></a>磁盘扩容</h2><p>先在Vmware虚拟机设置中扩展虚拟机磁盘容量</p>
 <p>查看以有分区<br><code>fdisk -l</code></p>
 <p>进入菜单,m列出菜单,p列出分区列表,n增加分区,w保存<br><code>fdisk /dev/sda</code></p>
@@ -131,26 +167,64 @@
       </tags>
   </entry>
   <entry>
-    <title>Idea 2019.1激活</title>
-    <url>/2020-10-Idea-2019-1%E6%BF%80%E6%B4%BB/</url>
-    <content><![CDATA[<p>原理应该是让idea拉回激活信息失败</p>
-<p>hosts 文件添加</p>
-<p>0.0.0.0 account.jetbrains.com<br>0.0.0.0 <span class="exturl" data-url="aHR0cDovL3d3dy5qZXRicmFpbnMuY29tLw==">www.jetbrains.com<i class="fa fa-external-link-alt"></i></span></p>
-<p>激活码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MNQ043JMTU-eyJsaWNlbnNlSWQiOiJNTlEwNDNKTVRVIiwibGljZW5zZWVOYW1lIjoiR1VPIEJJTiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNC0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNC0wNCJ9XSwiaGFzaCI6IjEyNjIxNDIwLzBwIiwiZ3JhY2VQZXJpb2REYXlzIjo3LCJhdXRvUHJvbG9uZ2F0ZWQiOnRydWUsImlzQXV0b1Byb2xvbmdhdGVkIjp0cnVlfQ&#x3D;&#x3D;-Zmbxcn7NPlqBNqAURX0uiLzybnruyx6PG+6KYZrpzm&#x2F;IJJs5nnIogGgdfIJoifO6fbaaJYc5pjds7CHdrt&#x2F;neIpvF2o&#x2F;HvIjMEF4&#x2F;AhNV7HUGsAa9zpMszc6YBIkMmVFh4Y7GPKOStA14&#x2F;Ld83AC7kGnwL1Fq7eAXKJFljc00GMejPpfE0zDqTN634bC+0ojfklhWXaLqhUt230SiE8onnd3quvEaH5NsW7sIQm2spyONZI+iHvHFtl4EvG7tlRlD1StsfhrbgNNxz61FOEEQ+GtZIzMx+T4sbpfoRyms7lbWQecrbAtE0c2sR98esm4PcDUhrFVBxGorPC1ppOLSQ&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO&#x2F;5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij&#x2F;78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB&#x2F;xVy&#x2F;VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE&#x2F;EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn&#x2F;72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN&#x2F;lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D&#x2F;cXmgpOyW&#x2F;1SmBz3XjVIi&#x2F;zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV&#x2F;bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit&#x2F;pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
+    <title>JavaSE-异常</title>
+    <url>/2020-10-%E5%BC%82%E5%B8%B8/</url>
+    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理，让程序继续执行下去,而不是遇到异常中断程序运行</li>
+<li>在多重catch块后面，可以加一个catch(Exception)来处理可能被遗漏的异常  </li>
+<li>对于不确定的代码，也可以加上try-catch来处理潜在的异常</li>
+<li>尽力去处理异常，切忌不要只是简单的调用printStackTrace()去打印输出  </li>
+<li>具体如何处理异常，要根据不同的业务需求和异常类型去决定</li>
+<li>尽量添加finally语句块去释放占用的资源</li>
+<li>不要在循环语句内使用try-catch，会占用大量资源<span id="more"></span>
+
+</li>
+</ul>
+<h3 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h3><p>运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。</p>
+<p>常见的5中运行时异常：</p>
+<p>ClassCastException(类转换异常)<br>IndexOutOfBoundsException(数组越界)<br>NullPointerException(空指针)<br>ArrayStoreException(数据存储异常，操作数组时类型不一致)<br>还有IO操作的BufferOverflowException异常</p>
+<h3 id="非运行时异常"><a href="#非运行时异常" class="headerlink" title="非运行时异常"></a>非运行时异常</h3><p>非运行时异常就必须得捕获了，强制处理异常，否则编译不过去，java编译器要求程序员必须对这种异常进行捕获或抛出,Java认为Checked异常都是可以被处理（修复）的异常，所以Java程序必须显式处理Checked异常。</p>
+<p>常见的非运行异常有io异常和sql异常。</p>
+<p>IOException<br>FileNotFoundExcetion<br>SQLException</p>
+<h3 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h3><p>错误 无法解决</p>
+<h2 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try catch finally"></a>try catch finally</h2><p>捕获异常 范围由小到大</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="throw和throws"><a href="#throw和throws" class="headerlink" title="throw和throws"></a>throw和throws</h2><p>1、throws出现在方法的声明中，表示该方法可能会抛出的异常，允许throws后面跟着多个异常类型<br>2、throw出现在方法体中，用于抛出异常。当方法在执行过程中遇到异常情况时，将异常信息封装为异常对象，然后throw。</p>
+<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>抛出异常和捕获异常：</p>
+<p>抛出异常 为了让程序继续执行<br>让调用者捕获解决异常</p>
+<p>什么时候用 try catch ，throws ，throw：</p>
+<ol>
+<li><p>throws:抛出异常</p>
+<p> 写方法时可能会遇到异常，在方法名声明异常  可声明多个异常  </p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">d2</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//这里有可能会产生FileNotFoundException异常</span></span><br><span class="line">    FileInputStream fis = <span class="keyword">new</span> FileInputStream(<span class="string">&quot;MyFile.txt&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>throw：手动抛出异常  </p>
+<p> 常用于判断内 例如：用户输入不合法</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(i==<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> ArithmeticException(<span class="string">&quot;i不能等于0&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 类似与sout打印到控制台，但是打印到控制台</p>
+</li>
+<li><p>try catch: 捕获异常，处理异常</p>
+<p> 调用时try catch捕获异常 处理异常</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 ]]></content>
       <categories>
-        <category>software</category>
-        <category>idea</category>
+        <category>Java</category>
+        <category>JavaSE</category>
       </categories>
       <tags>
-        <tag>Idea</tag>
+        <tag>JavaSE</tag>
       </tags>
   </entry>
   <entry>
     <title>Linux部署JavaWeb项目</title>
     <url>/2020-10-Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="linux部署javaWeb项目"><a href="#linux部署javaWeb项目" class="headerlink" title="linux部署javaWeb项目"></a>linux部署javaWeb项目</h1><h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
 </code></pre>
 <h2 id="2-部署tomcat"><a href="#2-部署tomcat" class="headerlink" title="2.部署tomcat"></a>2.部署tomcat</h2><p>解压tomcat</p>
 <pre><code>tar -zxvf apache-tomcat-8.5.43.tar.gz 
@@ -158,7 +232,7 @@
 <p>进入bin目录运行<code>start.sh</code></p>
 <pre><code>./start.sh
 </code></pre>
-<span id="more"></span>
+<!-- more -->
 
 <p>开放8080端口</p>
 <p>先关闭防火墙–&gt;安装或更新防火墙–&gt;启动防火墙–&gt;查看防火墙状态</p>
@@ -221,20 +295,6 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>VMware与Docker不兼容解决办法</title>
-    <url>/2020-10-VMware%E4%B8%8EDocker%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="熊掌和鱼不可兼得，只能使用其一"><a href="#熊掌和鱼不可兼得，只能使用其一" class="headerlink" title="熊掌和鱼不可兼得，只能使用其一"></a>熊掌和鱼不可兼得，只能使用其一</h2><span id="more"></span>
-<h2 id="1-使用用docker"><a href="#1-使用用docker" class="headerlink" title="1.使用用docker"></a>1.使用用docker</h2><p>第一步：在控制面板中勾选Hyper -v<br>第二步：在cmd，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype auto<br>第三步:重启</p>
-<h2 id="2-使用虚拟机"><a href="#2-使用虚拟机" class="headerlink" title="2.使用虚拟机"></a>2.使用虚拟机</h2><p>第一步：在控制面板中取消勾选Hyper -v<br>第二步：在cmd中，以管理员身份运行：<br>bcdedit /set hypervisorlaunchtype off<br>第三步:重启</p>
-]]></content>
-      <categories>
-        <category>技术储备</category>
-      </categories>
-      <tags>
-        <tag>VMware</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaSE-多态</title>
     <url>/2020-10-%E5%A4%9A%E6%80%81/</url>
     <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>动态绑定（多态）：动态绑定是指在“执行期间”（而非编译期间）判断所引用的实际对象类型，根据其实际的类型调用其相应的方法。所以实际当中找要调用的方法时是动态的去找的，new的是谁就找谁的方法，这就叫动态绑定。动态绑定帮助我们的程序的可扩展性达到了极致。</p>
@@ -247,59 +307,6 @@ useradd -r -g mysql mysql
 </ol>
 <p>这三个条件一旦满足，当你调用父类里面被重写的方法的时候，实际当中new的是哪个子类对象，就调用子类对象的方法（这个方法是从父类继承下来后重写后的方法）。</p>
 <p>　　面向对象比较强调类和类之间，对象和对象之间的一种组织关系，如果能把这种组织关系组织得比较好的话，你的程序想扩展性比较好，比较健壮，维护性比较好这些都可以达到，关键看你的设计到底好还是不好。</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-        <category>JavaSE</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaSE-异常</title>
-    <url>/2020-10-%E5%BC%82%E5%B8%B8/</url>
-    <content><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理，让程序继续执行下去,而不是遇到异常中断程序运行</li>
-<li>在多重catch块后面，可以加一个catch(Exception)来处理可能被遗漏的异常  </li>
-<li>对于不确定的代码，也可以加上try-catch来处理潜在的异常</li>
-<li>尽力去处理异常，切忌不要只是简单的调用printStackTrace()去打印输出  </li>
-<li>具体如何处理异常，要根据不同的业务需求和异常类型去决定</li>
-<li>尽量添加finally语句块去释放占用的资源</li>
-<li>不要在循环语句内使用try-catch，会占用大量资源<span id="more"></span>
-
-</li>
-</ul>
-<h3 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h3><p>运行时异常是不需要捕获的，程序员可以去处理，避免，比如0作除数异常，只需要加一个判断 被除数不能等于0即可避免，当异常出现时，虚拟机会处理。常见的运行时异常有空指针异常。</p>
-<p>常见的5中运行时异常：</p>
-<p>ClassCastException(类转换异常)<br>IndexOutOfBoundsException(数组越界)<br>NullPointerException(空指针)<br>ArrayStoreException(数据存储异常，操作数组时类型不一致)<br>还有IO操作的BufferOverflowException异常</p>
-<h3 id="非运行时异常"><a href="#非运行时异常" class="headerlink" title="非运行时异常"></a>非运行时异常</h3><p>非运行时异常就必须得捕获了，强制处理异常，否则编译不过去，java编译器要求程序员必须对这种异常进行捕获或抛出,Java认为Checked异常都是可以被处理（修复）的异常，所以Java程序必须显式处理Checked异常。</p>
-<p>常见的非运行异常有io异常和sql异常。</p>
-<p>IOException<br>FileNotFoundExcetion<br>SQLException</p>
-<h3 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h3><p>错误 无法解决</p>
-<h2 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try catch finally"></a>try catch finally</h2><p>捕获异常 范围由小到大</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="throw和throws"><a href="#throw和throws" class="headerlink" title="throw和throws"></a>throw和throws</h2><p>1、throws出现在方法的声明中，表示该方法可能会抛出的异常，允许throws后面跟着多个异常类型<br>2、throw出现在方法体中，用于抛出异常。当方法在执行过程中遇到异常情况时，将异常信息封装为异常对象，然后throw。</p>
-<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>抛出异常和捕获异常：</p>
-<p>抛出异常 为了让程序继续执行<br>让调用者捕获解决异常</p>
-<p>什么时候用 try catch ，throws ，throw：</p>
-<ol>
-<li><p>throws:抛出异常</p>
-<p> 写方法时可能会遇到异常，在方法名声明异常  可声明多个异常  </p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">d2</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//这里有可能会产生FileNotFoundException异常</span></span><br><span class="line">    FileInputStream fis = <span class="keyword">new</span> FileInputStream(<span class="string">&quot;MyFile.txt&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>throw：手动抛出异常  </p>
-<p> 常用于判断内 例如：用户输入不合法</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(i==<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> ArithmeticException(<span class="string">&quot;i不能等于0&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p> 类似与sout打印到控制台，但是打印到控制台</p>
-</li>
-<li><p>try catch: 捕获异常，处理异常</p>
-<p> 调用时try catch捕获异常 处理异常</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">        demo2.d2();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -573,18 +580,6 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
-    <title>JavaSE-问题记录</title>
-    <url>/2021-01-JavaSE-%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h2 id="为什么可以在匿名内部类中使用非final的数组"><a href="#为什么可以在匿名内部类中使用非final的数组" class="headerlink" title="为什么可以在匿名内部类中使用非final的数组"></a>为什么可以在匿名内部类中使用非final的数组</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestWin2</span> </span>&#123;</span><br><span class="line">   <span class="keyword">static</span> <span class="keyword">int</span> [] age1=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        <span class="comment">//方式二 匿名内部类 因为接口实现类只使用了一次</span></span><br><span class="line">        <span class="keyword">int</span> [] age=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;<span class="comment">//可以使用 且可以修改元素</span></span><br><span class="line">        age=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;; <span class="comment">//更改引用地址后 又不能使用了</span></span><br><span class="line">        age1=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;<span class="comment">//更改引用地址后 也可以使用</span></span><br><span class="line">        age[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">        System.out.println(age[<span class="number">0</span>]);</span><br><span class="line">        <span class="comment">//int ticket=101;//不可以使用</span></span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> ticket=<span class="number">101</span>; <span class="comment">//可以使用 不可以修改值</span></span><br><span class="line">        Runnable tickWin2=<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">            <span class="keyword">int</span> ticket=<span class="number">101</span>; <span class="comment">//可以使用 且可以修改值</span></span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                <span class="keyword">while</span> (<span class="keyword">true</span>)&#123;</span><br><span class="line">                    age1[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">                    <span class="keyword">if</span> (ticket&lt;=<span class="number">0</span>)&#123;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    System.out.println(Thread.currentThread().getName()+<span class="string">&quot;卖了第&quot;</span>+ticket+<span class="string">&quot;张票&quot;</span>);</span><br><span class="line">                    ticket--;</span><br><span class="line">                    <span class="comment">/*try &#123;</span></span><br><span class="line"><span class="comment">                        Thread.sleep(1000);  //状态一：休眠1秒</span></span><br><span class="line"><span class="comment">                    &#125; catch (InterruptedException e) &#123;</span></span><br><span class="line"><span class="comment">                        e.printStackTrace();</span></span><br><span class="line"><span class="comment">                    &#125;*/</span></span><br><span class="line">                    <span class="comment">//Thread.yield();  //状态二：放弃  当前线程主动放弃时间片，回到就绪状态，竞争下一次时间片</span></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Java</category>
-        <category>JavaSE</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown-lint规则</title>
     <url>/2021-02-MarkDown-lint%E8%A7%84%E5%88%99/</url>
     <content><![CDATA[<p>markdownlint是vscode上一款非常好用的 Markdown 格式检查扩展工具，它规定了许多规则并实时对文档进行检查，防止一些语法错误，同时维持文档风格的统一，使用此工具有助于形成一个良好的写作习惯和规范。但因其规则较多，写文档时很容易就出错（或不符合规则），所以需要对工具的规则有一个详细的了解，另外，有时工作要求的文档风格与markdownlint工具规定的规则并不相同，比如标题、列表的创建格式，缩进的空格数等等，这时就需要对规则进行一定的设置。</p>
@@ -693,9 +688,44 @@ useradd -r -g mysql mysql
       </tags>
   </entry>
   <entry>
+    <title>开发报错集合</title>
+    <url>/2021-03-%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="JavaSE"><a href="#JavaSE" class="headerlink" title="JavaSE"></a>JavaSE</h2><h3 id="为什么可以在匿名内部类中使用非final的数组"><a href="#为什么可以在匿名内部类中使用非final的数组" class="headerlink" title="为什么可以在匿名内部类中使用非final的数组"></a>为什么可以在匿名内部类中使用非final的数组</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestWin2</span> </span>&#123;</span><br><span class="line">   <span class="keyword">static</span> <span class="keyword">int</span> [] age1=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        <span class="comment">//方式二 匿名内部类 因为接口实现类只使用了一次</span></span><br><span class="line">        <span class="keyword">int</span> [] age=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;<span class="comment">//可以使用 且可以修改元素</span></span><br><span class="line">        age=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;; <span class="comment">//更改引用地址后 又不能使用了</span></span><br><span class="line">        age1=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;<span class="comment">//更改引用地址后 也可以使用</span></span><br><span class="line">        age[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">        System.out.println(age[<span class="number">0</span>]);</span><br><span class="line">        <span class="comment">//int ticket=101;//不可以使用</span></span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> ticket=<span class="number">101</span>; <span class="comment">//可以使用 不可以修改值</span></span><br><span class="line">        Runnable tickWin2=<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">            <span class="keyword">int</span> ticket=<span class="number">101</span>; <span class="comment">//可以使用 且可以修改值</span></span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                <span class="keyword">while</span> (<span class="keyword">true</span>)&#123;</span><br><span class="line">                    age1[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">                    <span class="keyword">if</span> (ticket&lt;=<span class="number">0</span>)&#123;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    System.out.println(Thread.currentThread().getName()+<span class="string">&quot;卖了第&quot;</span>+ticket+<span class="string">&quot;张票&quot;</span>);</span><br><span class="line">                    ticket--;</span><br><span class="line">                    <span class="comment">/*try &#123;</span></span><br><span class="line"><span class="comment">                        Thread.sleep(1000);  //状态一：休眠1秒</span></span><br><span class="line"><span class="comment">                    &#125; catch (InterruptedException e) &#123;</span></span><br><span class="line"><span class="comment">                        e.printStackTrace();</span></span><br><span class="line"><span class="comment">                    &#125;*/</span></span><br><span class="line">                    <span class="comment">//Thread.yield();  //状态二：放弃  当前线程主动放弃时间片，回到就绪状态，竞争下一次时间片</span></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><h3 id="Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml"><a href="#Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml" class="headerlink" title="Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml"></a>Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml</h3><p>原因：idea不会编译src的java目录的xml文件</p>
+<p>所以解决思路就是：将IDEA maven项目中src源代码下的xml等资源文件编译进classes文件夹</p>
+<p>具体操作方法就是：配置maven的pom文件配置，在节点下添加代码：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="attempted-to-return-null-from-a-method-with-a-primitive-return-type-int"><a href="#attempted-to-return-null-from-a-method-with-a-primitive-return-type-int" class="headerlink" title="attempted to return null from a method with a primitive return type (int)"></a>attempted to return null from a method with a primitive return type (int)</h3><p>sql语句返回为空，但是mapper.xml定义的返回类型为int<br>int默认为0，不支持空  改为java.lang.Integer即可<br>这就是基本类型int和包装类Integer的区别</p>
+<h2 id="Spring-Mybatis"><a href="#Spring-Mybatis" class="headerlink" title="Spring Mybatis"></a>Spring Mybatis</h2><h3 id="事务不生效问题"><a href="#事务不生效问题" class="headerlink" title="事务不生效问题"></a>事务不生效问题</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tx:advice</span> <span class="attr">id</span>=<span class="string">&quot;txAdvice&quot;</span> <span class="attr">transaction-manager</span>=<span class="string">&quot;transactionManager&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--给哪些方法添加事务--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--传播特性 默认REQUIRED--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;addUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;deleteUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;update&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;selectUser&quot;</span> <span class="attr">read-only</span>=<span class="string">&quot;true&quot;</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--&lt;tx:method name=&quot;*&quot; propagation=&quot;REQUIRED&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tx:advice</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>方法名与被事务的方法名名必须相同， 或则使用”<em>“ 所有方法,我出错的原因是写成了”</em>/“ 然后测试发现方法名不同也会不生效</p>
+<h3 id="Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml"><a href="#Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml" class="headerlink" title="Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]"></a>Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]</h3><p>mybatis-config.xml和spring-config.xml重复扫描mapper造成的,注释掉mybatis-config.xml里面的</p>
+<p>spring-config.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--生成代理器--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;sqlSessionFactory&quot;</span> <span class="attr">class</span>=<span class="string">&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;dataSource&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;dataSource&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;configLocation&quot;</span> <span class="attr">value</span>=<span class="string">&quot;mybatis-config.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;mapperLocations&quot;</span> <span class="attr">value</span>=<span class="string">&quot;classpath:top/chenmw/mapper/*.xml&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>mybatis-config.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描直接文件--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--&lt;mapper resource=&quot;top/chenmw/mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描指定包--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;top.chenmw.mapper&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><h3 id="配置项目名后静态资源路径问题不拼接项目名"><a href="#配置项目名后静态资源路径问题不拼接项目名" class="headerlink" title="配置项目名后静态资源路径问题不拼接项目名"></a>配置项目名后静态资源路径问题不拼接项目名</h3><p>原因：配置项目名使用的是 spring-mvc-servlet-path： /chenmw</p>
+<p>解决：改为使用 server-servlet-context-path： /chenmw</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>Error</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Spring注解大全详解</title>
     <url>/2021-03-Spring%E6%B3%A8%E8%A7%A3%E5%A4%A7%E5%85%A8%E8%AF%A6%E8%A7%A3/</url>
-    <content><![CDATA[<h2 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h2><h3 id="Bean"><a href="#Bean" class="headerlink" title="@Bean"></a>@Bean</h3><p>作用于方法上，一般标明返回的对象直接被Spring管理起来，常用于@Configuration中</p>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h2><h3 id="Bean"><a href="#Bean" class="headerlink" title="@Bean"></a>@Bean</h3><p>作用于方法上，一般标明返回的对象直接被Spring管理起来，常用于@Configuration中</p>
 <h3 id="Component"><a href="#Component" class="headerlink" title="@Component"></a>@Component</h3><p>作用于类上，声明这个类是一个组件，让spring容器管理起来</p>
 <p><strong>@Component三个衍生注解</strong></p>
 <ul>
@@ -703,8 +733,6 @@ useradd -r -g mysql mysql
 <li>@Service //作用于业务层下的类</li>
 <li>@Repository //作用于dao层下的类</li>
 </ul>
-<span id="more"></span>
-
 <h3 id="ComponentScan"><a href="#ComponentScan" class="headerlink" title="@ComponentScan()"></a>@ComponentScan()</h3><p>如果你的其他包都在使用了@SpringBootApplication注解的main<br>app所在的包及其下级包，则你什么都不用做，SpringBoot会自动帮你把其他包都扫描了</p>
 <p>如果你有一些bean所在的包，不在main<br>app的包及其下级包，那么你需要手动加上@ComponentScan注解并指定那个bean所在的包</p>
 <h3 id="Controller层"><a href="#Controller层" class="headerlink" title="Controller层"></a>Controller层</h3><ul>
@@ -731,36 +759,6 @@ useradd -r -g mysql mysql
       </categories>
       <tags>
         <tag>Spring</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开发报错集合</title>
-    <url>/2021-03-%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><h3 id="Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml"><a href="#Error-parsing-SQL-Mapper-Configuration-Cause-java-io-IOException-Could-not-find-resource-top-chenmw-user-mapper-UserMapper-xml" class="headerlink" title="Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml"></a>Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource top/chenmw/user/mapper/UserMapper.xml</h3><p>原因：idea不会编译src的java目录的xml文件</p>
-<p>所以解决思路就是：将IDEA maven项目中src源代码下的xml等资源文件编译进classes文件夹</p>
-<p>具体操作方法就是：配置maven的pom文件配置，在节点下添加代码：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="attempted-to-return-null-from-a-method-with-a-primitive-return-type-int"><a href="#attempted-to-return-null-from-a-method-with-a-primitive-return-type-int" class="headerlink" title="attempted to return null from a method with a primitive return type (int)"></a>attempted to return null from a method with a primitive return type (int)</h3><p>sql语句返回为空，但是mapper.xml定义的返回类型为int<br>int默认为0，不支持空  改为java.lang.Integer即可<br>这就是基本类型int和包装类Integer的区别</p>
-<h2 id="Spring-Mybatis"><a href="#Spring-Mybatis" class="headerlink" title="Spring Mybatis"></a>Spring Mybatis</h2><h3 id="事务不生效问题"><a href="#事务不生效问题" class="headerlink" title="事务不生效问题"></a>事务不生效问题</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tx:advice</span> <span class="attr">id</span>=<span class="string">&quot;txAdvice&quot;</span> <span class="attr">transaction-manager</span>=<span class="string">&quot;transactionManager&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--给哪些方法添加事务--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--传播特性 默认REQUIRED--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;addUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;deleteUser&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;update&quot;</span> <span class="attr">propagation</span>=<span class="string">&quot;REQUIRED&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tx:method</span> <span class="attr">name</span>=<span class="string">&quot;selectUser&quot;</span> <span class="attr">read-only</span>=<span class="string">&quot;true&quot;</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--&lt;tx:method name=&quot;*&quot; propagation=&quot;REQUIRED&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tx:attributes</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tx:advice</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>方法名与被事务的方法名名必须相同， 或则使用”<em>“ 所有方法,我出错的原因是写成了”</em>/“ 然后测试发现方法名不同也会不生效</p>
-<h3 id="Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml"><a href="#Error-creating-bean-with-name-‘sqlSessionFactory’-defined-in-class-path-resource-spring-config-xml-Invocation-of-init-method-failed-nested-exception-is-org-springframework-core-NestedIOException-Failed-to-parse-mapping-resource-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-nested-exception-is-org-apache-ibatis-builder-BuilderException-Error-parsing-Mapper-XML-The-XML-location-is-‘file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml-’-Cause-java-lang-IllegalArgumentException-Mapped-Statements-collection-already-contains-value-for-top-chenmw-mapper-UserMapper-selectUser-please-check-top-chenmw-mapper-UserMapper-xml-and-file-D-learn-Spring-Learning-spring-10-02-spring-mybatis-target-classes-top-chenmw-mapper-UserMapper-xml" class="headerlink" title="Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]"></a>Error creating bean with name ‘sqlSessionFactory’ defined in class path resource [spring-config.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is ‘file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]’. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for top.chenmw.mapper.UserMapper.selectUser. please check top/chenmw/mapper/UserMapper.xml and file [D:\learn\Spring-Learning\spring-10-02-spring-mybatis\target\classes\top\chenmw\mapper\UserMapper.xml]</h3><p>mybatis-config.xml和spring-config.xml重复扫描mapper造成的,注释掉mybatis-config.xml里面的</p>
-<p>spring-config.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--生成代理器--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;sqlSessionFactory&quot;</span> <span class="attr">class</span>=<span class="string">&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;dataSource&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;dataSource&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;configLocation&quot;</span> <span class="attr">value</span>=<span class="string">&quot;mybatis-config.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;mapperLocations&quot;</span> <span class="attr">value</span>=<span class="string">&quot;classpath:top/chenmw/mapper/*.xml&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>mybatis-config.xml</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描直接文件--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--&lt;mapper resource=&quot;top/chenmw/mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描指定包--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;top.chenmw.mapper&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><h3 id="配置项目名后静态资源路径问题不拼接项目名"><a href="#配置项目名后静态资源路径问题不拼接项目名" class="headerlink" title="配置项目名后静态资源路径问题不拼接项目名"></a>配置项目名后静态资源路径问题不拼接项目名</h3><p>原因：配置项目名使用的是 spring-mvc-servlet-path： /chenmw</p>
-<p>解决：改为使用 server-servlet-context-path： /chenmw</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-        <category>Error</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -1670,7 +1668,7 @@ useradd -r -g mysql mysql
 <p>然后创建SSH</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
-<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjeDc0OyYjeDQwOyYjMTAzOyYjMTA1OyYjMTE2OyYjeDY4OyYjMTE3OyYjOTg7JiN4MmU7JiM5OTsmIzExMTsmIzEwOTs=">&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#109;<i class="fa fa-external-link-alt"></i></span></p>
+<p>查看是否绑定成功<br>ssh -T <span class="exturl" data-url="bWFpbHRvOiYjMTAzOyYjMTA1OyYjeDc0OyYjNjQ7JiN4Njc7JiN4Njk7JiN4NzQ7JiN4Njg7JiMxMTc7JiM5ODsmIzQ2OyYjeDYzOyYjeDZmOyYjMTA5Ow==">&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#109;<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="Hexo部署配置"><a href="#Hexo部署配置" class="headerlink" title="Hexo部署配置"></a>Hexo部署配置</h3><p>这一步，将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/mw-gh/mw-gh.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
