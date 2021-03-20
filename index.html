@@ -332,7 +332,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 11:59:57" itemprop="dateModified" datetime="2021-03-18T11:59:57+08:00">2021-03-18</time>
+                <time title="修改时间：2021-03-19 14:03:32" itemprop="dateModified" datetime="2021-03-19T14:03:32+08:00">2021-03-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -436,7 +436,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 11:52:26" itemprop="dateModified" datetime="2021-03-18T11:52:26+08:00">2021-03-18</time>
+                <time title="修改时间：2021-03-19 14:00:21" itemprop="dateModified" datetime="2021-03-19T14:00:21+08:00">2021-03-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -448,11 +448,7 @@
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/SSM/" itemprop="url" rel="index"><span itemprop="name">SSM</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/SSM/Spring/" itemprop="url" rel="index"><span itemprop="name">Spring</span></a>
+                  <a href="/categories/Java/Spring/" itemprop="url" rel="index"><span itemprop="name">Spring</span></a>
                 </span>
             </span>
 
@@ -510,26 +506,14 @@
 <li>@Service //作用于业务层下的类</li>
 <li>@Repository //作用于dao层下的类</li>
 </ul>
-<h3 id="ComponentScan"><a href="#ComponentScan" class="headerlink" title="@ComponentScan()"></a>@ComponentScan()</h3><p>如果你的其他包都在使用了@SpringBootApplication注解的main<br>app所在的包及其下级包，则你什么都不用做，SpringBoot会自动帮你把其他包都扫描了</p>
-<p>如果你有一些bean所在的包，不在main<br>app的包及其下级包，那么你需要手动加上@ComponentScan注解并指定那个bean所在的包</p>
-<h3 id="Controller层"><a href="#Controller层" class="headerlink" title="Controller层"></a>Controller层</h3><ul>
-<li><p>@Controller //表示该类是一个控制器</p>
-</li>
-<li><p>@RestController //表示该类，只返回字符串</p>
-</li>
-<li><p>@ResponseBody  //表示该方法不走视图解析器，直接返回字符串</p>
-</li>
-<li><p>@RequestMapping(“hello”) //映射地址</p>
-</li>
-<li><p>@Autowired  //自动装配 在容器中自动找到依赖  根据类型 ，省去了get set方法</p>
-</li>
-<li><p>@Qualifier //与@Autowired配置使用，@Autowired根据类型找不到时@Qualifier根据名称取找</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span>    <span class="comment">//表示该类是一个控制器</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/books&quot;)</span>   <span class="comment">//映射主路径</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BooksController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Autowired</span>  <span class="comment">//在容器中自动找到依赖  根据类型</span></span><br><span class="line">    <span class="meta">@Qualifier(&quot;booksServiceImpl&quot;)</span>  <span class="comment">//根据名称</span></span><br><span class="line">    <span class="keyword">private</span> BooksService booksService;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@RequestMapping(&quot;/allBook&quot;)</span>  <span class="comment">//映射副路径</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">list</span><span class="params">(Model model)</span> </span>&#123;</span><br><span class="line">        List&lt;Books&gt; list = booksService.queryAllBook();</span><br><span class="line">        model.addAttribute(<span class="string">&quot;list&quot;</span>, list);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;allBook&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Configuration"><a href="#Configuration" class="headerlink" title="@Configuration"></a>@Configuration</h3><p>表示该类是一个配置类</p>
-</li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021-03-Spring%E6%B3%A8%E8%A7%A3%E5%A4%A7%E5%85%A8%E8%AF%A6%E8%A7%A3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -571,7 +555,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 11:51:05" itemprop="dateModified" datetime="2021-03-18T11:51:05+08:00">2021-03-18</time>
+                <time title="修改时间：2021-03-19 13:55:51" itemprop="dateModified" datetime="2021-03-19T13:55:51+08:00">2021-03-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -580,6 +564,10 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Error/" itemprop="url" rel="index"><span itemprop="name">Error</span></a>
                 </span>
             </span>
 
@@ -682,7 +670,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-07 22:24:23" itemprop="dateModified" datetime="2021-03-07T22:24:23+08:00">2021-03-07</time>
+                <time title="修改时间：2021-03-19 14:02:39" itemprop="dateModified" datetime="2021-03-19T14:02:39+08:00">2021-03-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -691,6 +679,10 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/software/" itemprop="url" rel="index"><span itemprop="name">software</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/software/idea/" itemprop="url" rel="index"><span itemprop="name">idea</span></a>
                 </span>
             </span>
 
@@ -787,7 +779,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 11:52:47" itemprop="dateModified" datetime="2021-03-18T11:52:47+08:00">2021-03-18</time>
+                <time title="修改时间：2021-03-20 04:19:52" itemprop="dateModified" datetime="2021-03-20T04:19:52+08:00">2021-03-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -904,7 +896,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 11:49:10" itemprop="dateModified" datetime="2021-03-18T11:49:10+08:00">2021-03-18</time>
+                <time title="修改时间：2021-03-20 07:01:19" itemprop="dateModified" datetime="2021-03-20T07:01:19+08:00">2021-03-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -947,7 +939,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.9k</span>
+              <span>3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -981,6 +973,9 @@
 
 <p>mybatis-config.xml</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描直接文件--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--&lt;mapper resource=&quot;top/chenmw/mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--扫描指定包--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;top.chenmw.mapper&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><h3 id="配置项目名后静态资源路径问题不拼接项目名"><a href="#配置项目名后静态资源路径问题不拼接项目名" class="headerlink" title="配置项目名后静态资源路径问题不拼接项目名"></a>配置项目名后静态资源路径问题不拼接项目名</h3><p>原因：配置项目名使用的是 spring-mvc-servlet-path： /chenmw</p>
+<p>解决：改为使用 server-servlet-context-path： /chenmw</p>
 
       
     </div>
@@ -1239,7 +1234,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020-10-Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/Mw.png">
@@ -1253,7 +1248,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">linux 常用命令</a>
+            <a href="/2020-10-Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/" class="post-title-link" itemprop="url">Linux部署JavaWeb项目</a>
         </h2>
 
         <div class="post-meta">
@@ -1279,7 +1274,7 @@
             </span>
 
           
-            <span id="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-meta-item leancloud_visitors" data-flag-title="linux 常用命令" title="阅读次数">
+            <span id="/2020-10-Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/" class="post-meta-item leancloud_visitors" data-flag-title="Linux部署JavaWeb项目" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -1294,8 +1289,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020-10-Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020-10-Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1305,7 +1300,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>591</span>
+              <span>943</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1324,14 +1319,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
-<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>网卡地址<br>vi /etc/sysconfig/network-scripts/ifcfg-ens33</p>
-<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p>正在运行程序<br>netstat -ntlp</p>
-<p>防火墙允许通过的进程<br>firewall-cmd –list-ports</p>
+          <h1 id="linux部署javaWeb项目"><a href="#linux部署javaWeb项目" class="headerlink" title="linux部署javaWeb项目"></a>linux部署javaWeb项目</h1><h2 id="1-查看是否有java环境"><a href="#1-查看是否有java环境" class="headerlink" title="1.查看是否有java环境"></a>1.查看是否有java环境</h2><pre><code>java -version
+</code></pre>
+<h2 id="2-部署tomcat"><a href="#2-部署tomcat" class="headerlink" title="2.部署tomcat"></a>2.部署tomcat</h2><p>解压tomcat</p>
+<pre><code>tar -zxvf apache-tomcat-8.5.43.tar.gz 
+</code></pre>
+<p>进入bin目录运行<code>start.sh</code></p>
+<pre><code>./start.sh
+</code></pre>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more" rel="contents">
+              <a class="btn" href="/2020-10-Linux%E9%83%A8%E7%BD%B2Javaweb%E9%A1%B9%E7%9B%AE/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1424,20 +1422,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">27</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1493,12 +1491,12 @@
     <span class="post-meta-item-icon">
     <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">348k</span>
+    <span title="站点总字数">347k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
     <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">5:17</span>
+    <span title="站点阅读时长">5:16</span>
 </div>
 <div class="busuanzi-count">
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
