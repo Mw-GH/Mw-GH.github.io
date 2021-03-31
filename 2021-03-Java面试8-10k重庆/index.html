@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="自我介绍项目介绍笔试题（一） 输入10000000000，输出10,000,000,000   1234&#x2F;&#x2F;方式一：DecimalFormat df &#x3D; new DecimalFormat(&quot;#,###.00&quot;);input &#x3D; df.format(Double.parseDouble(input));return input;    123456789101112131415">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试题">
+<meta property="og:url" content="http://example.com/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/index.html">
+<meta property="og:site_name" content="Mw-Blog">
+<meta property="og:description" content="自我介绍项目介绍笔试题（一） 输入10000000000，输出10,000,000,000   1234&#x2F;&#x2F;方式一：DecimalFormat df &#x3D; new DecimalFormat(&quot;#,###.00&quot;);input &#x3D; df.format(Double.parseDouble(input));return input;    123456789101112131415">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-03-20T12:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-31T04:46:37.661Z">
+<meta property="article:author" content="Mw">
+<meta property="article:tag" content="面试题">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>面试题 | Mw-Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+ 
+  <div id="music">
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52" src="//music.163.com/outchain/player?type=2&id=1305366486&auto=0&height=32"></iframe>
+  </div>
+  <style>
+    #music {
+        position: fixed;
+        left: 20px;
+        bottom: 5px;
+        z-index: 998;
+    }
+  </style>
+  
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Mw-Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          面试题
+        </h1>
+
+        <div class="post-meta">
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-31 12:46:37" itemprop="dateModified" datetime="2021-03-31T12:46:37+08:00">2021-03-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">面试题</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/" class="post-meta-item leancloud_visitors" data-flag-title="面试题" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><h2 id="笔试题（一）"><a href="#笔试题（一）" class="headerlink" title="笔试题（一）"></a>笔试题（一）</h2><ul>
+<li><p>输入10000000000，输出10,000,000,000</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方式一：</span></span><br><span class="line">DecimalFormat df = <span class="keyword">new</span> DecimalFormat(<span class="string">&quot;#,###.00&quot;</span>);</span><br><span class="line">input = df.format(Double.parseDouble(input));</span><br><span class="line"><span class="keyword">return</span> input;</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方式二：笨一点 </span></span><br><span class="line">String input=<span class="string">&quot;12345678911&quot;</span>;</span><br><span class="line"><span class="keyword">int</span> count=input.length()/<span class="number">3</span>;</span><br><span class="line">System.out.println(count);</span><br><span class="line"><span class="keyword">int</span> mo=input.length()%<span class="number">3</span>;</span><br><span class="line">System.out.println(mo);</span><br><span class="line"></span><br><span class="line"><span class="comment">//        input.substring(input.length()-9,input.length()-6);//567</span></span><br><span class="line"><span class="comment">//        input.substring(input.length()-6,input.length()-3);//2 i*3 i*3-3 891</span></span><br><span class="line"><span class="comment">//        input.substring(input.length()-3,input.length()-0);//1 i*3 i*3-3 011</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//System.out.println(str);</span></span><br><span class="line"><span class="keyword">if</span> (mo!=<span class="number">0</span>)&#123;</span><br><span class="line">    count++;</span><br><span class="line">&#125;</span><br><span class="line">String [] substrs=<span class="keyword">new</span> String[count];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i &lt;=count ; i++) &#123;</span><br><span class="line">    <span class="comment">//substrs[]=&#123;12,345,678,911.00&#125;</span></span><br><span class="line">    <span class="keyword">if</span>(input.contains(<span class="string">&quot;.&quot;</span>)&amp;&amp;i==<span class="number">1</span>)&#123;</span><br><span class="line">        String substring=input.substring(input.length() - (i * <span class="number">6</span>), input.length() - (i * <span class="number">3</span> - <span class="number">3</span>));</span><br><span class="line">    	substrs[count-i]=substring;</span><br><span class="line">        i=<span class="number">3</span>;</span><br><span class="line">        <span class="comment">//substrs[]=&#123;12,345,678,911&#125;</span></span><br><span class="line">    &#125;</span><br><span class="line">    String substring=input.substring(input.length() - (i * <span class="number">3</span>), input.length() - (i * <span class="number">3</span> - <span class="number">3</span>));</span><br><span class="line">    substrs[count-i]=substring;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">String joinStr;</span><br><span class="line"><span class="keyword">if</span> (mo!=<span class="number">0</span>)&#123;</span><br><span class="line">    String moStr=input.substring(<span class="number">0</span>,mo);</span><br><span class="line">    substrs[<span class="number">0</span>]=moStr;</span><br><span class="line">    joinStr=StringUtils.join(Arrays.asList(substrs), <span class="string">&quot;,&quot;</span>);</span><br><span class="line">    String last=String.join(<span class="string">&quot;,&quot;</span>,joinStr);</span><br><span class="line">    System.out.println(last);</span><br><span class="line">&#125;<span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    joinStr=StringUtils.join(Arrays.asList(substrs), <span class="string">&quot;,&quot;</span>);</span><br><span class="line">    System.out.println(joinStr);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>* 考察知识点：常用类的使用 
+* DecimalFormat
+* substring(),Arrays.asList数组转字符串，StringUtils.join
+</code></pre>
+</li>
+</ul>
+<h2 id="Java高级"><a href="#Java高级" class="headerlink" title="Java高级"></a>Java高级</h2><h3 id="jvm："><a href="#jvm：" class="headerlink" title="jvm："></a>jvm：</h3><ul>
+<li>简述堆内存和栈内存</li>
+<li>尽量多说出发生的full gc情况</li>
+</ul>
+<h2 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h2><ul>
+<li><p>SQL执行顺序</p>
+<ul>
+<li>FROM, including JOINs</li>
+<li>WHERE</li>
+<li>GROUP BY</li>
+<li>HAVING</li>
+<li>WINDOW functions</li>
+<li>SELECT</li>
+<li>DISTINCT</li>
+<li>UNION</li>
+<li>ORDER BY</li>
+<li>LIMIT and OFFSET</li>
+</ul>
+</li>
+<li><p>学生成绩</p>
+<p>#(5)查询平均成绩大于等于60分的同学的学生编号和学生姓名和平均成绩</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> stu.s_id, stu.s_name, </span><br><span class="line"><span class="built_in">SUM</span>(sc.score,<span class="number">0</span>)<span class="operator">/</span><span class="number">3</span> <span class="string">&#x27;平均成绩&#x27;</span></span><br><span class="line"><span class="keyword">From</span> student stu</span><br><span class="line"><span class="keyword">Left</span> <span class="keyword">Join</span> score sc <span class="keyword">On</span> stu.s_id <span class="operator">=</span> sc.s_id</span><br><span class="line"><span class="keyword">Group</span> <span class="keyword">by</span> stu.s_id</span><br><span class="line"><span class="keyword">having</span> <span class="built_in">SUM</span>(sc.score)<span class="operator">/</span><span class="number">3</span><span class="operator">&gt;</span><span class="number">60</span></span><br></pre></td></tr></table></figure>
+
+<p>知识点： 1. 考虑是否有学生单科成绩为null或0，为空时就不能用avg</p>
+<p>​                2. having </p>
+<ul>
+<li>考察知识点<ol>
+<li>连边查询 <code>inner\left\right join</code>的使用和区别</li>
+<li>行转列，静态，高级 动态</li>
+<li>优化</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="MySQL性能优化"><a href="#MySQL性能优化" class="headerlink" title="MySQL性能优化"></a>MySQL性能优化</h2><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="RESTfull"><a href="#RESTfull" class="headerlink" title="RESTfull"></a>RESTfull</h3><p>简述：客户端通过四个HTTP动词，对服务器端资源进行操作，实现”表现层状态转化”。</p>
+<p>​            URI中不该有动词，动词应该放在HTTP协议中 如get，post，put，delete</p>
+<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><h3 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h3><h4 id="IOC控制反转"><a href="#IOC控制反转" class="headerlink" title="IOC控制反转"></a>IOC控制反转</h4><p><strong>获得依赖对象的方式反转了</strong>  </p>
+<p>由程序控制对象，反转为有调用者控制对象，程序被动接收对象</p>
+<p>eg：我想穿新鞋，进了一家草鞋专卖店（控制权在专卖店），只有给我草鞋，发现不合适，得买皮鞋，我得再跑到草鞋专卖店去买，又发现不合适得买布鞋，还得跑去布鞋店（耦合）</p>
+<p>​        第二天，学聪明了 进了一家杂鞋店，什么鞋都有（控制权在我），我要草鞋给我拿草鞋厂家的鞋，要皮鞋给我拿皮鞋厂家的鞋</p>
+<h4 id="DI依赖注入"><a href="#DI依赖注入" class="headerlink" title="DI依赖注入"></a>DI依赖注入</h4><p><strong>IOC容器在运行期间，动态地将某种依赖关系注入到对象之中</strong>。</p>
+<p><strong>Spring三种依赖注入方式：</strong></p>
+<ul>
+<li>Set方法</li>
+<li>构造器</li>
+<li>接口</li>
+</ul>
+<p><strong>区别</strong>：构造注入是在对象创建时期就完成注入，set注入的方式是在创建对象完成后进行注入。一般使用set注入</p>
+<p>实现方式：xml,注解</p>
+<p><strong>Spring三种实列化bean方式：</strong></p>
+<ul>
+<li><p> 构造器</p>
+</li>
+<li><p> 静态工厂</p>
+</li>
+<li><p> 工厂方法</p>
+</li>
+<li><p>*Bean的生命周期和作用域:**</p>
+</li>
+</ul>
+<p><strong>@AutoWired和@Resource的区别</strong></p>
+<ul>
+<li><p>@Autowired：是按类型自动转配的，不支持id匹配。来自于SpringAOP需要导入 spring-aop的包！</p>
+</li>
+<li><p>@Resource如有指定的name属性，先按该属性进行byName方式查找装配；</p>
+</li>
+<li><p>其次再进行默认的byName方式进行装配；</p>
+</li>
+<li><p>如果以上都不成功，则按byType的方式自动装配。</p>
+</li>
+<li><p>都不成功，则报异常。</p>
+</li>
+</ul>
+<p>​    </p>
+<h2 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h2><h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><h2 id="面试题（3）"><a href="#面试题（3）" class="headerlink" title="面试题（3）"></a>面试题（3）</h2><p><strong>后端开发：</strong></p>
+<p><strong>面试**</strong>题**<strong>：</strong></p>
+<ol>
+<li><p><strong>array和arrayList的区别</strong></p>
+<p>array：数组，有序，有下标，可重复，长度固定</p>
+<p>arrayList：数组列表，有序，有下标，可重复，可变长度，基于数组</p>
+</li>
+<li><p><strong>重载跟重写的区别</strong> </p>
+<p>重载:在一个类中 通过重载 不同的修饰符 返回值 参数 为一个方法提供多种实现方式</p>
+<p>重写: 父类方法不满足子类 子类通过重写满足要求</p>
+</li>
+<li><p><strong>线程的创建方式</strong></p>
+<p>继承Thread、实现Runable、线程池</p>
+</li>
+<li><p><strong>==跟equals的区别 ，&amp;跟&amp;&amp;的区别</strong>       </p>
+<p>==:<br>   基本类型 比较值<br>   引用类型 比较地址</p>
+<p>equals:<br>   基本类型 比较值<br>   引用类型 比较地址 重写实现比较值</p>
+<p>&amp;: 左或右一边为false则返回false</p>
+<p>&amp;&amp;: 左为false则不计算右边直接返回false      </p>
+</li>
+<li><p><strong>全局异常怎么处理</strong></p>
+<p>写一个全局异常处理器，使用@ExceptionHandler注解捕获相应异常 返回异常信息</p>
+</li>
+<li><p>线程的创建方式</p>
+<p>1.基础Thread</p>
+<p>2.实现Runnable</p>
+<p>3.实现Callable  有返回值</p>
+<p>4.通过线程池</p>
+</li>
+<li><p><strong>线程的几种状态</strong></p>
+<p><strong>NEW</strong>：初始状态<br>线程还没有启动时的状态。</p>
+<p><strong>RUNNABLE</strong>：就绪状态和执行状态<br>线程启动时的状态。线程被JVM所执行但它还可能需要一些来自操作系统的其他资源才能执行。</p>
+<p><strong>BLOCKED</strong>：阻塞状态 当线程访问临界区 (同步块代码)时，如果没有拿到访问锁，便进入阻塞状态。<br>线程被一个监听锁所阻塞时的状态。</p>
+<p><strong>WAITING</strong>：无限期等待状态，线程正在等待时的状态。线程被以下方法所调用就会进入等待状态：</p>
+<ul>
+<li><code>Object.wait</code>无参方法 wait方法可以让当前线程进入等待状态，需要其他线程调用此线程对象的notify方法或者notifyAll方法来唤醒此线程；</li>
+<li><code>Thread.join</code>无参方法 调用join方法的线程需要等到被调用线程终止才能结束等待状态。</li>
+</ul>
+<p><strong>TIMED_WAITING</strong>： 有限等待状态<br>线程在指定时间后才能结束等待的一种等待状态。是由于调用了以下方法所引起的一种状态：</p>
+<ul>
+<li><code>Thread.sleep</code></li>
+<li><code>Object.wait</code>带参方法</li>
+<li><code>Thread.join</code>带参方法</li>
+</ul>
+<p><strong>TERMINATED</strong> ：终止状态<br>线程终止时的状态。该线程已经执行完毕。</p>
+</li>
+<li><p><strong>线程池参数. 200个线程同时请求，线程池如何分配</strong></p>
+<p>自定义线程池</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ExecutorService es = <span class="keyword">new</span> ThreadPoolExecutor(</span><br><span class="line">                corePoolSize,<span class="comment">//核心线程数</span></span><br><span class="line">                maximumPoolSize,<span class="comment">//最大线程数</span></span><br><span class="line">                <span class="number">60</span>,<span class="comment">//等待时间</span></span><br><span class="line">                TimeUnit.SECONDS,<span class="comment">//等待时间单位</span></span><br><span class="line">                <span class="keyword">new</span> LinkedBlockingQueue&lt;&gt;(<span class="number">20</span>),<span class="comment">//等待队列</span></span><br><span class="line">                Executors.defaultThreadFactory(),<span class="comment">//线程工厂</span></span><br><span class="line">                <span class="keyword">new</span> ThreadPoolExecutor.CallerRunsPolicy ());<span class="comment">//线程池策略</span></span><br><span class="line">        </span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><strong>你们团队是怎么使用git管理代码的</strong></p>
+<p>搭建本地代码仓库 gitlab  使用基本命令</p>
+</li>
+<li><p><strong>Spring aop原理和实际使用</strong></p>
+<p>实际使用：多用于 事务，异常，操作日志</p>
+</li>
+<li><p><strong>SpringBoot相比MVC有什么优势</strong></p>
+<p>Springboot 预配置了很多组件，通常只需引入依赖，Springboot会自动配置</p>
+<p>MVC需要自己手动配置 JavaConfig或者XML</p>
+</li>
+<li><p><strong>有一场景：在程序无法优化的情况，如何在数据库层面优化查询（Mysql）</strong></p>
+<p>一般优化SQL的几种常用手段</p>
+<p>添加索引、避免索引失效</p>
+<p>避免被锁</p>
+<p>不优秀的SQL</p>
+<p>表的设计</p>
+</li>
+<li><p><strong>说下 mysql的左连接</strong></p>
+<p>left join：左表有则有</p>
+</li>
+<li><p><strong>Mybatisplus和mybatis区别</strong></p>
+<p>Mybatisplus是国产的一款mybatis增强版</p>
+<p>无倾入，不改变mybatis的原有操作，自带了一些插件（分页，乐观锁，字段自动补充）</p>
+<p>通过BaseMapper 封装基础CRUD，提高开发效率</p>
+<p>通过Wrapper 可以写复杂条件的SQL，也按原Mybatis操作写复杂SQL</p>
+</li>
+<li><p><strong>mybatis pagehelper具体实现。</strong></p>
+<p>pagehelper.start需紧跟查询方法，如果查询方法出错（如xml中字段问题），使Pagehelper没有被消费，会一直保留在线程上，直到出现查询语句的线程，就会导致不该被分页的方法被分页。</p>
+</li>
+<li><p><strong>数据库大数据量分表</strong></p>
+<p>最常用 按时间</p>
+</li>
+<li><p><strong>实际项目中遇到的问题以及都怎么解决的</strong></p>
+</li>
+<li><p><strong>Redis 原理</strong></p>
+</li>
+<li><p><strong>redis存储的数据类型</strong></p>
+<p>String，Set，有序Set，Hash，</p>
+</li>
+<li><p><strong>redis的持久化</strong></p>
+<p>AOF、</p>
+</li>
+<li><p><strong>redis 雪崩</strong></p>
+</li>
+<li><p><strong>聊聊用过的mq</strong></p>
+</li>
+<li><p><strong>讲一下 es等流程引擎</strong></p>
+</li>
+<li><p><strong>工作流引擎</strong></p>
+</li>
+<li><p><strong>报表引擎</strong></p>
+</li>
+<li><p>**规则引擎</p>
+</li>
+<li><p><strong>es原理</strong></p>
+</li>
+<li><p><strong>kafka相关</strong></p>
+</li>
+<li><p><strong>（加分项）帆软报表的具体实现，权限控制，性能提升，统计图形等。</strong></p>
+</li>
+<li><p><strong>rabbitmq 基本用法和实现方式等。</strong></p>
+</li>
+<li><p><strong>netty 基本用法和实现方式。</strong></p>
+</li>
+</ol>
+<ul>
+<li>笔试题</li>
+</ul>
+<ol>
+<li><p><strong>封装的一些问题</strong></p>
+</li>
+<li><p><strong>类的加载</strong></p>
+</li>
+<li><p><strong>多态</strong></p>
+<p>基于继承关系，可根据需求，让父类指向子类 以子类实现 比如创建Map对象  Map map=new HashMap&lt;&gt;();</p>
+</li>
+<li><p><strong>快速排序等排序的复杂度比较</strong></p>
+<p>时间复杂程度：</p>
+</li>
+<li><p><strong>数据库B+树索引</strong></p>
+<p>mysql中的索引是以文件的形式按B+树数据结构存放在磁盘当中，索引指向着对应的数据</p>
+<p>B+树是B树演进的，B树又是二叉树演进的</p>
+<p>二叉树的特性：一个节点最多只能有二个子节点，除开极端条件，当数据量变大时二叉树的高度就会随之变高，磁盘IO次数随之变多，效率低</p>
+<p>B树特性：一个节点存放多个元素  （m/2 &lt;= k &lt;= m），数据量变大时B树的，比起二叉树 高度增加变低，磁盘IO次减少，效率变高</p>
+<p>B+树：一般只要3层 就能满足千万级别的数据，因为非叶节点仅存放键值，叶节点存放索引，所以高度通常不会增加，3次磁盘IO，查询效率高，且稳定，</p>
+<p> 一个节点（页）大小为16K</p>
+<p> 一个非叶节点 16K/14=1170个指针   （14=主键 ID 为 bigint 类型，长度为 8 字节 + 指针大小在 InnoDB 源码中设置为 6 字节）</p>
+<p> 一个叶节点，一行大约为1K  能记录16K/1K=16条</p>
+<p>一个指针指向一个叶节点也就是指向16条记录</p>
+<p>一棵高度为2的B+树 能存放：1170*16=18720条记录 （索引）</p>
+<p>一棵高度为3的B+树 能存放：1170*1170*16=21902400 条记录 2千万</p>
+<p>5.1. <strong>为什么 MySQL 的索引要使用 B+ 树而不是其它树形结构？</strong></p>
+<p>比如 B 树？</p>
+<p><strong>因为 B 树不管叶子节点还是非叶子节点，都会保存数据</strong>，这样导致在非叶子节点中能保存的指针数量变少，指针少的情况下要保存大量数据，只能增加树的高度，导致 IO 操作变多，查询性能变低。</p>
+</li>
+<li><p><strong>sql 用法</strong></p>
+</li>
+<li><p><strong>关于抽象类和接口的继承和实现.</strong></p>
+<p>答：继承抽象类必须重写所有抽象方法；普通方法也可重写，会覆盖原有实现</p>
+<p>​        实现接口必须重写所有抽象方法；default方法可重写，会覆盖原有实现；static方法为接口本身所有</p>
+</li>
+<li><p><strong>类的多重继承。</strong></p>
+<p>答：Java类只支持单继承，但可以通过接口实现多继承</p>
+</li>
+<li><p><strong>多线程start和run方法。</strong></p>
+<p>答：run()方法只是一个类的普通方法，调用后自动压栈执行，执行完后弹栈便可</p>
+<p>​        start()方法作用开启一个分支线程，在JVM中开辟一块新的栈空间，代码执行完，自动结束</p>
+<p>​        start()开辟空间——分支线程调用run()共同抢夺CPU资源抢占时间片执行代码——start()执行结束</p>
+</li>
+<li><p><strong>redis的线程模式。</strong></p>
+<p>答： Redis 是单线程模式，多路复用，Redis6.0引进多线程模式，解决网络数据的读写和协议解析和删除大键值对，执行命令仍然是多线程</p>
+</li>
+<li><p><strong>其他中间件的基本问题。</strong></p>
+</li>
+<li><p><strong>构造器的原理</strong></p>
+</li>
+<li><p><strong>堆栈的存储的问题</strong></p>
+</li>
+<li><p><strong>字符串相加</strong></p>
+</li>
+<li><p><strong>冒泡排序</strong></p>
+</li>
+<li><p><strong>spring 框架的问题</strong></p>
+</li>
+<li><p><strong>IOC和DI</strong></p>
+</li>
+<li><p><strong>消息队列</strong></p>
+</li>
+<li><p><strong>数据库有道查询</strong></p>
+</li>
+<li><p><strong>网络协议</strong></p>
+</li>
+<li><p><strong>位运算</strong></p>
+</li>
+<li><p><strong>递归，spring事物传播特性，接口，继承，抽象类，数组</strong></p>
+</li>
+<li><p><strong>集合框架常见的几个容器</strong></p>
+</li>
+<li><p><strong>双列集合和单列集合，还有他们的低层数据结构</strong></p>
+</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag"># 面试题</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021-03-SQL%E4%BC%98%E5%8C%96/" rel="prev" title="SQL优化">
+      <i class="fa fa-chevron-left"></i> SQL优化
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">自我介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.</span> <span class="nav-text">项目介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%94%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">笔试题（一）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E9%AB%98%E7%BA%A7"><span class="nav-number">4.</span> <span class="nav-text">Java高级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jvm%EF%BC%9A"><span class="nav-number">4.1.</span> <span class="nav-text">jvm：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL"><span class="nav-number">5.</span> <span class="nav-text">SQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="nav-number">6.</span> <span class="nav-text">MySQL性能优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">7.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RESTfull"><span class="nav-number">7.1.</span> <span class="nav-text">RESTfull</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A1%86%E6%9E%B6"><span class="nav-number">8.</span> <span class="nav-text">框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring"><span class="nav-number">8.1.</span> <span class="nav-text">Spring</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#IOC%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC"><span class="nav-number">8.1.1.</span> <span class="nav-text">IOC控制反转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DI%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5"><span class="nav-number">8.1.2.</span> <span class="nav-text">DI依赖注入</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1"><span class="nav-number">9.</span> <span class="nav-text">微服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F"><span class="nav-number">10.</span> <span class="nav-text">分布式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%883%EF%BC%89"><span class="nav-number">11.</span> <span class="nav-text">面试题（3）</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a href="/" class="site-author-image" rel="start" style="border:none">
+    <img class="site-author-image" itemprop="image" alt="Mw"
+      src="/images/Mw.png">
+  </a>
+  <p class="site-author-name" itemprop="name">Mw</p>
+  <div class="site-description" itemprop="description">God is Developer</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL213LWdo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mw-gh"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOm13LW1zQG91dGxvb2suY29t" title="E-Mail → mailto:mw-ms@outlook.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9DaGVubXc=" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;Chenmw"><i class=" fa-fw"></i>知乎</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vcC8xMDA1MDU2MDgyMjU0MTIyL2hvbWU/ZnJvbT1wYWdlXzEwMDUwNSZtb2Q9VEFCJmlzX2FsbD0xI3BsYWNl" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;p&#x2F;1005056082254122&#x2F;home?from&#x3D;page_100505&amp;mod&#x3D;TAB&amp;is_all&#x3D;1#place"><i class="fab fa-weibo fa-fw"></i>Weibo</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTMyOTc4NTI3MA==" title="网易云 → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;329785270"><i class=" fa-fw"></i>网易云</span>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+
+&copy; 
+<span itemprop="copyrightYear">2021</span>
+<span class="with-love">
+    <i class="fa fa-heart"></i>
+</span>
+<span class="author" itemprop="copyrightHolder">Mw</span>
+</div>
+
+
+<div class="wordcount">
+    <span class="post-meta-item-icon">
+    <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">413k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+    <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">6:16</span>
+</div>
+<div class="busuanzi-count">
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+    <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+    </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+    <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+    </span>
+    </span>
+</div>
+<div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> 强力驱动
+</div>
+        
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'KpFGcS5UDEldJtRGnAwWSgfA-9Nh9j0Va',
+      appKey     : 'mQBf0bbk986bOA6XAFKPvgkU',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

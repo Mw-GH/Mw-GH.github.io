@@ -309,7 +309,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021-03-SpringBoot/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/Mw.png">
@@ -323,7 +323,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021-03-SpringBoot/" class="post-title-link" itemprop="url">SpringBoot</a>
+            <a href="/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/" class="post-title-link" itemprop="url">面试题</a>
         </h2>
 
         <div class="post-meta">
@@ -332,7 +332,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-19 14:03:32" itemprop="dateModified" datetime="2021-03-19T14:03:32+08:00">2021-03-19</time>
+                <time title="修改时间：2021-03-31 12:46:37" itemprop="dateModified" datetime="2021-03-31T12:46:37+08:00">2021-03-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -340,16 +340,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
+                  <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">面试题</span></a>
                 </span>
             </span>
 
           
-            <span id="/2021-03-SpringBoot/" class="post-meta-item leancloud_visitors" data-flag-title="SpringBoot" title="阅读次数">
+            <span id="/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/" class="post-meta-item leancloud_visitors" data-flag-title="面试题" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -364,8 +360,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021-03-SpringBoot/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021-03-SpringBoot/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021-03-Java%E9%9D%A2%E8%AF%958-10k%E9%87%8D%E5%BA%86/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -375,7 +371,387 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>10</span>
+              <span>5.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><h2 id="笔试题（一）"><a href="#笔试题（一）" class="headerlink" title="笔试题（一）"></a>笔试题（一）</h2><ul>
+<li><p>输入10000000000，输出10,000,000,000</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方式一：</span></span><br><span class="line">DecimalFormat df = <span class="keyword">new</span> DecimalFormat(<span class="string">&quot;#,###.00&quot;</span>);</span><br><span class="line">input = df.format(Double.parseDouble(input));</span><br><span class="line"><span class="keyword">return</span> input;</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方式二：笨一点 </span></span><br><span class="line">String input=<span class="string">&quot;12345678911&quot;</span>;</span><br><span class="line"><span class="keyword">int</span> count=input.length()/<span class="number">3</span>;</span><br><span class="line">System.out.println(count);</span><br><span class="line"><span class="keyword">int</span> mo=input.length()%<span class="number">3</span>;</span><br><span class="line">System.out.println(mo);</span><br><span class="line"></span><br><span class="line"><span class="comment">//        input.substring(input.length()-9,input.length()-6);//567</span></span><br><span class="line"><span class="comment">//        input.substring(input.length()-6,input.length()-3);//2 i*3 i*3-3 891</span></span><br><span class="line"><span class="comment">//        input.substring(input.length()-3,input.length()-0);//1 i*3 i*3-3 011</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//System.out.println(str);</span></span><br><span class="line"><span class="keyword">if</span> (mo!=<span class="number">0</span>)&#123;</span><br><span class="line">    count++;</span><br><span class="line">&#125;</span><br><span class="line">String [] substrs=<span class="keyword">new</span> String[count];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i &lt;=count ; i++) &#123;</span><br><span class="line">    <span class="comment">//substrs[]=&#123;12,345,678,911.00&#125;</span></span><br><span class="line">    <span class="keyword">if</span>(input.contains(<span class="string">&quot;.&quot;</span>)&amp;&amp;i==<span class="number">1</span>)&#123;</span><br><span class="line">        String substring=input.substring(input.length() - (i * <span class="number">6</span>), input.length() - (i * <span class="number">3</span> - <span class="number">3</span>));</span><br><span class="line">    	substrs[count-i]=substring;</span><br><span class="line">        i=<span class="number">3</span>;</span><br><span class="line">        <span class="comment">//substrs[]=&#123;12,345,678,911&#125;</span></span><br><span class="line">    &#125;</span><br><span class="line">    String substring=input.substring(input.length() - (i * <span class="number">3</span>), input.length() - (i * <span class="number">3</span> - <span class="number">3</span>));</span><br><span class="line">    substrs[count-i]=substring;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">String joinStr;</span><br><span class="line"><span class="keyword">if</span> (mo!=<span class="number">0</span>)&#123;</span><br><span class="line">    String moStr=input.substring(<span class="number">0</span>,mo);</span><br><span class="line">    substrs[<span class="number">0</span>]=moStr;</span><br><span class="line">    joinStr=StringUtils.join(Arrays.asList(substrs), <span class="string">&quot;,&quot;</span>);</span><br><span class="line">    String last=String.join(<span class="string">&quot;,&quot;</span>,joinStr);</span><br><span class="line">    System.out.println(last);</span><br><span class="line">&#125;<span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    joinStr=StringUtils.join(Arrays.asList(substrs), <span class="string">&quot;,&quot;</span>);</span><br><span class="line">    System.out.println(joinStr);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>* 考察知识点：常用类的使用 
+* DecimalFormat
+* substring(),Arrays.asList数组转字符串，StringUtils.join
+</code></pre>
+</li>
+</ul>
+<h2 id="Java高级"><a href="#Java高级" class="headerlink" title="Java高级"></a>Java高级</h2><h3 id="jvm："><a href="#jvm：" class="headerlink" title="jvm："></a>jvm：</h3><ul>
+<li>简述堆内存和栈内存</li>
+<li>尽量多说出发生的full gc情况</li>
+</ul>
+<h2 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h2><ul>
+<li><p>SQL执行顺序</p>
+<ul>
+<li>FROM, including JOINs</li>
+<li>WHERE</li>
+<li>GROUP BY</li>
+<li>HAVING</li>
+<li>WINDOW functions</li>
+<li>SELECT</li>
+<li>DISTINCT</li>
+<li>UNION</li>
+<li>ORDER BY</li>
+<li>LIMIT and OFFSET</li>
+</ul>
+</li>
+<li><p>学生成绩</p>
+<p>#(5)查询平均成绩大于等于60分的同学的学生编号和学生姓名和平均成绩</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> stu.s_id, stu.s_name, </span><br><span class="line"><span class="built_in">SUM</span>(sc.score,<span class="number">0</span>)<span class="operator">/</span><span class="number">3</span> <span class="string">&#x27;平均成绩&#x27;</span></span><br><span class="line"><span class="keyword">From</span> student stu</span><br><span class="line"><span class="keyword">Left</span> <span class="keyword">Join</span> score sc <span class="keyword">On</span> stu.s_id <span class="operator">=</span> sc.s_id</span><br><span class="line"><span class="keyword">Group</span> <span class="keyword">by</span> stu.s_id</span><br><span class="line"><span class="keyword">having</span> <span class="built_in">SUM</span>(sc.score)<span class="operator">/</span><span class="number">3</span><span class="operator">&gt;</span><span class="number">60</span></span><br></pre></td></tr></table></figure>
+
+<p>知识点： 1. 考虑是否有学生单科成绩为null或0，为空时就不能用avg</p>
+<p>​                2. having </p>
+<ul>
+<li>考察知识点<ol>
+<li>连边查询 <code>inner\left\right join</code>的使用和区别</li>
+<li>行转列，静态，高级 动态</li>
+<li>优化</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="MySQL性能优化"><a href="#MySQL性能优化" class="headerlink" title="MySQL性能优化"></a>MySQL性能优化</h2><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="RESTfull"><a href="#RESTfull" class="headerlink" title="RESTfull"></a>RESTfull</h3><p>简述：客户端通过四个HTTP动词，对服务器端资源进行操作，实现”表现层状态转化”。</p>
+<p>​            URI中不该有动词，动词应该放在HTTP协议中 如get，post，put，delete</p>
+<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><h3 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h3><h4 id="IOC控制反转"><a href="#IOC控制反转" class="headerlink" title="IOC控制反转"></a>IOC控制反转</h4><p><strong>获得依赖对象的方式反转了</strong>  </p>
+<p>由程序控制对象，反转为有调用者控制对象，程序被动接收对象</p>
+<p>eg：我想穿新鞋，进了一家草鞋专卖店（控制权在专卖店），只有给我草鞋，发现不合适，得买皮鞋，我得再跑到草鞋专卖店去买，又发现不合适得买布鞋，还得跑去布鞋店（耦合）</p>
+<p>​        第二天，学聪明了 进了一家杂鞋店，什么鞋都有（控制权在我），我要草鞋给我拿草鞋厂家的鞋，要皮鞋给我拿皮鞋厂家的鞋</p>
+<h4 id="DI依赖注入"><a href="#DI依赖注入" class="headerlink" title="DI依赖注入"></a>DI依赖注入</h4><p><strong>IOC容器在运行期间，动态地将某种依赖关系注入到对象之中</strong>。</p>
+<p><strong>Spring三种依赖注入方式：</strong></p>
+<ul>
+<li>Set方法</li>
+<li>构造器</li>
+<li>接口</li>
+</ul>
+<p><strong>区别</strong>：构造注入是在对象创建时期就完成注入，set注入的方式是在创建对象完成后进行注入。一般使用set注入</p>
+<p>实现方式：xml,注解</p>
+<p><strong>Spring三种实列化bean方式：</strong></p>
+<ul>
+<li><p> 构造器</p>
+</li>
+<li><p> 静态工厂</p>
+</li>
+<li><p> 工厂方法</p>
+</li>
+<li><p>*Bean的生命周期和作用域:**</p>
+</li>
+</ul>
+<p><strong>@AutoWired和@Resource的区别</strong></p>
+<ul>
+<li><p>@Autowired：是按类型自动转配的，不支持id匹配。来自于SpringAOP需要导入 spring-aop的包！</p>
+</li>
+<li><p>@Resource如有指定的name属性，先按该属性进行byName方式查找装配；</p>
+</li>
+<li><p>其次再进行默认的byName方式进行装配；</p>
+</li>
+<li><p>如果以上都不成功，则按byType的方式自动装配。</p>
+</li>
+<li><p>都不成功，则报异常。</p>
+</li>
+</ul>
+<p>​    </p>
+<h2 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h2><h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><h2 id="面试题（3）"><a href="#面试题（3）" class="headerlink" title="面试题（3）"></a>面试题（3）</h2><p><strong>后端开发：</strong></p>
+<p><strong>面试**</strong>题**<strong>：</strong></p>
+<ol>
+<li><p><strong>array和arrayList的区别</strong></p>
+<p>array：数组，有序，有下标，可重复，长度固定</p>
+<p>arrayList：数组列表，有序，有下标，可重复，可变长度，基于数组</p>
+</li>
+<li><p><strong>重载跟重写的区别</strong> </p>
+<p>重载:在一个类中 通过重载 不同的修饰符 返回值 参数 为一个方法提供多种实现方式</p>
+<p>重写: 父类方法不满足子类 子类通过重写满足要求</p>
+</li>
+<li><p><strong>线程的创建方式</strong></p>
+<p>继承Thread、实现Runable、线程池</p>
+</li>
+<li><p><strong>==跟equals的区别 ，&amp;跟&amp;&amp;的区别</strong>       </p>
+<p>==:<br>   基本类型 比较值<br>   引用类型 比较地址</p>
+<p>equals:<br>   基本类型 比较值<br>   引用类型 比较地址 重写实现比较值</p>
+<p>&amp;: 左或右一边为false则返回false</p>
+<p>&amp;&amp;: 左为false则不计算右边直接返回false      </p>
+</li>
+<li><p><strong>全局异常怎么处理</strong></p>
+<p>写一个全局异常处理器，使用@ExceptionHandler注解捕获相应异常 返回异常信息</p>
+</li>
+<li><p>线程的创建方式</p>
+<p>1.基础Thread</p>
+<p>2.实现Runnable</p>
+<p>3.实现Callable  有返回值</p>
+<p>4.通过线程池</p>
+</li>
+<li><p><strong>线程的几种状态</strong></p>
+<p><strong>NEW</strong>：初始状态<br>线程还没有启动时的状态。</p>
+<p><strong>RUNNABLE</strong>：就绪状态和执行状态<br>线程启动时的状态。线程被JVM所执行但它还可能需要一些来自操作系统的其他资源才能执行。</p>
+<p><strong>BLOCKED</strong>：阻塞状态 当线程访问临界区 (同步块代码)时，如果没有拿到访问锁，便进入阻塞状态。<br>线程被一个监听锁所阻塞时的状态。</p>
+<p><strong>WAITING</strong>：无限期等待状态，线程正在等待时的状态。线程被以下方法所调用就会进入等待状态：</p>
+<ul>
+<li><code>Object.wait</code>无参方法 wait方法可以让当前线程进入等待状态，需要其他线程调用此线程对象的notify方法或者notifyAll方法来唤醒此线程；</li>
+<li><code>Thread.join</code>无参方法 调用join方法的线程需要等到被调用线程终止才能结束等待状态。</li>
+</ul>
+<p><strong>TIMED_WAITING</strong>： 有限等待状态<br>线程在指定时间后才能结束等待的一种等待状态。是由于调用了以下方法所引起的一种状态：</p>
+<ul>
+<li><code>Thread.sleep</code></li>
+<li><code>Object.wait</code>带参方法</li>
+<li><code>Thread.join</code>带参方法</li>
+</ul>
+<p><strong>TERMINATED</strong> ：终止状态<br>线程终止时的状态。该线程已经执行完毕。</p>
+</li>
+<li><p><strong>线程池参数. 200个线程同时请求，线程池如何分配</strong></p>
+<p>自定义线程池</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ExecutorService es = <span class="keyword">new</span> ThreadPoolExecutor(</span><br><span class="line">                corePoolSize,<span class="comment">//核心线程数</span></span><br><span class="line">                maximumPoolSize,<span class="comment">//最大线程数</span></span><br><span class="line">                <span class="number">60</span>,<span class="comment">//等待时间</span></span><br><span class="line">                TimeUnit.SECONDS,<span class="comment">//等待时间单位</span></span><br><span class="line">                <span class="keyword">new</span> LinkedBlockingQueue&lt;&gt;(<span class="number">20</span>),<span class="comment">//等待队列</span></span><br><span class="line">                Executors.defaultThreadFactory(),<span class="comment">//线程工厂</span></span><br><span class="line">                <span class="keyword">new</span> ThreadPoolExecutor.CallerRunsPolicy ());<span class="comment">//线程池策略</span></span><br><span class="line">        </span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><strong>你们团队是怎么使用git管理代码的</strong></p>
+<p>搭建本地代码仓库 gitlab  使用基本命令</p>
+</li>
+<li><p><strong>Spring aop原理和实际使用</strong></p>
+<p>实际使用：多用于 事务，异常，操作日志</p>
+</li>
+<li><p><strong>SpringBoot相比MVC有什么优势</strong></p>
+<p>Springboot 预配置了很多组件，通常只需引入依赖，Springboot会自动配置</p>
+<p>MVC需要自己手动配置 JavaConfig或者XML</p>
+</li>
+<li><p><strong>有一场景：在程序无法优化的情况，如何在数据库层面优化查询（Mysql）</strong></p>
+<p>一般优化SQL的几种常用手段</p>
+<p>添加索引、避免索引失效</p>
+<p>避免被锁</p>
+<p>不优秀的SQL</p>
+<p>表的设计</p>
+</li>
+<li><p><strong>说下 mysql的左连接</strong></p>
+<p>left join：左表有则有</p>
+</li>
+<li><p><strong>Mybatisplus和mybatis区别</strong></p>
+<p>Mybatisplus是国产的一款mybatis增强版</p>
+<p>无倾入，不改变mybatis的原有操作，自带了一些插件（分页，乐观锁，字段自动补充）</p>
+<p>通过BaseMapper 封装基础CRUD，提高开发效率</p>
+<p>通过Wrapper 可以写复杂条件的SQL，也按原Mybatis操作写复杂SQL</p>
+</li>
+<li><p><strong>mybatis pagehelper具体实现。</strong></p>
+<p>pagehelper.start需紧跟查询方法，如果查询方法出错（如xml中字段问题），使Pagehelper没有被消费，会一直保留在线程上，直到出现查询语句的线程，就会导致不该被分页的方法被分页。</p>
+</li>
+<li><p><strong>数据库大数据量分表</strong></p>
+<p>最常用 按时间</p>
+</li>
+<li><p><strong>实际项目中遇到的问题以及都怎么解决的</strong></p>
+</li>
+<li><p><strong>Redis 原理</strong></p>
+</li>
+<li><p><strong>redis存储的数据类型</strong></p>
+<p>String，Set，有序Set，Hash，</p>
+</li>
+<li><p><strong>redis的持久化</strong></p>
+<p>AOF、</p>
+</li>
+<li><p><strong>redis 雪崩</strong></p>
+</li>
+<li><p><strong>聊聊用过的mq</strong></p>
+</li>
+<li><p><strong>讲一下 es等流程引擎</strong></p>
+</li>
+<li><p><strong>工作流引擎</strong></p>
+</li>
+<li><p><strong>报表引擎</strong></p>
+</li>
+<li><p>**规则引擎</p>
+</li>
+<li><p><strong>es原理</strong></p>
+</li>
+<li><p><strong>kafka相关</strong></p>
+</li>
+<li><p><strong>（加分项）帆软报表的具体实现，权限控制，性能提升，统计图形等。</strong></p>
+</li>
+<li><p><strong>rabbitmq 基本用法和实现方式等。</strong></p>
+</li>
+<li><p><strong>netty 基本用法和实现方式。</strong></p>
+</li>
+</ol>
+<ul>
+<li>笔试题</li>
+</ul>
+<ol>
+<li><p><strong>封装的一些问题</strong></p>
+</li>
+<li><p><strong>类的加载</strong></p>
+</li>
+<li><p><strong>多态</strong></p>
+<p>基于继承关系，可根据需求，让父类指向子类 以子类实现 比如创建Map对象  Map map=new HashMap&lt;&gt;();</p>
+</li>
+<li><p><strong>快速排序等排序的复杂度比较</strong></p>
+<p>时间复杂程度：</p>
+</li>
+<li><p><strong>数据库B+树索引</strong></p>
+<p>mysql中的索引是以文件的形式按B+树数据结构存放在磁盘当中，索引指向着对应的数据</p>
+<p>B+树是B树演进的，B树又是二叉树演进的</p>
+<p>二叉树的特性：一个节点最多只能有二个子节点，除开极端条件，当数据量变大时二叉树的高度就会随之变高，磁盘IO次数随之变多，效率低</p>
+<p>B树特性：一个节点存放多个元素  （m/2 &lt;= k &lt;= m），数据量变大时B树的，比起二叉树 高度增加变低，磁盘IO次减少，效率变高</p>
+<p>B+树：一般只要3层 就能满足千万级别的数据，因为非叶节点仅存放键值，叶节点存放索引，所以高度通常不会增加，3次磁盘IO，查询效率高，且稳定，</p>
+<p> 一个节点（页）大小为16K</p>
+<p> 一个非叶节点 16K/14=1170个指针   （14=主键 ID 为 bigint 类型，长度为 8 字节 + 指针大小在 InnoDB 源码中设置为 6 字节）</p>
+<p> 一个叶节点，一行大约为1K  能记录16K/1K=16条</p>
+<p>一个指针指向一个叶节点也就是指向16条记录</p>
+<p>一棵高度为2的B+树 能存放：1170*16=18720条记录 （索引）</p>
+<p>一棵高度为3的B+树 能存放：1170*1170*16=21902400 条记录 2千万</p>
+<p>5.1. <strong>为什么 MySQL 的索引要使用 B+ 树而不是其它树形结构？</strong></p>
+<p>比如 B 树？</p>
+<p><strong>因为 B 树不管叶子节点还是非叶子节点，都会保存数据</strong>，这样导致在非叶子节点中能保存的指针数量变少，指针少的情况下要保存大量数据，只能增加树的高度，导致 IO 操作变多，查询性能变低。</p>
+</li>
+<li><p><strong>sql 用法</strong></p>
+</li>
+<li><p><strong>关于抽象类和接口的继承和实现.</strong></p>
+<p>答：继承抽象类必须重写所有抽象方法；普通方法也可重写，会覆盖原有实现</p>
+<p>​        实现接口必须重写所有抽象方法；default方法可重写，会覆盖原有实现；static方法为接口本身所有</p>
+</li>
+<li><p><strong>类的多重继承。</strong></p>
+<p>答：Java类只支持单继承，但可以通过接口实现多继承</p>
+</li>
+<li><p><strong>多线程start和run方法。</strong></p>
+<p>答：run()方法只是一个类的普通方法，调用后自动压栈执行，执行完后弹栈便可</p>
+<p>​        start()方法作用开启一个分支线程，在JVM中开辟一块新的栈空间，代码执行完，自动结束</p>
+<p>​        start()开辟空间——分支线程调用run()共同抢夺CPU资源抢占时间片执行代码——start()执行结束</p>
+</li>
+<li><p><strong>redis的线程模式。</strong></p>
+<p>答： Redis 是单线程模式，多路复用，Redis6.0引进多线程模式，解决网络数据的读写和协议解析和删除大键值对，执行命令仍然是多线程</p>
+</li>
+<li><p><strong>其他中间件的基本问题。</strong></p>
+</li>
+<li><p><strong>构造器的原理</strong></p>
+</li>
+<li><p><strong>堆栈的存储的问题</strong></p>
+</li>
+<li><p><strong>字符串相加</strong></p>
+</li>
+<li><p><strong>冒泡排序</strong></p>
+</li>
+<li><p><strong>spring 框架的问题</strong></p>
+</li>
+<li><p><strong>IOC和DI</strong></p>
+</li>
+<li><p><strong>消息队列</strong></p>
+</li>
+<li><p><strong>数据库有道查询</strong></p>
+</li>
+<li><p><strong>网络协议</strong></p>
+</li>
+<li><p><strong>位运算</strong></p>
+</li>
+<li><p><strong>递归，spring事物传播特性，接口，继承，抽象类，数组</strong></p>
+</li>
+<li><p><strong>集合框架常见的几个容器</strong></p>
+</li>
+<li><p><strong>双列集合和单列集合，还有他们的低层数据结构</strong></p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021-03-SQL%E4%BC%98%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-03-SQL%E4%BC%98%E5%8C%96/" class="post-title-link" itemprop="url">SQL优化</a>
+        </h2>
+
+        <div class="post-meta">
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-31 12:44:13" itemprop="dateModified" datetime="2021-03-31T12:44:13+08:00">2021-03-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SQL%E4%BC%98%E5%8C%96/" itemprop="url" rel="index"><span itemprop="name">SQL优化</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021-03-SQL%E4%BC%98%E5%8C%96/" class="post-meta-item leancloud_visitors" data-flag-title="SQL优化" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021-03-SQL%E4%BC%98%E5%8C%96/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021-03-SQL%E4%BC%98%E5%8C%96/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>442</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -394,7 +770,480 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2>
+          <p>SQL优化主要的三个方向</p>
+<h3 id="没有建立索引或索引失效"><a href="#没有建立索引或索引失效" class="headerlink" title="没有建立索引或索引失效"></a>没有建立索引或索引失效</h3><p><strong>1. 尽量避免在字段开头模糊查询，会导致数据库引擎放弃索引进行全表扫描。</strong>如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> t <span class="keyword">WHERE</span> username <span class="keyword">LIKE</span> <span class="string">&#x27;%陈%&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>优化方式：尽量在字段后面使用模糊查询。如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> t <span class="keyword">WHERE</span> username <span class="keyword">LIKE</span> <span class="string">&#x27;陈%&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>作者：小知<br>链接：<span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yOTkwNTE5OTY=">https://zhuanlan.zhihu.com/p/299051996<i class="fa fa-external-link-alt"></i></span><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<h3 id="锁等待"><a href="#锁等待" class="headerlink" title="锁等待"></a>锁等待</h3><p><strong>InnoDB 支持行锁和表锁</strong></p>
+<p><strong>MyISAM 只支持表锁</strong></p>
+<p>行锁是基于索引加的锁，在执行更新操作时，条件索引都失效了，那么这个锁也会执行从行锁升级为表锁</p>
+<h3 id="SQL语句不优秀"><a href="#SQL语句不优秀" class="headerlink" title="SQL语句不优秀"></a>SQL语句不优秀</h3><p>如，明明你需要查找的内容是 name ， age ，但是呢，为了省事，直接 <code>select *</code>，或者在 order by 时，后面的条件不是索引字段，这就是不恰当的 SQL 语句</p>
+<h3 id="其他调优"><a href="#其他调优" class="headerlink" title="其他调优"></a>其他调优</h3><p>数据库设计：</p>
+<p>不分表&gt;三泛式&gt;不规范</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021-03-%E7%BD%91%E7%BB%9C%E5%B8%B8%E8%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-03-%E7%BD%91%E7%BB%9C%E5%B8%B8%E8%AF%86/" class="post-title-link" itemprop="url">SpringBoot</a>
+        </h2>
+
+        <div class="post-meta">
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-31 12:45:55" itemprop="dateModified" datetime="2021-03-31T12:45:55+08:00">2021-03-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021-03-%E7%BD%91%E7%BB%9C%E5%B8%B8%E8%AF%86/" class="post-meta-item leancloud_visitors" data-flag-title="SpringBoot" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021-03-%E7%BD%91%E7%BB%9C%E5%B8%B8%E8%AF%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021-03-%E7%BD%91%E7%BB%9C%E5%B8%B8%E8%AF%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>423</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="URI和URL的区别"><a href="#URI和URL的区别" class="headerlink" title="URI和URL的区别"></a>URI和URL的区别</h2><p>可以这样理解URI表示的是一个抽象的地址，URL表示的是一个详细的地址。 抽象的地址：湖南省长沙市（这是一个抽象的地址，相当于URI） 详细的地址：湖南省长沙市雨花区香樟路22号（这是一个详细的地址，相当于URL） 为什么URL是URI的子集，雨花区的香樟路22号（URL）属于湖南省长沙市（URI）， 那么放到web上 <span class="exturl" data-url="aHR0cHM6Ly93d3cuY3Nkbi5uZXTmmK/kuIDkuKp1cmko5a6D5Y+q6K+05piO5LqG5pyN5Yqh5Zmo55qE5Zyw5Z2ALOayoeacieWFt+S9k+WIsOaWh+S7tuaYr+S7gOS5iOexu+Weiykv">https://www.csdn.net是一个URI（它只说明了服务器的地址，没有具体到文件是什么类型）<i class="fa fa-external-link-alt"></i></span> 那么<span class="exturl" data-url="aHR0cHM6Ly93d3cuY3Nkbi5uZXQvaW1hZ2UvbG9nby5naWYlRTUlQjAlQjElRTYlOTglQUYlRTQlQjglODAlRTQlQjglQUFVUkwlRUYlQkMlODglRTQlQkIlOTYlRTUlODUlQjclRTQlQkQlOTMlRTUlODglQjAlRTQlQkElODZsb2dvJUU2JTk2JTg3JUU0JUJCJUI2JUU3JTlBJTg0JUU0JUJEJThEJUU3JUJEJUFFJUU1JUI5JUI2JUU0JUI4JTk0bG9nbyVFNiU5NiU4NyVFNCVCQiVCNiVFNiU5OCVBRmdpZiVFNyVCMSVCQiVFNSU5RSU4QiVFNyU5QSU4NCVFRiVCQyU4OQ==">https://www.csdn.net/image/logo.gif就是一个URL（他具体到了logo文件的位置并且logo文件是gif类型的）<i class="fa fa-external-link-alt"></i></span> 这样一来URL和URI的区别就很清晰了</p>
+<p>实列：</p>
+<p>​    URI：访问网站 <span class="exturl" data-url="aHR0cHM6Ly9qcXVlcnkuY29tLw==">https://jquery.com/<i class="fa fa-external-link-alt"></i></span></p>
+<p>​    URL：获取文件 <span class="exturl" data-url="aHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vanF1ZXJ5LTMuNi4wLm1pbi5qcw==">https://code.jquery.com/jquery-3.6.0.min.js<i class="fa fa-external-link-alt"></i></span></p>
+<p>JAVA理解  URI是一个抽象类，URL具体去实现了URI</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021-03-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Mw.png">
+      <meta itemprop="name" content="Mw">
+      <meta itemprop="description" content="God is Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mw-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-03-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-title-link" itemprop="url">设计模式</a>
+        </h2>
+
+        <div class="post-meta">
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-31 12:45:16" itemprop="dateModified" datetime="2021-03-31T12:45:16+08:00">2021-03-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="index"><span itemprop="name">设计模式</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021-03-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-meta-item leancloud_visitors" data-flag-title="设计模式" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021-03-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021-03-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>13k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>12 min</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h2><ul>
+<li><p><strong>个人理解</strong>：不仅具有真实对象的功能，还具备一些附属操作</p>
+<p>eg：房屋中介 具有出租房子的功能，还具备：看房，收中介费等</p>
+</li>
+</ul>
+<p>为什么要学习代理模式，因为AOP的底层机制就是动态代理！</p>
+<p>代理模式：</p>
+<ul>
+<li>静态代理</li>
+<li>动态代理</li>
+</ul>
+<p>学习aop之前 , 我们要先了解一下代理模式！</p>
+
+
+<h3 id="静态代理"><a href="#静态代理" class="headerlink" title="静态代理"></a>静态代理</h3><p><strong>静态代理角色分析</strong></p>
+<ul>
+<li><p>抽象角色 : 一般使用接口或者抽象类来实现</p>
+</li>
+<li><p>真实角色 : 被代理的角色</p>
+</li>
+<li><p>代理角色 : 代理真实角色 ; 代理真实角色后 , 一般会做一些附属的操作 .</p>
+</li>
+<li><p>客户  :  使用代理角色来进行一些操作 .</p>
+</li>
+</ul>
+<p><strong>代码实现</strong></p>
+<p>Rent . java 即抽象角色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;抽象角色：租房</span><br><span class="line">public interface Rent &#123;</span><br><span class="line">   public void rent();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Host . java 即真实角色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;真实角色: 房东，房东要出租房子</span><br><span class="line">public class Host implements Rent&#123;</span><br><span class="line">   public void rent() &#123;</span><br><span class="line">       System.out.println(&quot;房屋出租&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Proxy . java 即代理角色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;代理角色：中介</span><br><span class="line">public class Proxy implements Rent &#123;</span><br><span class="line"></span><br><span class="line">   private Host host;</span><br><span class="line">   public Proxy() &#123; &#125;</span><br><span class="line">   public Proxy(Host host) &#123;</span><br><span class="line">       this.host &#x3D; host;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   &#x2F;&#x2F;租房</span><br><span class="line">   public void rent()&#123;</span><br><span class="line">       seeHouse();</span><br><span class="line">       host.rent();</span><br><span class="line">       fare();</span><br><span class="line">  &#125;</span><br><span class="line">   &#x2F;&#x2F;看房</span><br><span class="line">   public void seeHouse()&#123;</span><br><span class="line">       System.out.println(&quot;带房客看房&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">   &#x2F;&#x2F;收中介费</span><br><span class="line">   public void fare()&#123;</span><br><span class="line">       System.out.println(&quot;收中介费&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Client . java 即客户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;客户类，一般客户都会去找代理！</span><br><span class="line">public class Client &#123;</span><br><span class="line">   public static void main(String[] args) &#123;</span><br><span class="line">       &#x2F;&#x2F;房东要租房</span><br><span class="line">       Host host &#x3D; new Host();</span><br><span class="line">       &#x2F;&#x2F;中介帮助房东</span><br><span class="line">       Proxy proxy &#x3D; new Proxy(host);</span><br><span class="line"></span><br><span class="line">       &#x2F;&#x2F;你去找中介！</span><br><span class="line">       proxy.rent();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>分析：在这个过程中，你直接接触的就是中介，就如同现实生活中的样子，你看不到房东，但是你依旧租到了房东的房子通过代理，这就是所谓的代理模式，程序源自于生活，所以学编程的人，一般能够更加抽象的看待生活中发生的事情。</p>
+<p><strong>静态代理的好处:</strong></p>
+<ul>
+<li>可以使得我们的真实角色更加纯粹 . 不再去关注一些公共的事情 .</li>
+<li>公共的业务由代理来完成 . 实现了业务的分工 ,</li>
+<li>公共业务发生扩展时变得更加集中和方便 .</li>
+</ul>
+<p>缺点 :</p>
+<ul>
+<li>类多了 , 多了代理类 , 工作量变大了 . 开发效率降低 .</li>
+</ul>
+<p>我们想要静态代理的好处，又不想要静态代理的缺点，所以 , 就有了动态代理 !</p>
+<h3 id="静态代理再理解"><a href="#静态代理再理解" class="headerlink" title="静态代理再理解"></a>静态代理再理解</h3><p>同学们练习完毕后，我们再来举一个例子，巩固大家的学习！</p>
+<p>练习步骤：</p>
+<p>1、创建一个抽象角色，比如咋们平时做的用户业务，抽象起来就是增删改查！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;抽象角色：增删改查业务</span><br><span class="line">public interface UserService &#123;</span><br><span class="line">   void add();</span><br><span class="line">   void delete();</span><br><span class="line">   void update();</span><br><span class="line">   void query();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2、我们需要一个真实对象来完成这些增删改查操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;真实对象，完成增删改查操作的人</span><br><span class="line">public class UserServiceImpl implements UserService &#123;</span><br><span class="line"></span><br><span class="line">   public void add() &#123;</span><br><span class="line">       System.out.println(&quot;增加了一个用户&quot;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   public void delete() &#123;</span><br><span class="line">       System.out.println(&quot;删除了一个用户&quot;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   public void update() &#123;</span><br><span class="line">       System.out.println(&quot;更新了一个用户&quot;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   public void query() &#123;</span><br><span class="line">       System.out.println(&quot;查询了一个用户&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3、需求来了，现在我们需要增加一个日志功能，怎么实现！</p>
+<ul>
+<li>思路1 ：在实现类上增加代码 【麻烦！】</li>
+<li>思路2：使用代理来做，能够不改变原来的业务情况下，实现此功能就是最好的了！</li>
+</ul>
+<p>4、设置一个代理类来处理日志！代理角色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;代理角色，在这里面增加日志的实现</span><br><span class="line">public class UserServiceProxy implements UserService &#123;</span><br><span class="line">   private UserServiceImpl userService;</span><br><span class="line"></span><br><span class="line">   public void setUserService(UserServiceImpl userService) &#123;</span><br><span class="line">       this.userService &#x3D; userService;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   public void add() &#123;</span><br><span class="line">       log(&quot;add&quot;);</span><br><span class="line">       userService.add();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   public void delete() &#123;</span><br><span class="line">       log(&quot;delete&quot;);</span><br><span class="line">       userService.delete();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   public void update() &#123;</span><br><span class="line">       log(&quot;update&quot;);</span><br><span class="line">       userService.update();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   public void query() &#123;</span><br><span class="line">       log(&quot;query&quot;);</span><br><span class="line">       userService.query();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   public void log(String msg)&#123;</span><br><span class="line">       System.out.println(&quot;执行了&quot;+msg+&quot;方法&quot;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5、测试访问类：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public class Client &#123;</span><br><span class="line">   public static void main(String[] args) &#123;</span><br><span class="line">       &#x2F;&#x2F;真实业务</span><br><span class="line">       UserServiceImpl userService &#x3D; new UserServiceImpl();</span><br><span class="line">       &#x2F;&#x2F;代理类</span><br><span class="line">       UserServiceProxy proxy &#x3D; new UserServiceProxy();</span><br><span class="line">       &#x2F;&#x2F;使用代理类实现日志功能！</span><br><span class="line">       proxy.setUserService(userService);</span><br><span class="line"></span><br><span class="line">       proxy.add();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>OK，到了现在代理模式大家应该都没有什么问题了，重点大家需要理解其中的思想；</p>
+<p>我们在不改变原来的代码的情况下，实现了对原有功能的增强，这是AOP中最核心的思想</p>
+<p>聊聊AOP：纵向开发，横向开发</p>
+
+
+<h3 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h3><ul>
+<li><p><strong>个人理解</strong>：代理生成器根据不同真实对象来动态生成代理类，具备真实对象的功能，还可以在真实对象功能的前后加功能（AOP）</p>
+<p>eg：大中介 （包租房，租车 等等）</p>
+</li>
+</ul>
+<p>​    生成代理之前 代理生成器只具有一个收钱功能  </p>
+<p>​    代理生成器根据租房生成一个租房代理后，具有租房的功能，还具有收钱的</p>
+<p>​    代理生成器根据租房生成一个租车代理后，具有租车的功能，还具有收钱的</p>
+<ul>
+<li><p>动态代理的角色和静态代理的一样 .</p>
+</li>
+<li><p>动态代理的代理类是动态生成的 . 静态代理的代理类是我们提前写好的</p>
+</li>
+<li><p>动态代理分为两类 : 一类是基于接口动态代理 , 一类是基于类的动态代理</p>
+</li>
+<li><ul>
+<li>基于接口的动态代理—-JDK动态代理</li>
+<li>基于类的动态代理–cglib</li>
+<li>现在用的比较多的是 javasist 来生成动态代理 . 百度一下javasist</li>
+<li>我们这里使用JDK的原生代码来实现，其余的道理都是一样的！、</li>
+</ul>
+</li>
+</ul>
+<p><strong>JDK的动态代理需要了解两个类</strong></p>
+<p>核心 : InvocationHandler   和   Proxy  ， 打开JDK帮助文档看看</p>
+<p>【InvocationHandler：调用处理程序】</p>
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Object <span class="title">invoke</span><span class="params">(Object proxy, 方法 method, Object[] args)</span>；</span></span><br><span class="line"><span class="function"><span class="comment">//参数</span></span></span><br><span class="line"><span class="function"><span class="comment">//proxy - 调用该方法的代理实例</span></span></span><br><span class="line"><span class="function"><span class="comment">//method -所述方法对应于调用代理实例上的接口方法的实例。方法对象的声明类将是该方法声明的接口，它可以是代理类继承该方法的代理接口的超级接口。</span></span></span><br><span class="line"><span class="function"><span class="comment">//args -包含的方法调用传递代理实例的参数值的对象的阵列，或null如果接口方法没有参数。原始类型的参数包含在适当的原始包装器类的实例中，例如java.lang.Integer或java.lang.Boolean 。</span></span></span><br></pre></td></tr></table></figure>
+
+<p>【Proxy  : 代理】</p>
+
+
+
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//生成代理类</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">getProxy</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="keyword">return</span> Proxy.newProxyInstance(<span class="keyword">this</span>.getClass().getClassLoader(),</span><br><span class="line">                                 rent.getClass().getInterfaces(),<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>代码实现</strong> </p>
+<p>抽象角色和真实角色和之前的一样！</p>
+<p>Rent . java 即抽象角色</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//抽象角色：租房</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Rent</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rent</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Host . java 即真实角色</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//真实角色: 房东，房东要出租房子</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Host</span> <span class="keyword">implements</span> <span class="title">Rent</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">       System.out.println(<span class="string">&quot;房屋出租&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>ProxyInvocationHandler. java 即代理角色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">public class ProxyInvocationHandler implements InvocationHandler &#123;</span><br><span class="line">   private Rent rent;</span><br><span class="line"></span><br><span class="line">   public void setRent(Rent rent) &#123;</span><br><span class="line">       this.rent &#x3D; rent;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   &#x2F;&#x2F;生成代理类，重点是第二个参数，获取要代理的抽象角色！之前都是一个角色，现在可以代理一类角色</span><br><span class="line">   public Object getProxy()&#123;</span><br><span class="line">       return Proxy.newProxyInstance(this.getClass().getClassLoader(),</span><br><span class="line">               rent.getClass().getInterfaces(),this);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   &#x2F;&#x2F; proxy : 代理类 method : 代理类的调用处理程序的方法对象.</span><br><span class="line">   &#x2F;&#x2F; 处理代理实例上的方法调用并返回结果</span><br><span class="line">   @Override</span><br><span class="line">   public Object invoke(Object proxy, Method method, Object[] args) throws Throwable &#123;</span><br><span class="line">       seeHouse();</span><br><span class="line">       &#x2F;&#x2F;核心：本质利用反射实现！</span><br><span class="line">       Object result &#x3D; method.invoke(rent, args);</span><br><span class="line">       fare();</span><br><span class="line">       return result;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   &#x2F;&#x2F;看房</span><br><span class="line">   public void seeHouse()&#123;</span><br><span class="line">       System.out.println(&quot;带房客看房&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">   &#x2F;&#x2F;收中介费</span><br><span class="line">   public void fare()&#123;</span><br><span class="line">       System.out.println(&quot;收中介费&quot;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Client . java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;租客</span><br><span class="line">public class Client &#123;</span><br><span class="line"></span><br><span class="line">   public static void main(String[] args) &#123;</span><br><span class="line">       &#x2F;&#x2F;真实角色</span><br><span class="line">       Host host &#x3D; new Host();</span><br><span class="line">       &#x2F;&#x2F;代理实例的调用处理程序</span><br><span class="line">       ProxyInvocationHandler pih &#x3D; new ProxyInvocationHandler();</span><br><span class="line">       pih.setRent(host); &#x2F;&#x2F;将真实角色放置进去！</span><br><span class="line">       Rent proxy &#x3D; (Rent)pih.getProxy(); &#x2F;&#x2F;动态生成对应的代理类！</span><br><span class="line">       proxy.rent();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>核心：<strong>一个动态代理 , 一般代理某一类业务 , 一个动态代理可以代理多个类，代理的是接口！、</strong></p>
+<h3 id="深化理解"><a href="#深化理解" class="headerlink" title="深化理解"></a>深化理解</h3><p>我们来使用动态代理实现代理我们后面写的UserService！</p>
+<p>我们也可以编写一个通用的动态代理实现的类！所有的代理对象设置为Object即可！</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 生成的代理实例的调用处理程序</span></span><br><span class="line"><span class="comment">* InvocationHandler：代理实例的调用处理程序</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProxyInvocationHandler</span> <span class="keyword">implements</span> <span class="title">InvocationHandler</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Object target;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setTarget</span><span class="params">(Object target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.target=target;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    * 代理生成器</span></span><br><span class="line"><span class="comment">    * 参数: 通过反射获取ClassLoader，需要代理类（target）的接口 可以是多个接口，</span></span><br><span class="line"><span class="comment">    * 生成的代理实例的调用处理程序 调用方法是（invoke）</span></span><br><span class="line"><span class="comment">    * 返回结果：生成的代理实列</span></span><br><span class="line"><span class="comment">    * */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">getProxy</span><span class="params">()</span></span>&#123;</span><br><span class="line">       <span class="keyword">return</span> Proxy.newProxyInstance(<span class="keyword">this</span>.getClass().getClassLoader(),target.getClass().getInterfaces(),<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    * 执行生成代理实例的方法</span></span><br><span class="line"><span class="comment">    * 可以进行切入编程</span></span><br><span class="line"><span class="comment">    * 参数：代理对象，需要执行的方法，方法参数</span></span><br><span class="line"><span class="comment">    * 返回值：需要执行的方法的返回值</span></span><br><span class="line"><span class="comment">    * */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object proxy, Method method, Object[] args)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">        <span class="comment">//切入log方法</span></span><br><span class="line">        log(method.getName());</span><br><span class="line">        <span class="comment">//执行被代理类的方法（参数：被代理类，方法参数）</span></span><br><span class="line">        Object result=method.invoke(target, args);</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    * 需要切入的方法</span></span><br><span class="line"><span class="comment">    * */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">log</span><span class="params">(String method)</span></span>&#123;</span><br><span class="line">        System.out.println(method+<span class="string">&quot;记录日志&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>测试！</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//房东 真实角色</span></span><br><span class="line">    Host host=<span class="keyword">new</span> Host();</span><br><span class="line">    <span class="comment">//生成代理器</span></span><br><span class="line">    ProxyInvocationHandler pih=<span class="keyword">new</span> ProxyInvocationHandler();</span><br><span class="line">    <span class="comment">//根据房东生成房屋代理</span></span><br><span class="line">    pih.setTarget(host);</span><br><span class="line">    Rent rentProxy=(Rent) pih.getProxy();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//房屋代理出租房源</span></span><br><span class="line">    rentProxy.rent();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="动态代理的好处"><a href="#动态代理的好处" class="headerlink" title="动态代理的好处"></a>动态代理的好处</h3><p>静态代理有的它都有，静态代理没有的，它也有！</p>
+<ul>
+<li>可以使得我们的真实角色更加纯粹 . 不再去关注一些公共的事情 .</li>
+<li>公共的业务由代理来完成 . 实现了业务的分工 ,</li>
+<li>公共业务发生扩展时变得更加集中和方便 .</li>
+<li>一个动态代理 , 一般代理某一类业务</li>
+<li>一个动态代理可以代理多个类，代理的是接口！</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><p>静态代理：</p>
+<ul>
+<li><p>真实对象和代理对象都要实现同一接口</p>
+</li>
+<li><p>代理对象要设置真实对象</p>
+</li>
+<li><p>好处：代理对象可以做真实对象额外的事情</p>
+</li>
+</ul>
+<p>​            真实对象专注做自己的事情</p>
+</li>
+</ul>
+<h2 id="工厂设计模式"><a href="#工厂设计模式" class="headerlink" title="工厂设计模式"></a>工厂设计模式</h2><ul>
+<li>工厂模式主要负责对象创建的问题。</li>
+<li>开发中有一个非常重要的原则“开闭原则”，对拓展开放、对修改关闭。</li>
+<li>可通过反射进行工厂模式的设计，完成动态的对象创建。</li>
+</ul>
+<p>工厂模式一般有父类产品、子类产品、工厂和客户。以下演示工厂模式：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 父类产品</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Usb</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">service</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 子类产品</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Mouse</span> <span class="keyword">implements</span> <span class="title">Usb</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;鼠标开始工作。。&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 子类产品</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">KeyBoard</span> <span class="keyword">implements</span> <span class="title">Usb</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;键盘开始工作。。&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 子类产品</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Upan</span> <span class="keyword">implements</span> <span class="title">Usb</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;u盘开始工作。。&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 工厂类（负责对象创建）</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UsbFactory</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Usb <span class="title">createUsb</span><span class="params">(<span class="keyword">int</span> type)</span> </span>&#123;</span><br><span class="line">        Usb usb=<span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">if</span> (type==<span class="number">1</span>) &#123;<span class="comment">//鼠标</span></span><br><span class="line">            usb=<span class="keyword">new</span> Mouse();</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(type==<span class="number">2</span>)&#123;<span class="comment">//键盘</span></span><br><span class="line">            usb=<span class="keyword">new</span> KeyBoard();</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span> (type==<span class="number">3</span>) &#123;<span class="comment">//U盘</span></span><br><span class="line">            usb=<span class="keyword">new</span> Upan();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> usb;        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//客户</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;请选择产品：1.鼠标 2.键盘 3.U盘&quot;</span>);</span><br><span class="line">        Scanner in=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> type=in.nextInt();</span><br><span class="line">        Usb usb=UsbFactory.createUsb(type);</span><br><span class="line">        <span class="keyword">if</span>(usb!=<span class="keyword">null</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;购买成功。&quot;</span>);</span><br><span class="line">            usb.service();</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;产品不存在！&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">请选择产品：1.鼠标 2.键盘 3.U盘</span><br><span class="line">2</span><br><span class="line">购买成功。</span><br><span class="line">键盘开始工作。。</span><br></pre></td></tr></table></figure>
+
+<p>如果新增了一个产品，比如画板，那么需要新建一个子类产品类，然后在工厂类的if语句中加一个type，在new一个画板类。这么做就破坏了“开闭原则”，修改了源代码。接下来使用反射来优化这个程序。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 工厂类（负责对象创建）</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UsbFactory</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Usb <span class="title">createUsb</span><span class="params">(String type)</span> </span>&#123;</span><br><span class="line">        Usb usb=<span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; class1=Class.forName(type);</span><br><span class="line">            usb=(Usb) class1.newInstance();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">return</span> usb;        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在工厂类利用反射创建新实例，传递过来的就需要一个完整的“包名.类名”。</p>
+<p>但是客户还是输入数字来选择购买哪个产品，我们可以用Properties类来将<strong>客户的选择</strong>和“<strong>包名.类名</strong>”存储为键值对，并将它放在单独的配置文件中。</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##Usb.properties</span></span><br><span class="line"><span class="attr">1</span> = <span class="string">io.gitee.lazydog036.pattern.Mouse</span></span><br><span class="line"><span class="attr">2</span> = <span class="string">io.gitee.lazydog036.pattern.KeyBoard</span></span><br><span class="line"><span class="attr">3</span> = <span class="string">io.gitee.lazydog036.pattern.Upan</span></span><br></pre></td></tr></table></figure>
+
+<p>那么就相应地修改客户代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请选择产品：1.鼠标 2.键盘 3.U盘 4.画板&quot;</span>);</span><br><span class="line">    Scanner in=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    String choice=in.next();</span><br><span class="line">    Properties properties=<span class="keyword">new</span> Properties();</span><br><span class="line">    <span class="comment">//将文件读入到流中</span></span><br><span class="line">    FileInputStream fileInputStream=<span class="keyword">new</span> FileInputStream(<span class="string">&quot;src\\Usb.properties&quot;</span>);</span><br><span class="line">    <span class="comment">//从流中加载数据</span></span><br><span class="line">    properties.load(fileInputStream);</span><br><span class="line">    fileInputStream.close();</span><br><span class="line">    Usb usb=UsbFactory.createUsb(properties.getProperty(choice));</span><br><span class="line">    <span class="keyword">if</span>(usb!=<span class="keyword">null</span>) &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;购买成功。&quot;</span>);</span><br><span class="line">        usb.service();</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;产品不存在！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>关于Properties这个集合和IO框架的知识默认你已经知晓了，我的其他博客里也有总结。</p>
+<p>执行代码，程序正常运行。还是刚才那个问题，这时候新加了一个产品画板，我们之前需要修改工厂类的代码，而现在我们只需要在<code>Usb.properties</code>文件中新加一行代码：</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">4</span> = <span class="string">io.gitee.lazydog036.pattern.DrawingBoard</span></span><br></pre></td></tr></table></figure>
+
+<p>不用去修改源代码，再新添加一个DrawingBoard类，然后执行代码，运行结果如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">请选择产品：<span class="number">1.</span>鼠标 <span class="number">2.</span>键盘 <span class="number">3.</span>U盘</span><br><span class="line"><span class="number">4</span></span><br><span class="line">购买成功。</span><br><span class="line">画板开始工作。</span><br></pre></td></tr></table></figure>
+
+<p>输入4，正常输出结果，符合了“开闭原则”。</p>
+<h2 id="单例设计模式"><a href="#单例设计模式" class="headerlink" title="单例设计模式"></a>单例设计模式</h2><ul>
+<li><p>单例（Singleton）：约束类只能创建一个该类的对象。</p>
+<p>要保证整个系统在运行过程中只能创建一个对象，有两种方式：</p>
+<ul>
+<li><strong>方式1</strong>：<strong>饿汉式</strong>（<strong>类加载时创建</strong>，<strong>天生线程安全</strong>）</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 单例模式-饿汉  在类初始化即实例化instanc</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton1</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton1 instance=<span class="keyword">new</span> Singleton1();  <span class="comment">//1.创建一个等于该类的常量</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton1</span><span class="params">()</span> </span>&#123;&#125;     <span class="comment">//设置无参构造方法为私有 让外部类无法new</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton1 <span class="title">getInstance1</span><span class="params">()</span> </span>&#123;  <span class="comment">//提供公开的静态方法返回常量</span></span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">        <span class="comment">//return instance;   不等于return new Singleton1();  常量值不会改变，new会改变对象地址</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//饿汉-变种</span></span><br><span class="line">    <span class="comment">//静态的概念：在全类中只有一份，不因创建多个对象而产生多份</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton1 instance1=<span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        instance1 = <span class="keyword">new</span> Singleton1();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton1 <span class="title">getInstance2</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> instance1;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;这是单列-饿汉&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>饿汉式单例一共三个步骤，很简单：</p>
+<ol>
+<li>首先创建一个该类的常量对象。</li>
+<li>构造方法设置为私有，类外部不能创建该对象。</li>
+<li>通过一个公开的方法，返回这个对象。</li>
+</ol>
+<p>通过一个多线程的代码来测试其是否是线程安全的：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Application</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line">            <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                   <span class="comment">//饿汉</span></span><br><span class="line">                    System.out.println(Singleton1.getInstance1().hashCode());</span><br><span class="line">                    Singleton1 instance=Singleton1.getInstance1();</span><br><span class="line">                    <span class="comment">//instance.show();</span></span><br><span class="line">                    System.out.println(<span class="string">&quot;-----------&quot;</span>);</span><br><span class="line">                    System.out.println(Singleton1.getInstance2().hashCode());</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;).start();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>关于java多线程默认你已经有所了解，我的其他博客中总结得也很详细。</p>
+<p>运行结果如下，三个对象的hashcode一样，说明三个线程获取的是同一个对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1307179676</span><br><span class="line">1307179676</span><br><span class="line">1307179676</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>方式2</strong>：<strong>懒汉式</strong>（<strong>使用时创建</strong>，<strong>线程不安全</strong>，<strong>需要加同步</strong>）</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 单例模式-懒汉 （线程不安全） 调用getInstance方法时才创建对象，比饿汉式节省空间</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton2</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton2 instance=<span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span>  <span class="title">Singleton2</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//设置无参构造方法为私有 让外部类无法new</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton2 <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  <span class="comment">//线程不安全，下面提供三种方式保证线程安全</span></span><br><span class="line">            <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">                instance=<span class="keyword">new</span> Singleton2();</span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>相比饿汉式先创建一个对象而言，懒汉式只有在调用方法时才创建对象，比饿汉式节省空间。</p>
+<p>懒汉式单例同样是三个步骤：</p>
+<ol>
+<li>首先创造一个对象，赋值为null。</li>
+<li>构造方法改成私有，类外部不能创建对象。</li>
+<li>通过一个公开的方法，返回这个对象。</li>
+</ol>
+<p>通过一个多线程的代码来测试其是否是线程安全的，测试代码同上，结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">727916939</span><br><span class="line">1612280362</span><br><span class="line">727916939</span><br></pre></td></tr></table></figure>
+
+<p>hashcode不一样，说明在多线程中创建了不同的对象。怎么解决呢？很容易想到的是使用同步方法，或者是使用同步代码块，在方法名前加一个synchronized关键字，或者把需要同步的代码放进同步代码块中：</p>
+<ul>
+<li>保证线程安全的三种方式</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方式一：在方法名中加synchronized修饰</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">static</span> Singleton2 <span class="title">getInstance1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">        instance=<span class="keyword">new</span> Singleton2();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//&#125;</span></span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在线程比较多的情况下，每个线程在使用实例时，如果都需要判断是否上锁的话执行效率会大打折扣；其实当第一个线程进入到同步代码块中时就说明实例已经创建了，后来的其他线程执行的只是返回语句，所以可以让后来的线程绕过同步代码块：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方式二：加synchronized代码块</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">static</span> Singleton2 <span class="title">getInstance2</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="comment">//括号里不能是instance，因为前面赋值是null，会出现空指针异常</span></span><br><span class="line">        <span class="keyword">synchronized</span> (Singleton2.class) &#123;</span><br><span class="line">            <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">                instance=<span class="keyword">new</span> Singleton2();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在同步代码块中再加一个if判断，就可以让后来的线程直接执行下面的返回语句，而不必再去判断是否上锁。这样可以优化执行效率。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//静态的概念：在全类中只有一份，不因创建多个对象而产生多份</span></span><br><span class="line"><span class="comment">// 方式三：创建静态内部类</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Holder</span></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> Singleton2 instance=<span class="keyword">new</span> Singleton2();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton2 <span class="title">getInstance3</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Holder.instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>它跟饿汉不同的是（很细微的差别）：饿汉是只要Singleton类被装载了，那么instance就会被实例化（没有达到lazy loading效果），而这种方式是Singleton类被装载了，instance不一定被初始化。因为SingletonHolder类没有被主动使用，只有显示通过调用getInstance方法时，才会显示装载SingletonHolder类，从而实例化instance。</p>
+</li>
+<li><p>总结单例模式的两种写法的优缺点：</p>
+<p>饿汉式：</p>
+<ul>
+<li>优点：线程安全，类一加载就创建了实例。</li>
+<li>缺点：实例对象就算不用也存在于内存中，生命周期长，浪费空间。</li>
+</ul>
+<p>懒汉式：</p>
+<ul>
+<li>优点：只有在调用getInstance才会实例化，生命周期短，节省空间</li>
+<li>缺点：线程不安全。不过可以使用同步来保证线程互斥访问。</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
 
@@ -895,7 +1744,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-20 14:14:29" itemprop="dateModified" datetime="2021-03-20T14:14:29+08:00">2021-03-20</time>
+                <time title="修改时间：2021-03-20 19:50:39" itemprop="dateModified" datetime="2021-03-20T19:50:39+08:00">2021-03-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -938,14 +1787,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.9k</span>
+              <span>5.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 min</span>
+              <span>5 min</span>
             </span>
 
         </div>
@@ -961,358 +1810,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021-03-%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021-03-Spring/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/Mw.png">
-      <meta itemprop="name" content="Mw">
-      <meta itemprop="description" content="God is Developer">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mw-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021-03-Spring/" class="post-title-link" itemprop="url">Spring</a>
-        </h2>
-
-        <div class="post-meta">
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 11:52:51" itemprop="dateModified" datetime="2021-03-18T11:52:51+08:00">2021-03-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Spring/" itemprop="url" rel="index"><span itemprop="name">Spring</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2021-03-Spring/" class="post-meta-item leancloud_visitors" data-flag-title="Spring" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2021-03-Spring/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021-03-Spring/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>58k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>53 min</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>简介</p>
-</blockquote>
-<p>Spring : 春天 —&gt;给软件行业带来了春天</p>
-<p>2002年，Rod Jahnson首次推出了Spring框架雏形interface21框架。</p>
-<p>2004年3月24日，Spring框架以interface21框架为基础，经过重新设计，发布了1.0正式版。</p>
-<p>很难想象Rod Johnson的学历 , 他是悉尼大学的博士，然而他的专业不是计算机，而是音乐学。</p>
-<p>Spring理念 : 使现有技术更加实用 . 本身就是一个大杂烩 , 整合现有的框架技术</p>
-<p>官网 : <span class="exturl" data-url="aHR0cDovL3NwcmluZy5pby8=">http://spring.io/<i class="fa fa-external-link-alt"></i></span></p>
-<p>官方下载地址 : <span class="exturl" data-url="aHR0cHM6Ly9yZXBvLnNwcmluZy5pby9saWJzLXJlbGVhc2UtbG9jYWwvb3JnL3NwcmluZ2ZyYW1ld29yay9zcHJpbmcv">https://repo.spring.io/libs-release-local/org/springframework/spring/<i class="fa fa-external-link-alt"></i></span></p>
-<p>GitHub : <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NwcmluZy1wcm9qZWN0cw==">https://github.com/spring-projects<i class="fa fa-external-link-alt"></i></span></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021-03-Spring/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020-10-Git%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/Mw.png">
-      <meta itemprop="name" content="Mw">
-      <meta itemprop="description" content="God is Developer">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mw-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020-10-Git%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Git命令</a>
-        </h2>
-
-        <div class="post-meta">
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-20 14:15:50" itemprop="dateModified" datetime="2021-03-20T14:15:50+08:00">2021-03-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/" itemprop="url" rel="index"><span itemprop="name">技术储备</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2020-10-Git%E5%91%BD%E4%BB%A4/" class="post-meta-item leancloud_visitors" data-flag-title="Git命令" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020-10-Git%E5%91%BD%E4%BB%A4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020-10-Git%E5%91%BD%E4%BB%A4/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.9k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 min</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
-<li><p><code>git clone https://github.com/Mw-GH/GitLearning.git</code>     从远程仓库上克隆项目</p>
-</li>
-<li><p><code>git push -u orgin master</code><br>  将本地的最新数据推送到远程仓库<br>  第一加 <code>-u</code>后  后面可直接使用 <code>git push</code><br>  <code>pull</code>同理</p>
-</li>
-<li><p><code>git pull orgin master</code><br>  将远程仓库的最新数据同步到本地</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020-10-Git%E5%91%BD%E4%BB%A4/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/Mw.png">
-      <meta itemprop="name" content="Mw">
-      <meta itemprop="description" content="God is Developer">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mw-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">linux 常用命令</a>
-        </h2>
-
-        <div class="post-meta">
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-20 14:15:32" itemprop="dateModified" datetime="2021-03-20T14:15:32+08:00">2021-03-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/" itemprop="url" rel="index"><span itemprop="name">技术储备</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%82%A8%E5%A4%87/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-meta-item leancloud_visitors" data-flag-title="linux 常用命令" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>582</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 min</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><p>uname -an</p>
-<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>vi /etc/hostname</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020-10-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1405,20 +1902,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1474,12 +1971,12 @@
     <span class="post-meta-item-icon">
     <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">347k</span>
+    <span title="站点总字数">413k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
     <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">5:16</span>
+    <span title="站点阅读时长">6:16</span>
 </div>
 <div class="busuanzi-count">
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
